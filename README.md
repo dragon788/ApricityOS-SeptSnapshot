@@ -1,7 +1,7 @@
 # Apricity OS
 ####[Support us on Patreon](https://www.patreon.com/apricity)
-####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 ####[Download the latest ISO](http://apricityos.com/iso/apricity_os-2015.07.08-dual.iso)
+####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
 ![Nautilus Files](https://raw.githubusercontent.com/apagajewski/Apricity_OS/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2016-45-25.png)
 ![Activities Overview](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2016-45-03.png?raw=true)
