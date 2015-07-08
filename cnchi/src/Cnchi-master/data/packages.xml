@@ -13,23 +13,19 @@
 		<pkgname>argon</pkgname>
 		<pkgname>b43-fwcutter</pkgname>
 		<pkgname>baobab</pkgname>
-		<pkgname>base-devel</pkgname> <!-- Group -->
-		<pkgname>base</pkgname> <!-- Group -->
-		<pkgname>bash-completion</pkgname>
+		<pkgname>base</pkgname>
+		<pkgname>base-devel</pkgname>
 		<pkgname>bind-tools</pkgname>
 		<pkgname>btrfs-progs</pkgname>
 		<pkgname>btsync</pkgname>
 		<pkgname>btsync-gui</pkgname>
-		<pkgname>cheese</pkgname>
-		<pkgname>clonezilla</pkgname>
 		<pkgname>crda</pkgname>
 		<pkgname>cups</pkgname>
-		<pkgname>darkhttpd</pkgname>
-		<pkgname>ddrescue</pkgname>
 		<pkgname>dhclient</pkgname>
 		<pkgname>dialog</pkgname>
 		<pkgname>dmraid</pkgname>
 		<pkgname>dnsmasq</pkgname>
+		<pkgname>dnsutils</pkgname>
 		<pkgname>dosfstools</pkgname>
 		<pkgname>efibootmgr</pkgname>
 		<pkgname>eog</pkgname>
@@ -43,7 +39,6 @@
 		<pkgname>file-roller</pkgname>
 		<pkgname>filezilla</pkgname>
 		<pkgname>flac</pkgname>
-		<pkgname>fsarchiver</pkgname>
 		<pkgname>gdm</pkgname>
 		<pkgname>geary</pkgname>
 		<pkgname>gedit</pkgname>
@@ -60,7 +55,6 @@
 		<pkgname>gnome-contacts</pkgname>
 		<pkgname>gnome-control-center</pkgname>
 		<pkgname>gnome-disk-utility</pkgname>
-		<pkgname>gnome-documents</pkgname>
 		<pkgname>gnome-icon-theme-symbolic</pkgname>
 		<pkgname>gnome-keyring</pkgname>
 		<pkgname>gnome-music</pkgname>
@@ -68,16 +62,19 @@
 		<pkgname>gnome-screenshot</pkgname>
 		<pkgname>gnome-session</pkgname>
 		<pkgname>gnome-settings-daemon</pkgname>
-		<pkgname>gnome-shell-extensions</pkgname>
 		<pkgname>gnome-shell</pkgname>
+		<pkgname>gnome-shell-extensions</pkgname>
+		<pkgname>gnome-shell-extensions</pkgname>
 		<pkgname>gnome-system-log</pkgname>
 		<pkgname>gnome-system-monitor</pkgname>
 		<pkgname>gnome-terminal</pkgname>
+		<pkgname>gnome-themes-standard</pkgname>
 		<pkgname>gnome-themes-standard</pkgname>
 		<pkgname>gnome-tweak-tool</pkgname>
 		<pkgname>gnome-user-docs</pkgname>
 		<pkgname>gnu-netcat</pkgname>
 		<pkgname>google-chrome-beta</pkgname>
+		<pkgname>google-talkplugin</pkgname>
 		<pkgname>gpm</pkgname>
 		<pkgname>gptfdisk</pkgname>
 		<pkgname>grilo-plugins</pkgname>
@@ -92,27 +89,26 @@
 		<pkgname>gst-plugins-good</pkgname>
 		<pkgname>gst-plugins-ugly</pkgname>
 		<pkgname>gstreamer</pkgname>
+		<pkgname>gstreamer0.10</pkgname>
 		<pkgname>gstreamer0.10-bad-plugins</pkgname>
 		<pkgname>gstreamer0.10-base-plugins</pkgname>
 		<pkgname>gstreamer0.10-ffmpeg</pkgname>
 		<pkgname>gstreamer0.10-good-plugins</pkgname>
 		<pkgname>gstreamer0.10-ugly-plugins</pkgname>
-		<pkgname>gstreamer0.10</pkgname>
+		<pkgname>gtk-engine-murrine</pkgname>
+		<pkgname>gtk-engine-murrine</pkgname>
 		<pkgname>gucharmap</pkgname>
 		<pkgname>gummiboot</pkgname>
-		<pkgname>gzip</pkgname>
+		<pkgname>gummiboot</pkgname>
 		<pkgname>haveged</pkgname>
-		<pkgname>hdparm</pkgname>
 		<pkgname>hwdetect</pkgname>
-		<pkgname>hwinfo</pkgname>
 		<pkgname>ice-ssb</pkgname>
 		<pkgname>inkscape</pkgname>
 		<pkgname>intel-ucode</pkgname>
+		<pkgname>intel-ucode</pkgname>
 		<pkgname>ipw2100-fw</pkgname>
 		<pkgname>ipw2200-fw</pkgname>
-		<pkgname>irssi</pkgname>
 		<pkgname>lame</pkgname>
-		<pkgname>lftp</pkgname>
 		<pkgname>libcups</pkgname>
 		<pkgname>libdca</pkgname>
 		<pkgname>libdvdcss</pkgname>
@@ -121,10 +117,11 @@
 		<pkgname>libmad</pkgname>
 		<pkgname>libmatroska</pkgname>
 		<pkgname>libreoffice-fresh</pkgname>
-		<pkgname>linux-atm</pkgname>
 		<pkgname>linux-firmware</pkgname>
+		<pkgname>linux-headers</pkgname>
 		<pkgname>mc</pkgname>
 		<pkgname>mesa</pkgname>
+		<pkgname>mesa-vdpau</pkgname>
 		<pkgname>modemmanager</pkgname>
 		<pkgname>mousetweaks</pkgname>
 		<pkgname>mtools</pkgname>
@@ -135,46 +132,33 @@
 		<pkgname>network-manager-applet</pkgname>
 		<pkgname>networkmanager-openvpn</pkgname>
 		<pkgname>networkmanager-pptp</pkgname>
-		<pkgname>nfs-utils</pkgname>
-		<pkgname>nilfs-utils</pkgname>
-		<pkgname>nmap</pkgname>
+		<pkgname>ntfs-3g</pkgname>
 		<pkgname>ntfs-3g</pkgname>
 		<pkgname>ntp</pkgname>
-		<pkgname>openconnect</pkgname>
 		<pkgname>opencore-amr</pkgname>
 		<pkgname>openssh</pkgname>
 		<pkgname>openvpn</pkgname>
+		<pkgname>orca</pkgname>
 		<pkgname>os-prober</pkgname>
-		<pkgname>partclone</pkgname>
-		<pkgname>parted</pkgname>
-		<pkgname>partimage</pkgname>
+		<pkgname>pavucontrol</pkgname>
+		<pkgname>pipelight</pkgname>
 		<pkgname>pkgfile</pkgname>
 		<pkgname>playonlinux</pkgname>
 		<pkgname>plymouth</pkgname>
 		<pkgname>polkit-gnome</pkgname>
-		<pkgname>ppp</pkgname>
-		<pkgname>pptpclient</pkgname>
 		<pkgname>prebootloader</pkgname>
-		<pkgname>python-lxml</pkgname>
-		<pkgname>python-mako</pkgname>
-		<pkgname>python-mock</pkgname>
+		<pkgname>prebootloader</pkgname>
+		<pkgname>pulseaudio-alsa</pkgname>
 		<pkgname>refind-efi</pkgname>
 		<pkgname>reflector</pkgname>
 		<pkgname>rfkill</pkgname>
-		<pkgname>rp-pppoe</pkgname>
-		<pkgname>rsync</pkgname>
 		<pkgname>samba</pkgname>
-		<pkgname>screen</pkgname>
-		<pkgname>skype</pkgname>
 		<pkgname>smartmontools</pkgname>
-		<pkgname>speedtouch</pkgname>
 		<pkgname>squashfs-tools</pkgname>
 		<pkgname>steam</pkgname>
 		<pkgname>sudo</pkgname>
 		<pkgname>sushi</pkgname>
 		<pkgname>tar</pkgname>
-		<pkgname>tcpdump</pkgname>
-		<pkgname>testdisk</pkgname>
 		<pkgname>tlp</pkgname>
 		<pkgname>totem</pkgname>
 		<pkgname>transmission-cli</pkgname>
@@ -187,15 +171,13 @@
 		<pkgname>unrar</pkgname>
 		<pkgname>unzip</pkgname>
 		<pkgname>usb_modeswitch</pkgname>
-		<pkgname>vino</pkgname>
-		<pkgname>vpnc</pkgname>
 		<pkgname>wget</pkgname>
 		<pkgname>whois</pkgname>
 		<pkgname>wine</pkgname>
 		<pkgname>wireless_tools</pkgname>
 		<pkgname>wpa_actiond</pkgname>
-		<pkgname>wvdial</pkgname>
 		<pkgname>x264</pkgname>
+		<pkgname>xdg-user-dirs-gtk</pkgname>
 		<pkgname>xdg-user-dirs-gtk</pkgname>
 		<pkgname>xf86-input-synaptics</pkgname>
 		<pkgname>xf86-video-ati</pkgname>
@@ -205,9 +187,9 @@
 		<pkgname>xf86-video-vesa</pkgname>
 		<pkgname>xf86-video-vmware</pkgname>
 		<pkgname>xfsprogs</pkgname>
+		<pkgname>xfsprogs</pkgname>
 		<pkgname>xineramaproto</pkgname>
 		<pkgname>xkeyboard-config</pkgname>
-		<pkgname>xl2tpd</pkgname>
 		<pkgname>xorg-bdftopcf</pkgname>
 		<pkgname>xorg-font-util</pkgname>
 		<pkgname>xorg-font-utils</pkgname>
@@ -218,9 +200,11 @@
 		<pkgname>xorg-luit</pkgname>
 		<pkgname>xorg-mkfontdir</pkgname>
 		<pkgname>xorg-mkfontscale</pkgname>
+		<pkgname>xorg-server</pkgname>
+		<pkgname>xorg-server</pkgname>
 		<pkgname>xorg-server-common</pkgname>
 		<pkgname>xorg-server-utils</pkgname>
-		<pkgname>xorg-server</pkgname>
+		<pkgname>xorg-server-utils</pkgname>
 		<pkgname>xorg-sessreg</pkgname>
 		<pkgname>xorg-setxkbmap</pkgname>
 		<pkgname>xorg-twm</pkgname>
@@ -243,11 +227,8 @@
 		<pkgname>xproto</pkgname>
 		<pkgname>xvidcore</pkgname>
 		<pkgname>xz</pkgname>
-		<pkgname>yaourt-git</pkgname>
 		<pkgname>yelp</pkgname>
 		<pkgname>zd1211-firmware</pkgname>
-		<pkgname>zsh-completions</pkgname>
-		<pkgname>zsh</pkgname>
             </packages>
         </edition>
 
