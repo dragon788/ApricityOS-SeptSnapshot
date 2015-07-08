@@ -25,7 +25,6 @@
 		<pkgname>dialog</pkgname>
 		<pkgname>dmraid</pkgname>
 		<pkgname>dnsmasq</pkgname>
-		<pkgname>dnsutils</pkgname>
 		<pkgname>dosfstools</pkgname>
 		<pkgname>efibootmgr</pkgname>
 		<pkgname>eog</pkgname>

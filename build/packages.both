@@ -35,8 +35,7 @@ modemmanager
 networkmanager-openvpn
 networkmanager-pptp
 ntfs-3g
-whois 
-dnsutils
+whois
 netctl
 wget
 linux-firmware
