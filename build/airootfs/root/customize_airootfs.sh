@@ -52,7 +52,7 @@ echo 'seded'
 
 
 systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service tlp.service tlp-sleep.service
-systemctl -fq enable NetworkManager ModemManager bluetooth avahi-daemon ufw
+systemctl -fq enable NetworkManager ModemManager bluetooth ufw
 systemctl mask systemd-rfkill@.service
 systemctl set-default graphical.target
 touch /etc/pacman.d/antergos-mirrorlist
