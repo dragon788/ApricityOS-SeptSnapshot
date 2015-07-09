@@ -1,6 +1,6 @@
-# Cnchi - Antergos Installer
-# Copyright (C) 2013-2015 Antergos
-# Antergos Developers <devATantergos.com>
+# Cnchi - Apricity OS Installer
+# Copyright (C) 2013-2015 Apricity OS
+# Apricity OS Developers <devATantergos.com>
 # 
 # Translators:
 # Burak <burakgarci@gmail.com>, 2013
@@ -10,7 +10,7 @@
 # Taylan Tatlı <taylantatli90@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-04 11:36+0000\n"
 "Last-Translator: Dustin Falgout <dustin@falgout.us>\n"
@@ -95,12 +95,12 @@ msgid "Using pyalpm v{0} as interface to libalpm v{1}"
 msgstr ""
 
 #: cnchi/cnchi.py:177
-msgid "Cnchi v{0} - Antergos Installer"
+msgid "Cnchi v{0} - Apricity OS Installer"
 msgstr ""
 
 #: cnchi/cnchi.py:182
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
-msgstr "Antergos paketlerini indirmek için aria2 kullan (DENEYSEL)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
+msgstr "Apricity OS paketlerini indirmek için aria2 kullan (DENEYSEL)"
 
 #: cnchi/cnchi.py:186
 msgid "Use pre-downloaded xz packages when possible"
@@ -160,15 +160,15 @@ msgid "Choose Your Desktop"
 msgstr "Masaüstünüzü Seçin"
 
 #: cnchi/desktop.py:203
-msgid "Cnchi will install Antergos with the '%s' desktop"
-msgstr "Cnchi, Antergos'u '%s' masaüstü ile kuracak."
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
+msgstr "Cnchi, Apricity OS'u '%s' masaüstü ile kuracak."
 
 #: cnchi/desktop_environments.py:115
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
-msgstr "Gnome 3 bilgisayarınızı kolay ve şık kullanmanın bir yoludur. Tüm basit işlerinize kolay bir şekilde ulaşmanızı sağlayan Etkinlikler Genel Görünümü özelliğini sunar. Gnome 3 Antergos'un ön tanımlı masaüstüdür."
+"GNOME 3 is the default desktop in Apricity OS."
+msgstr "Gnome 3 bilgisayarınızı kolay ve şık kullanmanın bir yoludur. Tüm basit işlerinize kolay bir şekilde ulaşmanızı sağlayan Etkinlikler Genel Görünümü özelliğini sunar. Gnome 3 Apricity OS'un ön tanımlı masaüstüdür."
 
 #: cnchi/desktop_environments.py:120
 msgid ""
@@ -232,10 +232,10 @@ msgstr ""
 
 #: cnchi/desktop_environments.py:156
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
-msgstr "Bu seçenek Antergos'u hiçbir grafiksel arayüz olmadan sadece komut satırı sistem olarak yükleyecek. Kurulumdan sonra Antergos'u komut satırı paket yöneticisi ile paketleri yükleyerek özelleştirebilirsiniz."
+"Apricity OS by installing packages with the command-line package manager."
+msgstr "Bu seçenek Apricity OS'u hiçbir grafiksel arayüz olmadan sadece komut satırı sistem olarak yükleyecek. Kurulumdan sonra Apricity OS'u komut satırı paket yöneticisi ile paketleri yükleyerek özelleştirebilirsiniz."
 
 #: cnchi/desktop_environments.py:160
 msgid ""
@@ -524,8 +524,8 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
-msgstr "Arch Kullanıcı Deposu kullanıcıların gönderdiği PKGBUILD'ler koleksiyonudur.\nResmi depolardaki mevcut yazılımlar'a ilave sağlar.\n\nAUR topluluk odaklıdır ve Arch veya Antergos tarafından DESKTEKLENMEZ.\n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
+msgstr "Arch Kullanıcı Deposu kullanıcıların gönderdiği PKGBUILD'ler koleksiyonudur.\nResmi depolardaki mevcut yazılımlar'a ilave sağlar.\n\nAUR topluluk odaklıdır ve Arch veya Apricity OS tarafından DESKTEKLENMEZ.\n"
 
 #: cnchi/features.py:336
 msgid "Uncomplicated Firewall will be installed with these rules:"
@@ -875,7 +875,7 @@ msgid "Cnchi will not install any bootloader"
 msgstr ""
 
 #: cnchi/installation/advanced.py:2174
-msgid "Antergos will install the bootloader {0} in device {1}"
+msgid "Apricity OS will install the bootloader {0} in device {1}"
 msgstr ""
 
 #: cnchi/installation/advanced.py:2190 cnchi/installation/automatic.py:295
@@ -891,7 +891,7 @@ msgid "Will shrink device {0} and create new device {1}"
 msgstr ""
 
 #: cnchi/installation/alongside.py:148
-msgid "Cnchi recommends at least 6.5GB free to install Antergos."
+msgid "Cnchi recommends at least 6.5GB free to install Apricity OS."
 msgstr ""
 
 #: cnchi/installation/alongside.py:149
@@ -902,7 +902,7 @@ msgstr ""
 
 #: cnchi/installation/alongside.py:150
 msgid ""
-"You can still install Antergos, but be carefull on which DE you choose as it"
+"You can still install Apricity OS, but be carefull on which DE you choose as it"
 " might not fit in."
 msgstr ""
 
@@ -919,8 +919,8 @@ msgid "Choose the partition that you want to shrink:"
 msgstr ""
 
 #: cnchi/installation/alongside.py:212
-msgid "Antergos Alongside Installation"
-msgstr "Antergos Yanına Kurulum"
+msgid "Apricity OS Alongside Installation"
+msgstr "Apricity OS Yanına Kurulum"
 
 #: cnchi/installation/alongside.py:252
 msgid ""
@@ -969,12 +969,12 @@ msgid "Installation Type"
 msgstr "Kurulum Çeşidi"
 
 #: cnchi/installation/ask.py:222
-msgid "Replace {0} with Antergos"
+msgid "Replace {0} with Apricity OS"
 msgstr ""
 
 #: cnchi/installation/ask.py:224
-msgid "Erase disk and install Antergos"
-msgstr "Diski sil ve Antergos yükle"
+msgid "Erase disk and install Apricity OS"
+msgstr "Diski sil ve Apricity OS yükle"
 
 #: cnchi/installation/ask.py:228
 msgid "Warning: This will erase ALL data on your disk."
@@ -1008,11 +1008,11 @@ msgid ""
 msgstr "Bu /home dizinini farklı bir bölüme yükleyecektir."
 
 #: cnchi/installation/ask.py:262
-msgid "Install Antergos alongside {0}"
+msgid "Install Apricity OS alongside {0}"
 msgstr ""
 
 #: cnchi/installation/ask.py:267
-msgid "Installs Antergos without removing {0}"
+msgid "Installs Apricity OS without removing {0}"
 msgstr ""
 
 #: cnchi/installation/ask.py:272
@@ -1024,7 +1024,7 @@ msgid "What do you want to do?"
 msgstr ""
 
 #: cnchi/installation/ask.py:283
-msgid "Choose exactly where Antergos should be installed."
+msgid "Choose exactly where Apricity OS should be installed."
 msgstr ""
 
 #: cnchi/installation/ask.py:286
@@ -1032,20 +1032,20 @@ msgid "Edit partition table and choose mount points."
 msgstr "Bölüm tablosunu düzenleyin ve bağlama noktalarını seçin."
 
 #: cnchi/installation/ask.py:317
-msgid "Antergos installation will be encrypted using LUKS"
-msgstr "Antergos kurulumu LUKS kullanılarak şifrelenecek"
+msgid "Apricity OS installation will be encrypted using LUKS"
+msgstr "Apricity OS kurulumu LUKS kullanılarak şifrelenecek"
 
 #: cnchi/installation/ask.py:320
-msgid "Antergos will be installed using LVM volumes"
-msgstr "Antergos LVM birimleri kullanılarak yüklenecek"
+msgid "Apricity OS will be installed using LVM volumes"
+msgstr "Apricity OS LVM birimleri kullanılarak yüklenecek"
 
 #: cnchi/installation/ask.py:322
-msgid "Antergos will be installed using a separate /home volume."
-msgstr "Antergos ayrı bir kısımda /home yani Ev Dizini kullanarak kurulacaktır"
+msgid "Apricity OS will be installed using a separate /home volume."
+msgstr "Apricity OS ayrı bir kısımda /home yani Ev Dizini kullanarak kurulacaktır"
 
 #: cnchi/installation/ask.py:324
-msgid "Antergos will be installed using a separate /home partition."
-msgstr "Antergos ayrı bir diskde /home yani Ev Dizini kullanarak kurulacaktır."
+msgid "Apricity OS will be installed using a separate /home partition."
+msgstr "Apricity OS ayrı bir diskde /home yani Ev Dizini kullanarak kurulacaktır."
 
 #: cnchi/installation/auto_partition.py:79
 msgid "Unmounting %s"
@@ -1255,7 +1255,7 @@ msgstr "UYARI! Bu seçenek sürücünüzde bulunan her şeyin üzerine yazacak!"
 
 #: cnchi/installation/automatic.py:81
 msgid ""
-"Select the drive we should use to install Antergos and then click above to "
+"Select the drive we should use to install Apricity OS and then click above to "
 "start the process."
 msgstr ""
 
@@ -1294,11 +1294,11 @@ msgid ""
 msgstr ""
 
 #: cnchi/installation/automatic.py:258
-msgid "Cnchi will install Antergos on device %s"
+msgid "Cnchi will install Apricity OS on device %s"
 msgstr ""
 
 #: cnchi/installation/automatic.py:270
-msgid "Antergos will install the bootloader '{0}' in device '{1}'"
+msgid "Apricity OS will install the bootloader '{0}' in device '{1}'"
 msgstr ""
 
 #: cnchi/installation/bootloader.py:88
@@ -1913,8 +1913,8 @@ msgid "Using '%s' file as package list"
 msgstr "%s dosyası paket listesi olarak kullanılıyor"
 
 #: cnchi/main_window.py:202
-msgid "Antergos Installer"
-msgstr "Antergos Yükleyici"
+msgid "Apricity OS Installer"
+msgstr "Apricity OS Yükleyici"
 
 #: cnchi/main_window.py:343
 msgid "Do you really want to quit the installer?"
@@ -2179,28 +2179,28 @@ msgid "Auto mirror selection has been run successfully"
 msgstr ""
 
 #: cnchi/show_message.py:55
-msgid "Antergos Installer - Error"
-msgstr "Antergos Yükleyici - Hata"
+msgid "Apricity OS Installer - Error"
+msgstr "Apricity OS Yükleyici - Hata"
 
 #: cnchi/show_message.py:69
-msgid "Antergos Installer - Warning"
-msgstr "Antergos Yükleyici - Uyarı"
+msgid "Apricity OS Installer - Warning"
+msgstr "Apricity OS Yükleyici - Uyarı"
 
 #: cnchi/show_message.py:83
-msgid "Antergos Installer - Information"
-msgstr "Antergos Yükleyici - Bilgi"
+msgid "Apricity OS Installer - Information"
+msgstr "Apricity OS Yükleyici - Bilgi"
 
 #: cnchi/show_message.py:97
-msgid "Antergos Installer - Confirmation"
-msgstr "Antergos Yükleyici - Doğrulama"
+msgid "Apricity OS Installer - Confirmation"
+msgstr "Apricity OS Yükleyici - Doğrulama"
 
 #: cnchi/slides.py:73
 msgid "Please wait..."
 msgstr "Lütfen bekleyin..."
 
 #: cnchi/slides.py:75
-msgid "Installing Antergos..."
-msgstr "Antergos yükleniyor..."
+msgid "Installing Apricity OS..."
+msgstr "Apricity OS yükleniyor..."
 
 #: cnchi/slides.py:187
 msgid ""
@@ -2381,11 +2381,11 @@ msgid "Too many characters"
 msgstr "Çok fazla karakter"
 
 #: cnchi/welcome.py:73
-msgid "Try Antergos without making any changes to your system."
+msgid "Try Apricity OS without making any changes to your system."
 msgstr ""
 
 #: cnchi/welcome.py:79
-msgid "Create a permanent place for Antergos on your system."
+msgid "Create a permanent place for Apricity OS on your system."
 msgstr ""
 
 #: cnchi/welcome.py:83
@@ -2397,8 +2397,8 @@ msgid "Install It"
 msgstr ""
 
 #: cnchi/welcome.py:92
-msgid "Welcome to Antergos!"
-msgstr "Antergos'a hoş geldiniz!"
+msgid "Welcome to Apricity OS!"
+msgstr "Apricity OS'a hoş geldiniz!"
 
 #: cnchi/welcome.py:125
 msgid "Loading, please wait..."

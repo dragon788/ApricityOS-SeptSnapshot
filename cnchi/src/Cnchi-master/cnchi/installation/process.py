@@ -115,7 +115,7 @@ class InstallationProcess(multiprocessing.Process):
         self.mount_devices = mount_devices
 
         # Set defaults
-        self.desktop_manager = 'lightdm'
+        self.desktop_manager = 'gdm'
         self.network_manager = 'NetworkManager'
 
         # Packages to be removed
@@ -1032,10 +1032,10 @@ class InstallationProcess(multiprocessing.Process):
         # if self.settings.get("feature_aur"):
         #    logging.debug(_("Configuring AUR..."))
 
-        services = []
+        services = ['bluetooth'']
 
         if self.settings.get("feature_bluetooth"):
-            services.append('bluetooth')
+            services.append('bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw')
 
         if self.settings.get("feature_cups"):
             services.append('org.cups.cupsd')

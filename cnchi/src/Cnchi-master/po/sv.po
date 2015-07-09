@@ -1,6 +1,6 @@
-# Cnchi - Antergos Installer
-# Copyright (C) 2013-2015 Antergos
-# Antergos Developers <devATantergos.com>
+# Cnchi - Apricity OS Installer
+# Copyright (C) 2013-2015 Apricity OS
+# Apricity OS Developers <devATantergos.com>
 # 
 # Translators:
 # Alexandre Filgueira <faidoc@gmail.com>, 2013
@@ -11,7 +11,7 @@
 # Patrik Nilsson <asavartzeth@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-15 17:29+0000\n"
 "Last-Translator: Daniel <daniel.a.back@telia.com>\n"
@@ -96,12 +96,12 @@ msgid "Using pyalpm v{0} as interface to libalpm v{1}"
 msgstr "Använd pyalpm v[0] som gränssnitt till libalpm v[1]"
 
 #: cnchi/cnchi.py:177
-msgid "Cnchi v{0} - Antergos Installer"
-msgstr "Cnchi v{0} - Antergos Installationsprogram"
+msgid "Cnchi v{0} - Apricity OS Installer"
+msgstr "Cnchi v{0} - Apricity OS Installationsprogram"
 
 #: cnchi/cnchi.py:182
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
-msgstr "Använd aria2 för att ladda ned Antergos paket (EXPERIMENTELLT)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
+msgstr "Använd aria2 för att ladda ned Apricity OS paket (EXPERIMENTELLT)"
 
 #: cnchi/cnchi.py:186
 msgid "Use pre-downloaded xz packages when possible"
@@ -161,15 +161,15 @@ msgid "Choose Your Desktop"
 msgstr "Välj din skrivbordsmiljö"
 
 #: cnchi/desktop.py:203
-msgid "Cnchi will install Antergos with the '%s' desktop"
-msgstr "Cnchi kommer att installera Antergos med '%s' som skrivbord."
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
+msgstr "Cnchi kommer att installera Apricity OS med '%s' som skrivbord."
 
 #: cnchi/desktop_environments.py:115
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
-msgstr "Gnome 3 är ett enkelt och elegant sätt att använda din dator. Den innehåller en översikt över aktiviteter som är ett enkelt sätt att komma åt dina program. Gnome 3 är förvalt skrivbord i Antergos."
+"GNOME 3 is the default desktop in Apricity OS."
+msgstr "Gnome 3 är ett enkelt och elegant sätt att använda din dator. Den innehåller en översikt över aktiviteter som är ett enkelt sätt att komma åt dina program. Gnome 3 är förvalt skrivbord i Apricity OS."
 
 #: cnchi/desktop_environments.py:120
 msgid ""
@@ -233,10 +233,10 @@ msgstr "LXQt är en avancerad, lättanvänd och snabb skrivbordsmiljö baserad p
 
 #: cnchi/desktop_environments.py:156
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
-msgstr "Det här kommer att installera Antergos som ett terminalbaserat system utan någon grafisk användarmiljö. Efter installationen kan du själv anpassa Antergos genom att installera de paket du önskar med pakethanteraren via kommandopromten."
+"Apricity OS by installing packages with the command-line package manager."
+msgstr "Det här kommer att installera Apricity OS som ett terminalbaserat system utan någon grafisk användarmiljö. Efter installationen kan du själv anpassa Apricity OS genom att installera de paket du önskar med pakethanteraren via kommandopromten."
 
 #: cnchi/desktop_environments.py:160
 msgid ""
@@ -525,8 +525,8 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
-msgstr "\"Arch User Repository\" är en samling PKGBUILDs från användare\nkompletterar mjukvaran som är tillgänglig från de officiella förråden.\n\nAUR är samhällsdriven och stöds EJ av Arch eller Antergos.\n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
+msgstr "\"Arch User Repository\" är en samling PKGBUILDs från användare\nkompletterar mjukvaran som är tillgänglig från de officiella förråden.\n\nAUR är samhällsdriven och stöds EJ av Arch eller Apricity OS.\n"
 
 #: cnchi/features.py:336
 msgid "Uncomplicated Firewall will be installed with these rules:"
@@ -876,8 +876,8 @@ msgid "Cnchi will not install any bootloader"
 msgstr "Cnchi kommer inte installera någon starthanterare"
 
 #: cnchi/installation/advanced.py:2174
-msgid "Antergos will install the bootloader {0} in device {1}"
-msgstr "Antergos kommer att installera starthanterare {0} i {1}"
+msgid "Apricity OS will install the bootloader {0} in device {1}"
+msgstr "Apricity OS kommer att installera starthanterare {0} i {1}"
 
 #: cnchi/installation/advanced.py:2190 cnchi/installation/automatic.py:295
 msgid "Testing mode. Cnchi will not change anything!"
@@ -892,8 +892,8 @@ msgid "Will shrink device {0} and create new device {1}"
 msgstr "Kommer krympa enheten {0} och skapa enheten {1}"
 
 #: cnchi/installation/alongside.py:148
-msgid "Cnchi recommends at least 6.5GB free to install Antergos."
-msgstr "Cnchi rekommenderar att det finns minst 6,5GB ledigt för att installera Antergos."
+msgid "Cnchi recommends at least 6.5GB free to install Apricity OS."
+msgstr "Cnchi rekommenderar att det finns minst 6,5GB ledigt för att installera Apricity OS."
 
 #: cnchi/installation/alongside.py:149
 msgid ""
@@ -903,7 +903,7 @@ msgstr ""
 
 #: cnchi/installation/alongside.py:150
 msgid ""
-"You can still install Antergos, but be carefull on which DE you choose as it"
+"You can still install Apricity OS, but be carefull on which DE you choose as it"
 " might not fit in."
 msgstr ""
 
@@ -920,8 +920,8 @@ msgid "Choose the partition that you want to shrink:"
 msgstr "Välj partitionen du vill krympa:"
 
 #: cnchi/installation/alongside.py:212
-msgid "Antergos Alongside Installation"
-msgstr "Installera Antergos bredvid annat operativsystem"
+msgid "Apricity OS Alongside Installation"
+msgstr "Installera Apricity OS bredvid annat operativsystem"
 
 #: cnchi/installation/alongside.py:252
 msgid ""
@@ -970,12 +970,12 @@ msgid "Installation Type"
 msgstr "Typ av installation"
 
 #: cnchi/installation/ask.py:222
-msgid "Replace {0} with Antergos"
-msgstr "Byt ut {0} med Antergos"
+msgid "Replace {0} with Apricity OS"
+msgstr "Byt ut {0} med Apricity OS"
 
 #: cnchi/installation/ask.py:224
-msgid "Erase disk and install Antergos"
-msgstr "Radera disken och installera Antergos"
+msgid "Erase disk and install Apricity OS"
+msgstr "Radera disken och installera Apricity OS"
 
 #: cnchi/installation/ask.py:228
 msgid "Warning: This will erase ALL data on your disk."
@@ -1009,12 +1009,12 @@ msgid ""
 msgstr "Detta kommer ställa in din /home katalog på en annan partition eller volym."
 
 #: cnchi/installation/ask.py:262
-msgid "Install Antergos alongside {0}"
-msgstr "Installera Antergos brevid {0}"
+msgid "Install Apricity OS alongside {0}"
+msgstr "Installera Apricity OS brevid {0}"
 
 #: cnchi/installation/ask.py:267
-msgid "Installs Antergos without removing {0}"
-msgstr "Installera Antergos utan att ta bort {0}"
+msgid "Installs Apricity OS without removing {0}"
+msgstr "Installera Apricity OS utan att ta bort {0}"
 
 #: cnchi/installation/ask.py:272
 msgid "This computer has {0} installed."
@@ -1025,28 +1025,28 @@ msgid "What do you want to do?"
 msgstr "Vad vill du göra?"
 
 #: cnchi/installation/ask.py:283
-msgid "Choose exactly where Antergos should be installed."
-msgstr "Välj exakt var Antergos ska installeras."
+msgid "Choose exactly where Apricity OS should be installed."
+msgstr "Välj exakt var Apricity OS ska installeras."
 
 #: cnchi/installation/ask.py:286
 msgid "Edit partition table and choose mount points."
 msgstr "Ändra partitionstabell och välj monteringspunkter."
 
 #: cnchi/installation/ask.py:317
-msgid "Antergos installation will be encrypted using LUKS"
-msgstr "Antergosinstallationen kommer att krypteras enligt LUKS"
+msgid "Apricity OS installation will be encrypted using LUKS"
+msgstr "Apricity OSinstallationen kommer att krypteras enligt LUKS"
 
 #: cnchi/installation/ask.py:320
-msgid "Antergos will be installed using LVM volumes"
-msgstr "Antergos kommer att installeras med LVM volymer"
+msgid "Apricity OS will be installed using LVM volumes"
+msgstr "Apricity OS kommer att installeras med LVM volymer"
 
 #: cnchi/installation/ask.py:322
-msgid "Antergos will be installed using a separate /home volume."
-msgstr "Antergos kommer installeras med en separat /home volym."
+msgid "Apricity OS will be installed using a separate /home volume."
+msgstr "Apricity OS kommer installeras med en separat /home volym."
 
 #: cnchi/installation/ask.py:324
-msgid "Antergos will be installed using a separate /home partition."
-msgstr "Antergos kommer installeras med en separat /home partition."
+msgid "Apricity OS will be installed using a separate /home partition."
+msgstr "Apricity OS kommer installeras med en separat /home partition."
 
 #: cnchi/installation/auto_partition.py:79
 msgid "Unmounting %s"
@@ -1256,9 +1256,9 @@ msgstr "VARNING! Det här kommer att skriva över allt på din disk!"
 
 #: cnchi/installation/automatic.py:81
 msgid ""
-"Select the drive we should use to install Antergos and then click above to "
+"Select the drive we should use to install Apricity OS and then click above to "
 "start the process."
-msgstr "Välj den hårddisk där vi ska installera Antergos och tryck på knappen ovan för att starta."
+msgstr "Välj den hårddisk där vi ska installera Apricity OS och tryck på knappen ovan för att starta."
 
 #: cnchi/installation/automatic.py:85
 msgid "Encryption Password:"
@@ -1295,12 +1295,12 @@ msgid ""
 msgstr ""
 
 #: cnchi/installation/automatic.py:258
-msgid "Cnchi will install Antergos on device %s"
-msgstr "Cnchi kommer att installera Antergos på %s"
+msgid "Cnchi will install Apricity OS on device %s"
+msgstr "Cnchi kommer att installera Apricity OS på %s"
 
 #: cnchi/installation/automatic.py:270
-msgid "Antergos will install the bootloader '{0}' in device '{1}'"
-msgstr "Antergos kommer att installera starthanterare {0} i {1}"
+msgid "Apricity OS will install the bootloader '{0}' in device '{1}'"
+msgstr "Apricity OS kommer att installera starthanterare {0} i {1}"
 
 #: cnchi/installation/bootloader.py:88
 msgid ""
@@ -1914,8 +1914,8 @@ msgid "Using '%s' file as package list"
 msgstr "Använder fil '%s' som paketlista"
 
 #: cnchi/main_window.py:202
-msgid "Antergos Installer"
-msgstr "Antergos installerare"
+msgid "Apricity OS Installer"
+msgstr "Apricity OS installerare"
 
 #: cnchi/main_window.py:343
 msgid "Do you really want to quit the installer?"
@@ -2180,28 +2180,28 @@ msgid "Auto mirror selection has been run successfully"
 msgstr ""
 
 #: cnchi/show_message.py:55
-msgid "Antergos Installer - Error"
-msgstr "Antergos installation - Fel"
+msgid "Apricity OS Installer - Error"
+msgstr "Apricity OS installation - Fel"
 
 #: cnchi/show_message.py:69
-msgid "Antergos Installer - Warning"
-msgstr "Antergos installation - Varning"
+msgid "Apricity OS Installer - Warning"
+msgstr "Apricity OS installation - Varning"
 
 #: cnchi/show_message.py:83
-msgid "Antergos Installer - Information"
-msgstr "Antergos installation - information"
+msgid "Apricity OS Installer - Information"
+msgstr "Apricity OS installation - information"
 
 #: cnchi/show_message.py:97
-msgid "Antergos Installer - Confirmation"
-msgstr "Antergos installation - bekräftelse"
+msgid "Apricity OS Installer - Confirmation"
+msgstr "Apricity OS installation - bekräftelse"
 
 #: cnchi/slides.py:73
 msgid "Please wait..."
 msgstr "Vänta..."
 
 #: cnchi/slides.py:75
-msgid "Installing Antergos..."
-msgstr "Installerar Antergos..."
+msgid "Installing Apricity OS..."
+msgstr "Installerar Apricity OS..."
 
 #: cnchi/slides.py:187
 msgid ""
@@ -2382,11 +2382,11 @@ msgid "Too many characters"
 msgstr "För många tecken"
 
 #: cnchi/welcome.py:73
-msgid "Try Antergos without making any changes to your system."
+msgid "Try Apricity OS without making any changes to your system."
 msgstr ""
 
 #: cnchi/welcome.py:79
-msgid "Create a permanent place for Antergos on your system."
+msgid "Create a permanent place for Apricity OS on your system."
 msgstr ""
 
 #: cnchi/welcome.py:83
@@ -2398,8 +2398,8 @@ msgid "Install It"
 msgstr "Installera"
 
 #: cnchi/welcome.py:92
-msgid "Welcome to Antergos!"
-msgstr "Välkommen till Antergos!"
+msgid "Welcome to Apricity OS!"
+msgstr "Välkommen till Apricity OS!"
 
 #: cnchi/welcome.py:125
 msgid "Loading, please wait..."

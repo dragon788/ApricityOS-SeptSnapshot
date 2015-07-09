@@ -6,7 +6,7 @@
 # Japhy <zeman.filip@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2014-03-29 10:36+PET\n"
 "PO-Revision-Date: 2014-03-29 15:37+0000\n"
 "Last-Translator: faidoc <faidoc@gmail.com>\n"
@@ -38,8 +38,8 @@ msgid "Cnchi installer version %s"
 msgstr "Verze Cnchi instalátoru %s"
 
 #: cnchi.py:197
-msgid "Antergos Installer"
-msgstr "Antergos Instalátor"
+msgid "Apricity OS Installer"
+msgstr "Apricity OS Instalátor"
 
 #: cnchi.py:233
 msgid "Using Aria2 to download packages - EXPERIMENTAL"
@@ -50,16 +50,16 @@ msgid "Using '%s' file as package list"
 msgstr ""
 
 #: cnchi.py:278
-msgid "Cnchi - Antergos Installer"
-msgstr "Cnchi - Instalátor distribuce Antergos"
+msgid "Cnchi - Apricity OS Installer"
+msgstr "Cnchi - Instalátor distribuce Apricity OS"
 
 #: cnchi.py:331 src/welcome.py:120
 msgid "Quiting installer..."
 msgstr "Dokončuji instalaci ..."
 
 #: cnchi.py:453
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
-msgstr "Použít aria2 ke stažení balíků distribuce Antergos (EXPERIMENTÁLNÍ)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
+msgstr "Použít aria2 ke stažení balíků distribuce Apricity OS (EXPERIMENTÁLNÍ)"
 
 #: cnchi.py:454
 msgid ""
@@ -185,15 +185,15 @@ msgid "Choose Your Desktop"
 msgstr "Vyberte si svůj desktop"
 
 #: src/desktop.py:132
-msgid "Cnchi will install Antergos with the '%s' desktop"
-msgstr "Cnchi nainstaluje distribuci Antergos spolu s pracovním prostředím '%s'"
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
+msgstr "Cnchi nainstaluje distribuci Apricity OS spolu s pracovním prostředím '%s'"
 
 #: src/desktop_environments.py:65
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
-msgstr "Gnome 3 je jednoduchý a elegantní způsob, jak používat váš počítač. Je vybaveno přehledem aktivit, které usnadní přístup ke všem základním úkolům. GNOME 3 je výchozí desktop distribuce Antergos."
+"GNOME 3 is the default desktop in Apricity OS."
+msgstr "Gnome 3 je jednoduchý a elegantní způsob, jak používat váš počítač. Je vybaveno přehledem aktivit, které usnadní přístup ke všem základním úkolům. GNOME 3 je výchozí desktop distribuce Apricity OS."
 
 #: src/desktop_environments.py:70
 msgid ""
@@ -250,10 +250,10 @@ msgstr "Razor-qt je moderní, snadno ovladatelné a rychlé desktopové prostře
 
 #: src/desktop_environments.py:103
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
-msgstr "Tato možnost nainstaluje Antergos bez jakéhokoli typu grafického rozhraní, pouze s podporou příkazového řádku.  Po dokončení instalace lze přizpůsobit Antergos instalací balíků z příkazového řádku."
+"Apricity OS by installing packages with the command-line package manager."
+msgstr "Tato možnost nainstaluje Apricity OS bez jakéhokoli typu grafického rozhraní, pouze s podporou příkazového řádku.  Po dokončení instalace lze přizpůsobit Apricity OS instalací balíků z příkazového řádku."
 
 #: src/desktop_environments.py:107
 msgid ""
@@ -459,7 +459,7 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
 msgstr ""
 
 #: src/features.py:312
@@ -746,8 +746,8 @@ msgid "Cnchi will not install any boot loader"
 msgstr "Nebude instalován zavaděč systému"
 
 #: src/installation/advanced.py:1821
-msgid "Antergos will install the bootloader of type %s in %s"
-msgstr "Antergos nainstaluje zavaděč typu %s do %s"
+msgid "Apricity OS will install the bootloader of type %s in %s"
+msgstr "Apricity OS nainstaluje zavaděč typu %s do %s"
 
 #: src/installation/advanced.py:1835 src/installation/automatic.py:241
 msgid "Testing mode. Cnchi will not change anything!"
@@ -758,11 +758,11 @@ msgid "Can't load %s css"
 msgstr "Nelze nahrát %s css"
 
 #: src/installation/alongside.py:136
-msgid "Select the OS you would like Antergos installed next to."
-msgstr "Vyberte operační systém, vedle kterého chcete instalovat Antergos."
+msgid "Select the OS you would like Apricity OS installed next to."
+msgstr "Vyberte operační systém, vedle kterého chcete instalovat Apricity OS."
 
 #: src/installation/alongside.py:141
-msgid "Antergos Alongside Installation"
+msgid "Apricity OS Alongside Installation"
 msgstr ""
 
 #: src/installation/alongside.py:172
@@ -786,8 +786,8 @@ msgid "Installation Type"
 msgstr "Typ instalace"
 
 #: src/installation/ask.py:117
-msgid "Erase disk and install Antergos"
-msgstr "Vymazat disk a nainstalovat Antergos"
+msgid "Erase disk and install Apricity OS"
+msgstr "Vymazat disk a nainstalovat Apricity OS"
 
 #: src/installation/ask.py:120
 msgid "Warning: This will erase ALL data on your disk."
@@ -817,11 +817,11 @@ msgid ""
 msgstr "Tato volba nastaví /home adresář na jiný oddíl nebo svazek."
 
 #: src/installation/ask.py:156 src/installation/ask.py:158
-msgid "Install Antergos alongside %s"
+msgid "Install Apricity OS alongside %s"
 msgstr ""
 
 #: src/installation/ask.py:165
-msgid "Choose exactly where Antergos should be installed. (advanced)"
+msgid "Choose exactly where Apricity OS should be installed. (advanced)"
 msgstr "Vybrat přesné umístění pro instalaci (pokročilé)"
 
 #: src/installation/ask.py:168
@@ -829,20 +829,20 @@ msgid "Edit partition table and choose mount points."
 msgstr "Upravit tabulku oddílů a vybrat přípojné body."
 
 #: src/installation/ask.py:194
-msgid "Antergos installation will be encrypted using LUKS"
-msgstr "Instalace distribuce Antergos bude zašifrována pomocí LUKS"
+msgid "Apricity OS installation will be encrypted using LUKS"
+msgstr "Instalace distribuce Apricity OS bude zašifrována pomocí LUKS"
 
 #: src/installation/ask.py:197
-msgid "Antergos will be installed using LVM volumes"
-msgstr "Instalace distribuce Antergos použije LVM svazky"
+msgid "Apricity OS will be installed using LVM volumes"
+msgstr "Instalace distribuce Apricity OS použije LVM svazky"
 
 #: src/installation/ask.py:199
-msgid "Antergos will be installed using a separate /home volume."
-msgstr "Antergos použije samostatný svazek pro /home."
+msgid "Apricity OS will be installed using a separate /home volume."
+msgstr "Apricity OS použije samostatný svazek pro /home."
 
 #: src/installation/ask.py:201
-msgid "Antergos will be installed using a separate /home partition."
-msgstr "Antergos použije samostatný oddíl pro /home."
+msgid "Apricity OS will be installed using a separate /home partition."
+msgstr "Apricity OS použije samostatný oddíl pro /home."
 
 #: src/installation/auto_partition.py:73 src/installation/auto_partition.py:82
 msgid "Unmounting %s"
@@ -940,9 +940,9 @@ msgstr "VAROVÁNÍ\" Tímto přepíšete veškerá data na vašem disku!"
 
 #: src/installation/automatic.py:80
 msgid ""
-"Select the drive we should use to install Antergos and then click below to "
+"Select the drive we should use to install Apricity OS and then click below to "
 "start the process."
-msgstr "Vyberte disk, kde má být nainstalován Antergos a klikněte níže pro zahájení instalace."
+msgstr "Vyberte disk, kde má být nainstalován Apricity OS a klikněte níže pro zahájení instalace."
 
 #: src/installation/automatic.py:85
 msgid "Encryption Password:"
@@ -976,12 +976,12 @@ msgid ""
 msgstr "Opravdu chcete pokračovat a vymazat tak veškerý obsah na vašem pevném disku?\n\n%s"
 
 #: src/installation/automatic.py:211
-msgid "Cnchi will install Antergos on %s"
-msgstr "Cnchi nainstaluje Antergos na %s"
+msgid "Cnchi will install Apricity OS on %s"
+msgstr "Cnchi nainstaluje Apricity OS na %s"
 
 #: src/installation/automatic.py:222
-msgid "Antergos will install the %s bootloader on %s"
-msgstr "Antergos nainstaluje zavaděč %s na "
+msgid "Apricity OS will install the %s bootloader on %s"
+msgstr "Apricity OS nainstaluje zavaděč %s na "
 
 #: src/installation/process.py:91
 msgid "Installing using the '%s' method. Please wait..."
@@ -1189,8 +1189,8 @@ msgid "Added to crypttab : %s"
 msgstr "Přidáno do crypttab : %s"
 
 #: src/installation/process.py:926
-msgid "Added to fstab : /dev/mapper/cryptAntergosHome %s %s %s 0 %s"
-msgstr "Přidáno do fstab : /dev/mapper/cryptAntergosHome %s %s %s 0 %s"
+msgid "Added to fstab : /dev/mapper/cryptApricity OSHome %s %s %s 0 %s"
+msgstr "Přidáno do fstab : /dev/mapper/cryptApricity OSHome %s %s %s 0 %s"
 
 #: src/installation/process.py:978
 msgid "Added to fstab : %s"
@@ -1476,8 +1476,8 @@ msgid ""
 msgstr "Cnchi is pre-release beta software that is under active development.\n\nIt does not yet properly handle RAID, btrfs subvolumes, or other advanced\n\nsetups. Please proceed with caution as data loss is possible!\n\nPokud objevíte jakékoliv chyby, prosím nahlaste je zde <a href='http://bugs.antergos.com'>http://bugs.antergos.com</a>"
 
 #: src/language.py:97 src/welcome.py:102
-msgid "Welcome to Antergos!"
-msgstr "Vítejte v distribuci Antergos!"
+msgid "Welcome to Apricity OS!"
+msgstr "Vítejte v distribuci Apricity OS!"
 
 #: src/language.py:131
 msgid "Can't find translation file for the %s language"
@@ -1665,28 +1665,28 @@ msgid "Couldn't execute auto mirror selection"
 msgstr ""
 
 #: src/show_message.py:52
-msgid "Antergos Installer - Error"
-msgstr "Instalace Antergos - Chyba"
+msgid "Apricity OS Installer - Error"
+msgstr "Instalace Apricity OS - Chyba"
 
 #: src/show_message.py:64
-msgid "Antergos Installer - Warning"
-msgstr "Instalace distribuce Antergos - Varování"
+msgid "Apricity OS Installer - Warning"
+msgstr "Instalace distribuce Apricity OS - Varování"
 
 #: src/show_message.py:76
-msgid "Antergos Installer - Information"
-msgstr "Instalace distribuce Antergos - Informace"
+msgid "Apricity OS Installer - Information"
+msgstr "Instalace distribuce Apricity OS - Informace"
 
 #: src/show_message.py:87
-msgid "Antergos Installer - Confirmation"
-msgstr "Instalátor Antergos - Potvrzení"
+msgid "Apricity OS Installer - Confirmation"
+msgstr "Instalátor Apricity OS - Potvrzení"
 
 #: src/slides.py:91
 msgid "Please wait..."
 msgstr "Prosím čekejte..."
 
 #: src/slides.py:93
-msgid "Installing Antergos..."
-msgstr "Instaluji Antergos..."
+msgid "Installing Apricity OS..."
+msgstr "Instaluji Apricity OS..."
 
 #: src/slides.py:185
 msgid ""
@@ -1867,9 +1867,9 @@ msgstr "Příliš mnoho znaků"
 
 #: src/welcome.py:87
 msgid ""
-"You can try Antergos without making any changes to your system by selecting 'Try It'.\n"
-"When you are ready to install Antergos simply choose which installer you prefer."
-msgstr "Můžete vyzkoušet Antergos bez jakýchkoliv změn ve Vašem systému zvolením možnosti 'Vyzkoušet'.\nPokud jste připravení instalovat Antergos, jednoduše vyberte instalaci, kterou preferujete."
+"You can try Apricity OS without making any changes to your system by selecting 'Try It'.\n"
+"When you are ready to install Apricity OS simply choose which installer you prefer."
+msgstr "Můžete vyzkoušet Apricity OS bez jakýchkoliv změn ve Vašem systému zvolením možnosti 'Vyzkoušet'.\nPokud jste připravení instalovat Apricity OS, jednoduše vyberte instalaci, kterou preferujete."
 
 #: src/welcome.py:92
 msgid "Try It"

@@ -4,7 +4,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2014-03-29 10:36+PET\n"
 "PO-Revision-Date: 2013-05-09 16:58+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -36,7 +36,7 @@ msgid "Cnchi installer version %s"
 msgstr ""
 
 #: cnchi.py:197
-msgid "Antergos Installer"
+msgid "Apricity OS Installer"
 msgstr ""
 
 #: cnchi.py:233
@@ -48,7 +48,7 @@ msgid "Using '%s' file as package list"
 msgstr ""
 
 #: cnchi.py:278
-msgid "Cnchi - Antergos Installer"
+msgid "Cnchi - Apricity OS Installer"
 msgstr ""
 
 #: cnchi.py:331 src/welcome.py:120
@@ -56,7 +56,7 @@ msgid "Quiting installer..."
 msgstr ""
 
 #: cnchi.py:453
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
 msgstr ""
 
 #: cnchi.py:454
@@ -183,14 +183,14 @@ msgid "Choose Your Desktop"
 msgstr ""
 
 #: src/desktop.py:132
-msgid "Cnchi will install Antergos with the '%s' desktop"
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
 msgstr ""
 
 #: src/desktop_environments.py:65
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
+"GNOME 3 is the default desktop in Apricity OS."
 msgstr ""
 
 #: src/desktop_environments.py:70
@@ -248,9 +248,9 @@ msgstr ""
 
 #: src/desktop_environments.py:103
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
+"Apricity OS by installing packages with the command-line package manager."
 msgstr ""
 
 #: src/desktop_environments.py:107
@@ -457,7 +457,7 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
 msgstr ""
 
 #: src/features.py:312
@@ -744,7 +744,7 @@ msgid "Cnchi will not install any boot loader"
 msgstr ""
 
 #: src/installation/advanced.py:1821
-msgid "Antergos will install the bootloader of type %s in %s"
+msgid "Apricity OS will install the bootloader of type %s in %s"
 msgstr ""
 
 #: src/installation/advanced.py:1835 src/installation/automatic.py:241
@@ -756,11 +756,11 @@ msgid "Can't load %s css"
 msgstr ""
 
 #: src/installation/alongside.py:136
-msgid "Select the OS you would like Antergos installed next to."
+msgid "Select the OS you would like Apricity OS installed next to."
 msgstr ""
 
 #: src/installation/alongside.py:141
-msgid "Antergos Alongside Installation"
+msgid "Apricity OS Alongside Installation"
 msgstr ""
 
 #: src/installation/alongside.py:172
@@ -784,7 +784,7 @@ msgid "Installation Type"
 msgstr ""
 
 #: src/installation/ask.py:117
-msgid "Erase disk and install Antergos"
+msgid "Erase disk and install Apricity OS"
 msgstr ""
 
 #: src/installation/ask.py:120
@@ -815,11 +815,11 @@ msgid ""
 msgstr ""
 
 #: src/installation/ask.py:156 src/installation/ask.py:158
-msgid "Install Antergos alongside %s"
+msgid "Install Apricity OS alongside %s"
 msgstr ""
 
 #: src/installation/ask.py:165
-msgid "Choose exactly where Antergos should be installed. (advanced)"
+msgid "Choose exactly where Apricity OS should be installed. (advanced)"
 msgstr ""
 
 #: src/installation/ask.py:168
@@ -827,19 +827,19 @@ msgid "Edit partition table and choose mount points."
 msgstr ""
 
 #: src/installation/ask.py:194
-msgid "Antergos installation will be encrypted using LUKS"
+msgid "Apricity OS installation will be encrypted using LUKS"
 msgstr ""
 
 #: src/installation/ask.py:197
-msgid "Antergos will be installed using LVM volumes"
+msgid "Apricity OS will be installed using LVM volumes"
 msgstr ""
 
 #: src/installation/ask.py:199
-msgid "Antergos will be installed using a separate /home volume."
+msgid "Apricity OS will be installed using a separate /home volume."
 msgstr ""
 
 #: src/installation/ask.py:201
-msgid "Antergos will be installed using a separate /home partition."
+msgid "Apricity OS will be installed using a separate /home partition."
 msgstr ""
 
 #: src/installation/auto_partition.py:73 src/installation/auto_partition.py:82
@@ -938,7 +938,7 @@ msgstr ""
 
 #: src/installation/automatic.py:80
 msgid ""
-"Select the drive we should use to install Antergos and then click below to "
+"Select the drive we should use to install Apricity OS and then click below to "
 "start the process."
 msgstr ""
 
@@ -974,11 +974,11 @@ msgid ""
 msgstr ""
 
 #: src/installation/automatic.py:211
-msgid "Cnchi will install Antergos on %s"
+msgid "Cnchi will install Apricity OS on %s"
 msgstr ""
 
 #: src/installation/automatic.py:222
-msgid "Antergos will install the %s bootloader on %s"
+msgid "Apricity OS will install the %s bootloader on %s"
 msgstr ""
 
 #: src/installation/process.py:91
@@ -1187,7 +1187,7 @@ msgid "Added to crypttab : %s"
 msgstr ""
 
 #: src/installation/process.py:926
-msgid "Added to fstab : /dev/mapper/cryptAntergosHome %s %s %s 0 %s"
+msgid "Added to fstab : /dev/mapper/cryptApricity OSHome %s %s %s 0 %s"
 msgstr ""
 
 #: src/installation/process.py:978
@@ -1474,7 +1474,7 @@ msgid ""
 msgstr ""
 
 #: src/language.py:97 src/welcome.py:102
-msgid "Welcome to Antergos!"
+msgid "Welcome to Apricity OS!"
 msgstr ""
 
 #: src/language.py:131
@@ -1663,19 +1663,19 @@ msgid "Couldn't execute auto mirror selection"
 msgstr ""
 
 #: src/show_message.py:52
-msgid "Antergos Installer - Error"
+msgid "Apricity OS Installer - Error"
 msgstr ""
 
 #: src/show_message.py:64
-msgid "Antergos Installer - Warning"
+msgid "Apricity OS Installer - Warning"
 msgstr ""
 
 #: src/show_message.py:76
-msgid "Antergos Installer - Information"
+msgid "Apricity OS Installer - Information"
 msgstr ""
 
 #: src/show_message.py:87
-msgid "Antergos Installer - Confirmation"
+msgid "Apricity OS Installer - Confirmation"
 msgstr ""
 
 #: src/slides.py:91
@@ -1683,7 +1683,7 @@ msgid "Please wait..."
 msgstr ""
 
 #: src/slides.py:93
-msgid "Installing Antergos..."
+msgid "Installing Apricity OS..."
 msgstr ""
 
 #: src/slides.py:185
@@ -1865,8 +1865,8 @@ msgstr ""
 
 #: src/welcome.py:87
 msgid ""
-"You can try Antergos without making any changes to your system by selecting 'Try It'.\n"
-"When you are ready to install Antergos simply choose which installer you prefer."
+"You can try Apricity OS without making any changes to your system by selecting 'Try It'.\n"
+"When you are ready to install Apricity OS simply choose which installer you prefer."
 msgstr ""
 
 #: src/welcome.py:92

@@ -5,7 +5,7 @@
 # exoos <mince.lesovski@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2014-03-29 10:36+PET\n"
 "PO-Revision-Date: 2014-03-29 15:37+0000\n"
 "Last-Translator: faidoc <faidoc@gmail.com>\n"
@@ -37,8 +37,8 @@ msgid "Cnchi installer version %s"
 msgstr "%s верзија на Cnchi инсталацијска програма"
 
 #: cnchi.py:197
-msgid "Antergos Installer"
-msgstr "Antergos инсталацијска програма"
+msgid "Apricity OS Installer"
+msgstr "Apricity OS инсталацијска програма"
 
 #: cnchi.py:233
 msgid "Using Aria2 to download packages - EXPERIMENTAL"
@@ -49,16 +49,16 @@ msgid "Using '%s' file as package list"
 msgstr ""
 
 #: cnchi.py:278
-msgid "Cnchi - Antergos Installer"
-msgstr "Cnchi - Antergos инсталацијска програма"
+msgid "Cnchi - Apricity OS Installer"
+msgstr "Cnchi - Apricity OS инсталацијска програма"
 
 #: cnchi.py:331 src/welcome.py:120
 msgid "Quiting installer..."
 msgstr "Прекинување на инсталацијската програма..."
 
 #: cnchi.py:453
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
-msgstr "Користи aria2 за превземање на Antergos пакетите (ЕКСПЕРИМЕНТАЛНО)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
+msgstr "Користи aria2 за превземање на Apricity OS пакетите (ЕКСПЕРИМЕНТАЛНО)"
 
 #: cnchi.py:454
 msgid ""
@@ -184,15 +184,15 @@ msgid "Choose Your Desktop"
 msgstr "Одбери ја твојата работна околина"
 
 #: src/desktop.py:132
-msgid "Cnchi will install Antergos with the '%s' desktop"
-msgstr "Cnch ќе го инсталира Antergos со '%s' работна површина "
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
+msgstr "Cnch ќе го инсталира Apricity OS со '%s' работна површина "
 
 #: src/desktop_environments.py:65
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
-msgstr "Gnome 3 е лесен и елегантен начин за користење на твојот компјутер. Содржи преглед на активности што претставува лесен начин на пристап кон сите твои основни задачи. Gnome 3 е стандардна работна околина во Antergos.  "
+"GNOME 3 is the default desktop in Apricity OS."
+msgstr "Gnome 3 е лесен и елегантен начин за користење на твојот компјутер. Содржи преглед на активности што претставува лесен начин на пристап кон сите твои основни задачи. Gnome 3 е стандардна работна околина во Apricity OS.  "
 
 #: src/desktop_environments.py:70
 msgid ""
@@ -249,10 +249,10 @@ msgstr "Razor-qt е напредна, лесна за употреба и брз
 
 #: src/desktop_environments.py:103
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
-msgstr "Оваа опција ќе го инсталира Antergos само како текстуален оперативен систем, без никаков графички интерфејс. После инсталацијата може да го прилагодите Antergos со инсталирање пакети преку текстуалниот менаџер на пакети. "
+"Apricity OS by installing packages with the command-line package manager."
+msgstr "Оваа опција ќе го инсталира Apricity OS само како текстуален оперативен систем, без никаков графички интерфејс. После инсталацијата може да го прилагодите Apricity OS со инсталирање пакети преку текстуалниот менаџер на пакети. "
 
 #: src/desktop_environments.py:107
 msgid ""
@@ -458,8 +458,8 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
-msgstr "Arch корисничката архива е колекција од кориснички додадени PKGBUILD\nкои го дополнуваат софтверот достапен во официјалните архиви.\nAUR ја одржуваат корисниците и НЕ е подржана од Arch или Antergos.\n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
+msgstr "Arch корисничката архива е колекција од кориснички додадени PKGBUILD\nкои го дополнуваат софтверот достапен во официјалните архиви.\nAUR ја одржуваат корисниците и НЕ е подржана од Arch или Apricity OS.\n"
 
 #: src/features.py:312
 msgid "Uncomplicated Firewall will be installed with these rules:"
@@ -745,8 +745,8 @@ msgid "Cnchi will not install any boot loader"
 msgstr "Cnchi нема да инсталира било кој подигач на системот"
 
 #: src/installation/advanced.py:1821
-msgid "Antergos will install the bootloader of type %s in %s"
-msgstr "Antergos ќе инсталира подигач на системот од типот %s во %s"
+msgid "Apricity OS will install the bootloader of type %s in %s"
+msgstr "Apricity OS ќе инсталира подигач на системот од типот %s во %s"
 
 #: src/installation/advanced.py:1835 src/installation/automatic.py:241
 msgid "Testing mode. Cnchi will not change anything!"
@@ -757,12 +757,12 @@ msgid "Can't load %s css"
 msgstr "Не може да се вчита %s css"
 
 #: src/installation/alongside.py:136
-msgid "Select the OS you would like Antergos installed next to."
-msgstr "Одбери оперативен систем покрај кој сакаш да биде инсталиран Antergos."
+msgid "Select the OS you would like Apricity OS installed next to."
+msgstr "Одбери оперативен систем покрај кој сакаш да биде инсталиран Apricity OS."
 
 #: src/installation/alongside.py:141
-msgid "Antergos Alongside Installation"
-msgstr "Antergos инсталација покрај постоечки оперативен систем  "
+msgid "Apricity OS Alongside Installation"
+msgstr "Apricity OS инсталација покрај постоечки оперативен систем  "
 
 #: src/installation/alongside.py:172
 msgid "Detected OS"
@@ -785,8 +785,8 @@ msgid "Installation Type"
 msgstr "Вид на инсталација"
 
 #: src/installation/ask.py:117
-msgid "Erase disk and install Antergos"
-msgstr "Избриши го дискот и инсталирај го Antergos"
+msgid "Erase disk and install Apricity OS"
+msgstr "Избриши го дискот и инсталирај го Apricity OS"
 
 #: src/installation/ask.py:120
 msgid "Warning: This will erase ALL data on your disk."
@@ -816,32 +816,32 @@ msgid ""
 msgstr "Ова ќе го подеси твојот /почетен директориум во друга партиција или диск."
 
 #: src/installation/ask.py:156 src/installation/ask.py:158
-msgid "Install Antergos alongside %s"
-msgstr "Инсталирај го Antergos покрај %s"
+msgid "Install Apricity OS alongside %s"
+msgstr "Инсталирај го Apricity OS покрај %s"
 
 #: src/installation/ask.py:165
-msgid "Choose exactly where Antergos should be installed. (advanced)"
-msgstr "Одбери точно каде ќе биде инсталиран Antergos. (напредно)"
+msgid "Choose exactly where Apricity OS should be installed. (advanced)"
+msgstr "Одбери точно каде ќе биде инсталиран Apricity OS. (напредно)"
 
 #: src/installation/ask.py:168
 msgid "Edit partition table and choose mount points."
 msgstr "Уреди ги партицијските табели и одбери монт точки."
 
 #: src/installation/ask.py:194
-msgid "Antergos installation will be encrypted using LUKS"
-msgstr "Antergos инсталацијата ќе биде шифрирана со LUKS"
+msgid "Apricity OS installation will be encrypted using LUKS"
+msgstr "Apricity OS инсталацијата ќе биде шифрирана со LUKS"
 
 #: src/installation/ask.py:197
-msgid "Antergos will be installed using LVM volumes"
-msgstr "Antergos ќе биде инсталиран со LVM-Логичко управување со дискови"
+msgid "Apricity OS will be installed using LVM volumes"
+msgstr "Apricity OS ќе биде инсталиран со LVM-Логичко управување со дискови"
 
 #: src/installation/ask.py:199
-msgid "Antergos will be installed using a separate /home volume."
-msgstr "Antergos ќе биде инсталиран користејќи посебен /почетен диск."
+msgid "Apricity OS will be installed using a separate /home volume."
+msgstr "Apricity OS ќе биде инсталиран користејќи посебен /почетен диск."
 
 #: src/installation/ask.py:201
-msgid "Antergos will be installed using a separate /home partition."
-msgstr "Antergos ќе биде инсталиран користејќи посебена /почетна партиција."
+msgid "Apricity OS will be installed using a separate /home partition."
+msgstr "Apricity OS ќе биде инсталиран користејќи посебена /почетна партиција."
 
 #: src/installation/auto_partition.py:73 src/installation/auto_partition.py:82
 msgid "Unmounting %s"
@@ -939,9 +939,9 @@ msgstr "ПРЕДУПРЕДУВАЊЕ! Ова повторно ќе запише 
 
 #: src/installation/automatic.py:80
 msgid ""
-"Select the drive we should use to install Antergos and then click below to "
+"Select the drive we should use to install Apricity OS and then click below to "
 "start the process."
-msgstr "Одбери го дискот кој ќе се користи за инсталација на Antergos и кликни подолу за да започне процесот."
+msgstr "Одбери го дискот кој ќе се користи за инсталација на Apricity OS и кликни подолу за да започне процесот."
 
 #: src/installation/automatic.py:85
 msgid "Encryption Password:"
@@ -975,12 +975,12 @@ msgid ""
 msgstr "Дали навистина сакате да продолжите и да ја избришете целата содржина на вашиот хард диск?\n\n%s"
 
 #: src/installation/automatic.py:211
-msgid "Cnchi will install Antergos on %s"
-msgstr "Cnchi ќе го инсталира Antergos на %s"
+msgid "Cnchi will install Apricity OS on %s"
+msgstr "Cnchi ќе го инсталира Apricity OS на %s"
 
 #: src/installation/automatic.py:222
-msgid "Antergos will install the %s bootloader on %s"
-msgstr "Antergos ќе го инсталира %s подигачот на системот на %s"
+msgid "Apricity OS will install the %s bootloader on %s"
+msgstr "Apricity OS ќе го инсталира %s подигачот на системот на %s"
 
 #: src/installation/process.py:91
 msgid "Installing using the '%s' method. Please wait..."
@@ -1188,8 +1188,8 @@ msgid "Added to crypttab : %s"
 msgstr "Додадено на crypttab : %s"
 
 #: src/installation/process.py:926
-msgid "Added to fstab : /dev/mapper/cryptAntergosHome %s %s %s 0 %s"
-msgstr "Додадено на fstab : /dev/mapper/cryptAntergosHome %s %s %s 0 %s"
+msgid "Added to fstab : /dev/mapper/cryptApricity OSHome %s %s %s 0 %s"
+msgstr "Додадено на fstab : /dev/mapper/cryptApricity OSHome %s %s %s 0 %s"
 
 #: src/installation/process.py:978
 msgid "Added to fstab : %s"
@@ -1475,8 +1475,8 @@ msgid ""
 msgstr "Cnchi е софтвер во бета пред издание кој активно се развива.\nСеуште не се справува добро со RAID, btrfs субдискови и други напредни\nподесувања. Ве молиме продолжете внимателно бидејќи е можно губење на податоци!\n\nАко пронајдете било какви грешки ве молиме пријавете ги на <a href='http://bugs.antergos.com'>http://bugs.antergos.com</a>"
 
 #: src/language.py:97 src/welcome.py:102
-msgid "Welcome to Antergos!"
-msgstr "Добредојдовте во Antergos!"
+msgid "Welcome to Apricity OS!"
+msgstr "Добредојдовте во Apricity OS!"
 
 #: src/language.py:131
 msgid "Can't find translation file for the %s language"
@@ -1664,28 +1664,28 @@ msgid "Couldn't execute auto mirror selection"
 msgstr "Не може да се изврши автоселекција на мирор"
 
 #: src/show_message.py:52
-msgid "Antergos Installer - Error"
-msgstr "Antergos Инсталацијска програма - Грешка"
+msgid "Apricity OS Installer - Error"
+msgstr "Apricity OS Инсталацијска програма - Грешка"
 
 #: src/show_message.py:64
-msgid "Antergos Installer - Warning"
-msgstr "Antergos Инсталацијска програма - Предупредување"
+msgid "Apricity OS Installer - Warning"
+msgstr "Apricity OS Инсталацијска програма - Предупредување"
 
 #: src/show_message.py:76
-msgid "Antergos Installer - Information"
-msgstr "Antergos Инсталацијска програма - Информација"
+msgid "Apricity OS Installer - Information"
+msgstr "Apricity OS Инсталацијска програма - Информација"
 
 #: src/show_message.py:87
-msgid "Antergos Installer - Confirmation"
-msgstr "Antergos Инсталацијска програма - Потврда"
+msgid "Apricity OS Installer - Confirmation"
+msgstr "Apricity OS Инсталацијска програма - Потврда"
 
 #: src/slides.py:91
 msgid "Please wait..."
 msgstr "Ве молиме почекајте..."
 
 #: src/slides.py:93
-msgid "Installing Antergos..."
-msgstr "Инсталирање на Antergos..."
+msgid "Installing Apricity OS..."
+msgstr "Инсталирање на Apricity OS..."
 
 #: src/slides.py:185
 msgid ""
@@ -1866,9 +1866,9 @@ msgstr "Премногу знаци"
 
 #: src/welcome.py:87
 msgid ""
-"You can try Antergos without making any changes to your system by selecting 'Try It'.\n"
-"When you are ready to install Antergos simply choose which installer you prefer."
-msgstr "Можеш да го испробаш Antergos без да направиш никакви промени на твојот систем со селектирање на 'Испробај'.\nКога ќе бидеш спремен да го инсталираш Antergos едноставно одбеи која инсталацијска програма повеќе ти се допаѓа."
+"You can try Apricity OS without making any changes to your system by selecting 'Try It'.\n"
+"When you are ready to install Apricity OS simply choose which installer you prefer."
+msgstr "Можеш да го испробаш Apricity OS без да направиш никакви промени на твојот систем со селектирање на 'Испробај'.\nКога ќе бидеш спремен да го инсталираш Apricity OS едноставно одбеи која инсталацијска програма повеќе ти се допаѓа."
 
 #: src/welcome.py:92
 msgid "Try It"

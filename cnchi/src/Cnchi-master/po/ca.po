@@ -1,6 +1,6 @@
-# Cnchi - Antergos Installer
-# Copyright (C) 2013-2015 Antergos
-# Antergos Developers <devATantergos.com>
+# Cnchi - Apricity OS Installer
+# Copyright (C) 2013-2015 Apricity OS
+# Apricity OS Developers <devATantergos.com>
 # 
 # Translators:
 # Arseni garcia <tot3lmon@gmail.com>, 2013
@@ -11,7 +11,7 @@
 # Arseni garcia <tot3lmon@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: Antergos\n"
+"Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-04 19:06+0000\n"
 "Last-Translator: Gustau Castells <karasu@antergos.com>\n"
@@ -96,12 +96,12 @@ msgid "Using pyalpm v{0} as interface to libalpm v{1}"
 msgstr "S'usa pyalpm v{0} com a interfície de libalpm v{1}"
 
 #: cnchi/cnchi.py:177
-msgid "Cnchi v{0} - Antergos Installer"
-msgstr "Cnchi v{0} - Instal·lador d'Antergos"
+msgid "Cnchi v{0} - Apricity OS Installer"
+msgstr "Cnchi v{0} - Instal·lador d'Apricity OS"
 
 #: cnchi/cnchi.py:182
-msgid "Use aria2 to download Antergos packages (EXPERIMENTAL)"
-msgstr "Usa aria2 per descarregar els paquets d'Antergos (EXPERIMENTAL)"
+msgid "Use aria2 to download Apricity OS packages (EXPERIMENTAL)"
+msgstr "Usa aria2 per descarregar els paquets d'Apricity OS (EXPERIMENTAL)"
 
 #: cnchi/cnchi.py:186
 msgid "Use pre-downloaded xz packages when possible"
@@ -161,15 +161,15 @@ msgid "Choose Your Desktop"
 msgstr "Escull el teu Escriptori"
 
 #: cnchi/desktop.py:203
-msgid "Cnchi will install Antergos with the '%s' desktop"
-msgstr "Cnchi instal·larà l'Antergos amb l'escriptori '%s'"
+msgid "Cnchi will install Apricity OS with the '%s' desktop"
+msgstr "Cnchi instal·larà l'Apricity OS amb l'escriptori '%s'"
 
 #: cnchi/desktop_environments.py:115
 msgid ""
 "Gnome 3 is an easy and elegant way to use your computer. It features the "
 "Activities Overview which is an easy way to access all your basic tasks. "
-"GNOME 3 is the default desktop in Antergos."
-msgstr "GNOME 3 és una manera elegant i fàcil d'usar l'ordinador. Disposa de la vista d'activitats que és una manera fàcil d'accedir a totes les tasques bàsiques. GNOME 3  és l'escriptori per defecte a Antergos."
+"GNOME 3 is the default desktop in Apricity OS."
+msgstr "GNOME 3 és una manera elegant i fàcil d'usar l'ordinador. Disposa de la vista d'activitats que és una manera fàcil d'accedir a totes les tasques bàsiques. GNOME 3  és l'escriptori per defecte a Apricity OS."
 
 #: cnchi/desktop_environments.py:120
 msgid ""
@@ -233,10 +233,10 @@ msgstr "LXQt és un entorn d'escriptori avançat, fàcil d'usar i ràpid basat e
 
 #: cnchi/desktop_environments.py:156
 msgid ""
-"This option will install Antergos as command-line only system, without any "
+"This option will install Apricity OS as command-line only system, without any "
 "type of graphical interface. After the installation you can customize "
-"Antergos by installing packages with the command-line package manager."
-msgstr "Aquesta opció instal·larà l'Antergos com un sistema de línia de comandes, sense cap tipus d'interfície gràfica. Després de la instal·lació podràs configurar l'Antergos instal·lant paquets amb el gestor de paquets pacman."
+"Apricity OS by installing packages with the command-line package manager."
+msgstr "Aquesta opció instal·larà l'Apricity OS com un sistema de línia de comandes, sense cap tipus d'interfície gràfica. Després de la instal·lació podràs configurar l'Apricity OS instal·lant paquets amb el gestor de paquets pacman."
 
 #: cnchi/desktop_environments.py:160
 msgid ""
@@ -370,7 +370,7 @@ msgstr "Suport pel Repositori d'Usuari Arch (AUR)"
 
 #: cnchi/features.py:179
 msgid "The AUR is a community-driven repository for Arch users."
-msgstr "AUR és un repositori pels usuaris d'Arch (i Antergos) creat per la comunitat d'usuaris."
+msgstr "AUR és un repositori pels usuaris d'Arch (i Apricity OS) creat per la comunitat d'usuaris."
 
 #: cnchi/features.py:180
 msgid ""
@@ -525,8 +525,8 @@ msgid ""
 "The Arch User Repository is a collection of user-submitted PKGBUILDs\n"
 "that supplement software available from the official repositories.\n"
 "\n"
-"The AUR is community driven and NOT supported by Arch or Antergos.\n"
-msgstr "El repositori d'usuaris d'Arch és una col·lecció de PKGBUILDS que suplementen\nel programari disponible dels repositoris oficials.\n\nL'AUR és gestionat per la comunitat i NO per Arch o Antergos. \n"
+"The AUR is community driven and NOT supported by Arch or Apricity OS.\n"
+msgstr "El repositori d'usuaris d'Arch és una col·lecció de PKGBUILDS que suplementen\nel programari disponible dels repositoris oficials.\n\nL'AUR és gestionat per la comunitat i NO per Arch o Apricity OS. \n"
 
 #: cnchi/features.py:336
 msgid "Uncomplicated Firewall will be installed with these rules:"
@@ -876,8 +876,8 @@ msgid "Cnchi will not install any bootloader"
 msgstr "El Cnchi no instal·larà cap gestor d'arrencada"
 
 #: cnchi/installation/advanced.py:2174
-msgid "Antergos will install the bootloader {0} in device {1}"
-msgstr "Antergos instal·larà el gestor d'arrencada {0} al dispositiu {1}"
+msgid "Apricity OS will install the bootloader {0} in device {1}"
+msgstr "Apricity OS instal·larà el gestor d'arrencada {0} al dispositiu {1}"
 
 #: cnchi/installation/advanced.py:2190 cnchi/installation/automatic.py:295
 msgid "Testing mode. Cnchi will not change anything!"
@@ -892,8 +892,8 @@ msgid "Will shrink device {0} and create new device {1}"
 msgstr "S'encongeix el dispositiu {0} per crear nou dispositiu {1}"
 
 #: cnchi/installation/alongside.py:148
-msgid "Cnchi recommends at least 6.5GB free to install Antergos."
-msgstr "Cnchi recomana almenys 6,5 GB lliures per instal·lar Antergos."
+msgid "Cnchi recommends at least 6.5GB free to install Apricity OS."
+msgstr "Cnchi recomana almenys 6,5 GB lliures per instal·lar Apricity OS."
 
 #: cnchi/installation/alongside.py:149
 msgid ""
@@ -903,9 +903,9 @@ msgstr "La nova partició {0} resultant de disminuir {1} no tindrà prou espai l
 
 #: cnchi/installation/alongside.py:150
 msgid ""
-"You can still install Antergos, but be carefull on which DE you choose as it"
+"You can still install Apricity OS, but be carefull on which DE you choose as it"
 " might not fit in."
-msgstr "Encara es pot instal·lar Antergos, però depenent del DE escollit podria no haver-hi prou espai lliure."
+msgstr "Encara es pot instal·lar Apricity OS, però depenent del DE escollit podria no haver-hi prou espai lliure."
 
 #: cnchi/installation/alongside.py:151
 msgid "Install at your own risk!"
@@ -920,7 +920,7 @@ msgid "Choose the partition that you want to shrink:"
 msgstr "Tria la partició que vols reduir:"
 
 #: cnchi/installation/alongside.py:212
-msgid "Antergos Alongside Installation"
+msgid "Apricity OS Alongside Installation"
 msgstr "Instal·lació \"al costat de\""
 
 #: cnchi/installation/alongside.py:252
@@ -970,12 +970,12 @@ msgid "Installation Type"
 msgstr "Tipus d'Instal·lació"
 
 #: cnchi/installation/ask.py:222
-msgid "Replace {0} with Antergos"
-msgstr "Reemplaça {0} amb Antergos"
+msgid "Replace {0} with Apricity OS"
+msgstr "Reemplaça {0} amb Apricity OS"
 
 #: cnchi/installation/ask.py:224
-msgid "Erase disk and install Antergos"
-msgstr "Esborra el disc i instal·la l'Antergos"
+msgid "Erase disk and install Apricity OS"
+msgstr "Esborra el disc i instal·la l'Apricity OS"
 
 #: cnchi/installation/ask.py:228
 msgid "Warning: This will erase ALL data on your disk."
@@ -1009,12 +1009,12 @@ msgid ""
 msgstr "Això configurarà el teu directori /home en una partició o volum diferent."
 
 #: cnchi/installation/ask.py:262
-msgid "Install Antergos alongside {0}"
-msgstr "Instal·lar l'Antergos al costat de {0}"
+msgid "Install Apricity OS alongside {0}"
+msgstr "Instal·lar l'Apricity OS al costat de {0}"
 
 #: cnchi/installation/ask.py:267
-msgid "Installs Antergos without removing {0}"
-msgstr "Instal·la l'Antergos sense esborrar {0}"
+msgid "Installs Apricity OS without removing {0}"
+msgstr "Instal·la l'Apricity OS sense esborrar {0}"
 
 #: cnchi/installation/ask.py:272
 msgid "This computer has {0} installed."
@@ -1025,28 +1025,28 @@ msgid "What do you want to do?"
 msgstr "Què vols fer?"
 
 #: cnchi/installation/ask.py:283
-msgid "Choose exactly where Antergos should be installed."
-msgstr "Escull exactament on s'hauria d'instal·lar Antergos."
+msgid "Choose exactly where Apricity OS should be installed."
+msgstr "Escull exactament on s'hauria d'instal·lar Apricity OS."
 
 #: cnchi/installation/ask.py:286
 msgid "Edit partition table and choose mount points."
 msgstr "Edita la taula de particions i escull els punts de muntatge."
 
 #: cnchi/installation/ask.py:317
-msgid "Antergos installation will be encrypted using LUKS"
-msgstr "La instal·lació d'Antergos s'encriptarà mitjançant LUKS"
+msgid "Apricity OS installation will be encrypted using LUKS"
+msgstr "La instal·lació d'Apricity OS s'encriptarà mitjançant LUKS"
 
 #: cnchi/installation/ask.py:320
-msgid "Antergos will be installed using LVM volumes"
-msgstr "S'usaran volums LVM a la instal·lació d'Antergos"
+msgid "Apricity OS will be installed using LVM volumes"
+msgstr "S'usaran volums LVM a la instal·lació d'Apricity OS"
 
 #: cnchi/installation/ask.py:322
-msgid "Antergos will be installed using a separate /home volume."
-msgstr "L'Antergos s'instal·larà usant un volum separat pel directory /home"
+msgid "Apricity OS will be installed using a separate /home volume."
+msgstr "L'Apricity OS s'instal·larà usant un volum separat pel directory /home"
 
 #: cnchi/installation/ask.py:324
-msgid "Antergos will be installed using a separate /home partition."
-msgstr "L'Antergos s'instal·larà usant una partició separada pel directori /home"
+msgid "Apricity OS will be installed using a separate /home partition."
+msgstr "L'Apricity OS s'instal·larà usant una partició separada pel directori /home"
 
 #: cnchi/installation/auto_partition.py:79
 msgid "Unmounting %s"
@@ -1256,9 +1256,9 @@ msgstr "AVÍS! Això sobreescriurà totes les dades del teu disc!"
 
 #: cnchi/installation/automatic.py:81
 msgid ""
-"Select the drive we should use to install Antergos and then click above to "
+"Select the drive we should use to install Apricity OS and then click above to "
 "start the process."
-msgstr "Selecciona el dispositiu on vols instal·lar l'Antergos i clica a dalt per començar el procés."
+msgstr "Selecciona el dispositiu on vols instal·lar l'Apricity OS i clica a dalt per començar el procés."
 
 #: cnchi/installation/automatic.py:85
 msgid "Encryption Password:"
@@ -1295,12 +1295,12 @@ msgid ""
 msgstr "Realment vols continuar i suprimir tot el contingut del teu disc dur?"
 
 #: cnchi/installation/automatic.py:258
-msgid "Cnchi will install Antergos on device %s"
-msgstr "Cnchi instal·larà Antergos al dispositiu %s"
+msgid "Cnchi will install Apricity OS on device %s"
+msgstr "Cnchi instal·larà Apricity OS al dispositiu %s"
 
 #: cnchi/installation/automatic.py:270
-msgid "Antergos will install the bootloader '{0}' in device '{1}'"
-msgstr "Antergos instal·larà el gestor d'arrencada '{0}' al dispositiu '{1}'"
+msgid "Apricity OS will install the bootloader '{0}' in device '{1}'"
+msgstr "Apricity OS instal·larà el gestor d'arrencada '{0}' al dispositiu '{1}'"
 
 #: cnchi/installation/bootloader.py:88
 msgid ""
@@ -1914,8 +1914,8 @@ msgid "Using '%s' file as package list"
 msgstr "El fitxer '%s' s'usarà com a llista de paquets"
 
 #: cnchi/main_window.py:202
-msgid "Antergos Installer"
-msgstr "Instal·lador d'Antergos"
+msgid "Apricity OS Installer"
+msgstr "Instal·lador d'Apricity OS"
 
 #: cnchi/main_window.py:343
 msgid "Do you really want to quit the installer?"
@@ -2180,28 +2180,28 @@ msgid "Auto mirror selection has been run successfully"
 msgstr "S'ha executat la selecció automàtica dels servidors de rèplica"
 
 #: cnchi/show_message.py:55
-msgid "Antergos Installer - Error"
-msgstr "Instal·lador d'Antergos - Error"
+msgid "Apricity OS Installer - Error"
+msgstr "Instal·lador d'Apricity OS - Error"
 
 #: cnchi/show_message.py:69
-msgid "Antergos Installer - Warning"
-msgstr "Instal·lador d'Antergos - Avís"
+msgid "Apricity OS Installer - Warning"
+msgstr "Instal·lador d'Apricity OS - Avís"
 
 #: cnchi/show_message.py:83
-msgid "Antergos Installer - Information"
-msgstr "Instal·lador d'Antergos - Informació"
+msgid "Apricity OS Installer - Information"
+msgstr "Instal·lador d'Apricity OS - Informació"
 
 #: cnchi/show_message.py:97
-msgid "Antergos Installer - Confirmation"
-msgstr "Instal·lador d'Antergos - Confirmació"
+msgid "Apricity OS Installer - Confirmation"
+msgstr "Instal·lador d'Apricity OS - Confirmació"
 
 #: cnchi/slides.py:73
 msgid "Please wait..."
 msgstr "Si us plau, espera..."
 
 #: cnchi/slides.py:75
-msgid "Installing Antergos..."
-msgstr "Instal·lant Antergos..."
+msgid "Installing Apricity OS..."
+msgstr "Instal·lant Apricity OS..."
 
 #: cnchi/slides.py:187
 msgid ""
@@ -2382,12 +2382,12 @@ msgid "Too many characters"
 msgstr "Massa caràcters"
 
 #: cnchi/welcome.py:73
-msgid "Try Antergos without making any changes to your system."
-msgstr "Prova Antergos sense fer cap canvi al teu sistema."
+msgid "Try Apricity OS without making any changes to your system."
+msgstr "Prova Apricity OS sense fer cap canvi al teu sistema."
 
 #: cnchi/welcome.py:79
-msgid "Create a permanent place for Antergos on your system."
-msgstr "Crea un lloc permanent per l'Antergos en el teu sistema."
+msgid "Create a permanent place for Apricity OS on your system."
+msgstr "Crea un lloc permanent per l'Apricity OS en el teu sistema."
 
 #: cnchi/welcome.py:83
 msgid "Try It"
@@ -2398,8 +2398,8 @@ msgid "Install It"
 msgstr "Instal·la"
 
 #: cnchi/welcome.py:92
-msgid "Welcome to Antergos!"
-msgstr "Benvingut a Antergos!"
+msgid "Welcome to Apricity OS!"
+msgstr "Benvingut a Apricity OS!"
 
 #: cnchi/welcome.py:125
 msgid "Loading, please wait..."

@@ -17,6 +17,8 @@ inkscape
 btsync
 btsync-gui
 ice-ssb
+ufw
+gufw
 
 #Codecs
 gstreamer

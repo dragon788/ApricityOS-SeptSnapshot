@@ -97,7 +97,7 @@
 		<pkgname>gtk-engine-murrine</pkgname>
 		<pkgname>gtk-engine-murrine</pkgname>
 		<pkgname>gucharmap</pkgname>
-		<pkgname>gummiboot</pkgname>
+		<pkgname>gufw</pkgname>
 		<pkgname>gummiboot</pkgname>
 		<pkgname>haveged</pkgname>
 		<pkgname>hwdetect</pkgname>
@@ -167,6 +167,7 @@
 		<pkgname>ttf-bitstream-vera</pkgname>
 		<pkgname>ttf-dejavu</pkgname>
 		<pkgname>ttf-freefont</pkgname>
+		<pkgname>ufw</pkgname>
 		<pkgname>unrar</pkgname>
 		<pkgname>unzip</pkgname>
 		<pkgname>usb_modeswitch</pkgname>
