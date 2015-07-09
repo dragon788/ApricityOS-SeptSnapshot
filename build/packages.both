@@ -138,6 +138,13 @@ unrar
 unzip
 tar
 haveged
+bluedevil
+bluedevil-frameworks
+bluez-utils
+cups-pk-helper
+gsfonts
+hplip
+splix
 
 # Fonts
 ttf-dejavu
