@@ -53,7 +53,7 @@ gsettings set org.gnome.desktop.interface gtk-theme "Arctic Apricity"
 gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"
 gsettings set org.gnome.shell.extensions.user-theme name "Arctic Apricity"
 gsettings set org.gnome.desktop.interface icon-theme "Apricity Icons"
-gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'simple-dock@nothing.org', 'shellshape@gfxmonk.net', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com']"
+gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'simple-dock@nothing.org', 'shellshape@gfxmonk.net', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com', 'Move_Clock@rmy.pobox.com']"
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <':minimize,maximize,close'>}"
 gsettings set org.gnome.shell.overrides dynamic-workspaces false
@@ -66,7 +66,7 @@ tracker-control -r
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/flow.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/gnome/aurora.jpg
 rm ~/.local/share/applications/chrome-app-list.desktop
-cp -rf /etc/apricity-assets/google-chrome-beta ~/.config/
+mv -f /etc/apricity-assets/google-chrome-beta ~/.config/
 #sudo rm -r /usr/lib/evolution-data-server
 #killall evolution-addressbook-factory
 #killall evolution-addressbook-factory-subprocess

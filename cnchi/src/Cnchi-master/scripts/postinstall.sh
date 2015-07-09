@@ -4,7 +4,7 @@
 #
 #  postinstall.sh
 #
-#  Copyright © 2013,2014 Apricity OS
+#  Copyright © 2013,2014 Antergos
 #
 #  This file is part of Cnchi.
 #
@@ -31,229 +31,418 @@ set_xorg()
 
 gnome_settings()
 {
-##############################################################################################
-	rm /usr/share/applications/bssh.desktop
-	rm /usr/share/applications/bvnc.desktop
-	rm /usr/share/applications/avahi-discover.desktop
-	rm /usr/share/applications/qv4l2.desktop
-	rm /usr/share/applications/polkit-gnome-authentication-agent-1.desktop
-	rm /usr/share/applications/tracker-needle.desktop
-	rm /usr/share/applications/zenmap.desktop
-	rm /usr/share/applications/zenmap-root.desktop
-	rm /usr/share/applications/gksu.desktop
-	rm /usr/share/applications/gucharmap.desktop
-	rm /usr/share/applications/cups.desktop
-	rm /usr/share/applications/uxterm.desktop
-	rm /usr/share/applications/epiphany.desktop
-	rm /usr/share/applications/empathy.desktop
-	rm /usr/share/applications/designer-qt4.desktop
-	rm /usr/share/applications/linguist-qt4.desktop
-	rm /usr/share/applications/assistant-qt4.desktop
-	rm /usr/share/applications/qdbusviewer-qt4.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon-notifier-config.desktop
-	sed -i 's@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@' /usr/share/applications/org.gnome.Books.desktop
-	sed -i 's@Icon=builder@Icon=textwrangler@' /usr/share/applications/org.gnome.Builder.desktop
-	sed -i 's@Icon=gnome-characters@Icon=accessories-character-map@' /usr/share/applications/org.gnome.Characters.desktop
-	sed -i 's@Icon=x-office-address-book@Icon=evolution-addressbook@' /usr/share/applications/org.gnome.Contacts.desktop
-	sed -i 's@Icon=grsync.png@Icon=luckybackup@' /usr/share/applications/grsync.desktop
-	sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' /usr/share/applications/xterm.desktop
-	sed -i 's@Icon=tracker@Icon=preferences-system-search@' /usr/share/applications/tracker-preferences.desktop
-	cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux15.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux16.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
-	set -e -u
-	sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
-	locale-gen
-	ln -sf /usr/share/zoneinfo/UTC /etc/localtime
-	usermod -s /usr/bin/zsh root
-	cp -aT /etc/skel/ /root/
-	chmod 700 /root
-	id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel"
-	passwd -d liveuser
-	echo 'created user'
-	chmod 750 /etc/sudoers.d
-	chmod 440 /etc/sudoers.d/g_wheel
-	chown -R root /etc/sudoers.d
-	echo 'sudoed'
-	EDITOR=nano
-	#/etc/apricity-assets/Elegant_Dark/install.sh
-	sed -i.bak 's/Arch Linux/Apricity OS/g' /usr/lib/os-release
-	sed -i.bak 's/arch/apricity/g' /usr/lib/os-release
-	sed -i.bak 's/www.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bbs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bugs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	cp /usr/lib/os-release /etc/os-release
-	arch=`uname -m`
-	if [ "$arch" == "x86_64" ]
-	then
-	    echo "x86_64, plymouth okay"
-	    echo "$(cat /etc/mkinitcpio.conf)"
-	    sed -i.bak 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-	    chown -R root.root /usr/share/plymouth/themes/apricity
-	    plymouth-set-default-theme -R apricity
-	    mkinitcpio -p linux
-	    systemctl enable org.cups.cupsd.service
-	    systemctl enable smbd nmbd
-	else
-	    echo "i686, no plymouth"
-	fi
-	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
-	sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
-	echo 'seded'
-	systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service
-	systemctl -fq enable NetworkManager ModemManager
-	systemctl set-default graphical.target
-	systemctl enable tlp.service tlp-sleep.service
-	systemctl mask systemd-rfkill@.service
-	cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
-	chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
-	if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
-	else
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
-	fi
+    # Set gsettings input-source
+    if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
+    else
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
+    fi
+    # Set gsettings
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+
+    # Set gdm shell logo
+    cp /usr/share/antergos/logo.png ${DESTDIR}/usr/share/antergos/
+    chroot ${DESTDIR} sudo -u gdm dbus-launch gsettings set org.gnome.login-screen logo "/usr/share/antergos/logo.png" > /dev/null 2>&1
+
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Set skel directory
+    cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
+
+    ## Set defaults directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # xscreensaver config
+    cp /usr/share/cnchi/scripts/postinstall/xscreensaver ${DESTDIR}/home/${USER_NAME}/.xscreensaver
+    cp ${DESTDIR}/home/${USER_NAME}/.xscreensaver ${DESTDIR}/etc/skel
+
+    rm ${DESTDIR}/etc/xdg/autostart/xscreensaver.desktop
+
+    # Ensure that Light Locker starts before gnome-shell
+    sed -i 's|echo "X|/usr/bin/light-locker \&\nsleep 3; echo "X|g' ${DESTDIR}/etc/lightdm/Xsession
 }
 
 cinnamon_settings()
 {
-    
+    # Set gsettings input-source
+    if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
+    else
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
+    fi
+    # copy antergos menu icon
+    mkdir -p ${DESTDIR}/usr/share/antergos/
+    cp /usr/share/antergos/antergos-menu.png ${DESTDIR}/usr/share/antergos/antergos-menu.png
+
+    # Set gsettings
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Copy menu@cinnamon.org.json to set menu icon
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.cinnamon/configs/menu@cinnamon.org/
+    cp -f /usr/share/cnchi/scripts/menu@cinnamon.org.json ${DESTDIR}/home/${USER_NAME}/.cinnamon/configs/menu@cinnamon.org/
+
+    # Copy panel-launchers@cinnamon.org.json to set launchers
+    if [[ $_BROWSER = "firefox" ]]; then
+        sed -i 's|chromium|firefox|g' /usr/share/cnchi/scripts/panel-launchers@cinnamon.org.json
+    fi
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.cinnamon/configs/panel-launchers@cinnamon.org/
+    cp -f /usr/share/cnchi/scripts/panel-launchers@cinnamon.org.json ${DESTDIR}/home/${USER_NAME}/.cinnamon/configs/panel-launchers@cinnamon.org/
+
+    # Set Cinnamon in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=cinnamon" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+
+    # Set skel directory
+    cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/home/${USER_NAME}/.cinnamon ${DESTDIR}/etc/skel
+
+    ## Set defaults directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # Populate our wallpapers in Cinnamon Settings
+    chroot ${DESTDIR} "ln -s /usr/share/antergos/wallpapers/ /home/${USER_NAME}/.cinnamon/backgrounds/antergos" ${USER_NAME}
 }
 
 xfce_settings()
 {
-   
+    # copy antergos menu icon
+    mkdir -p ${DESTDIR}/usr/share/antergos/
+    cp /usr/share/antergos/antergos-menu.png ${DESTDIR}/usr/share/antergos/antergos-menu.png
+
+    # Set settings
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.config/xfce4/xfconf/xfce-perchannel-xml
+    cp -R ${DESTDIR}/etc/xdg/xfce4/panel ${DESTDIR}/etc/xdg/xfce4/helpers.rc ${DESTDIR}/home/${USER_NAME}/.config/xfce4
+    if [[ ${_BROWSER} = "chromium" ]]; then
+        sed -i "s/WebBrowser=firefox/WebBrowser=chromium/" ${DESTDIR}/home/${USER_NAME}/.config/xfce4/helpers.rc
+    fi
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.config
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Set skel directory
+    cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
+
+    ## Set defaults directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # Set xfce in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=xfce" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    echo "QT_STYLE_OVERRIDE=gtk" >> ${DESTDIR}/etc/environment
+
+    # xscreensaver config
+    cp /usr/share/cnchi/scripts/postinstall/xscreensaver ${DESTDIR}/home/${USER_NAME}/.xscreensaver
+    cp ${DESTDIR}/home/${USER_NAME}/.xscreensaver ${DESTDIR}/etc/skel
+
+    rm ${DESTDIR}/etc/xdg/autostart/xscreensaver.desktop
 
 }
 
 openbox_settings()
 {
-    
+    # Copy antergos menu icon
+    mkdir -p ${DESTDIR}/usr/share/antergos/
+    cp /usr/share/antergos/antergos-menu.png ${DESTDIR}/usr/share/antergos/antergos-menu.png
+
+    # Get zip file from github, unzip it and copy all setup files in their right places.
+    wget -q -O /tmp/master.zip "https://github.com/Antergos/openbox-setup/archive/master.zip"
+    unzip -o -qq /tmp/master.zip -d /tmp
+
+    ## Copy slim theme
+    #mkdir -p ${DESTDIR}/usr/share/slim/themes/antergos-slim
+    #cp ${DESTDIR}/tmp/openbox-setup-master/antergos-slim/* ${DESTDIR}/usr/share/slim/themes/antergos-slim
+
+    # Copy home files
+    cp /tmp/openbox-setup-master/gtkrc-2.0 ${DESTDIR}/home/${USER_NAME}/.gtkrc-2.0
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.gtkrc-2.0
+    cp /tmp/openbox-setup-master/xinitrc ${DESTDIR}/home/${USER_NAME}/.xinitrc
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.xinitrc
+
+    # Copy .config files
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.config
+    cp -R /tmp/openbox-setup-master/config/* ${DESTDIR}/home/${USER_NAME}/.config
+
+    # Copy /etc setup files
+    cp -R /tmp/openbox-setup-master/etc/* ${DESTDIR}/etc
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.config
+
+    # Copy oblogout icons
+    mkdir -p ${DESTDIR}/usr/share/themes/Numix/oblogout
+    cp -R /tmp/openbox-setup-master/oblogout/* ${DESTDIR}/usr/share/themes/Numix/oblogout
+
+    # Set settings
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Set skel directory
+    cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
+
+    ## Set defaults directories
+    #chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # Set openbox in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=openbox" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    # xscreensaver config
+    cp /usr/share/cnchi/scripts/postinstall/xscreensaver ${DESTDIR}/home/${USER_NAME}/.xscreensaver
+    cp ${DESTDIR}/home/${USER_NAME}/.xscreensaver ${DESTDIR}/etc/skel
+    rm ${DESTDIR}/etc/xdg/autostart/xscreensaver.desktop
 }
 
 lxde_settings()
 {
-   
+    # FIXME: This is just a copy of openbox settings.
+    # TODO: Adapt this to LXDE
+
+    # Copy antergos menu icon
+    mkdir -p ${DESTDIR}/usr/share/antergos/
+    cp /usr/share/antergos/antergos-menu.png ${DESTDIR}/usr/share/antergos/antergos-menu.png
+
+    # Get zip file from github, unzip it and copy all setup files in their right places.
+    wget -q -O /tmp/master.zip "https://github.com/Antergos/openbox-setup/archive/master.zip"
+    unzip -o -qq /tmp/master.zip -d /tmp
+
+    ## Copy slim theme
+    #mkdir -p ${DESTDIR}/usr/share/slim/themes/antergos-slim
+    #cp ${DESTDIR}/tmp/openbox-setup-master/antergos-slim/* ${DESTDIR}/usr/share/slim/themes/antergos-slim
+
+    # Copy home files
+    cp /tmp/openbox-setup-master/gtkrc-2.0 ${DESTDIR}/home/${USER_NAME}/.gtkrc-2.0
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.gtkrc-2.0
+    cp /tmp/openbox-setup-master/xinitrc ${DESTDIR}/home/${USER_NAME}/.xinitrc
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.xinitrc
+
+    # Copy .config files
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.config
+    cp -R /tmp/openbox-setup-master/config/* ${DESTDIR}/home/${USER_NAME}/.config
+
+    # Copy /etc setup files
+    cp -R /tmp/openbox-setup-master/etc/* ${DESTDIR}/etc
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.config
+
+    # Copy oblogout icons
+    mkdir -p ${DESTDIR}/usr/share/themes/Numix/oblogout
+    cp -R /tmp/openbox-setup-master/oblogout/* ${DESTDIR}/usr/share/themes/Numix/oblogout
+
+    # Set settings
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Set skel directory
+    cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
+
+    ## Set defaults directories
+    #chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # Set openbox in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=openbox" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
 }
 
 lxqt_settings()
 {
+    # Set theme
+    mkdir -p ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel
+    echo "[General]" > ${DESTDIR}/home/${USER_NAME}/.config/razor/razor.conf
+    echo "__userfile__=true" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor.conf
+    echo "icon_theme=Faenza" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor.conf
+    echo "theme=ambiance" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor.conf
 
+    # Set panel launchers
+    echo "[quicklaunch]" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel/panel.conf
+    echo "apps\1\desktop=/usr/share/applications/razor-config.desktop" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel/panel.conf
+    echo "apps\size=3" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel/panel.conf
+    echo "apps\2\desktop=/usr/share/applications/kde4/konsole.desktop" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel/panel.conf
+    echo "apps\3\desktop=/usr/share/applications/chromium.desktop" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/razor-panel/panel.conf
+
+    # Set Wallpaper
+    echo "[razor]" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+    echo "screens\size=1" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+    echo "screens\1\desktops\1\wallpaper_type=pixmap" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+    echo "screens\1\desktops\1\wallpaper=/usr/share/antergos/wallpapers/antergos-wallpaper.png" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+    echo "screens\1\desktops\1\keep_aspect_ratio=false" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+    echo "screens\1\desktops\size=1" >> ${DESTDIR}/home/${USER_NAME}/.config/razor/desktop.conf
+
+    # Set Razor in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=razor" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}/.config
 }
 
 kde4_settings()
 {
-    
+    # Set KDE in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=kde-plasma" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    # Force QtCurve to use our theme
+    rm -R ${DESTDIR}/usr/share/apps/QtCurve/
+
+    # Get zip file from github, unzip it and copy all setup files in their right places.
+    wget -q -O /tmp/master.tar.xz "https://github.com/Antergos/kde-setup/raw/master/kde-setup-2014-25-05.tar.xz"
+    #xz -d -qq /tmp/master.tar.xz
+    #cd ${DESTDIR}
+    cd /tmp
+    tar xfJ /tmp/master.tar.xz
+    chown -R root:root /tmp/etc
+    chown -R root:root /tmp/usr
+    cp -R /tmp/etc/* ${DESTDIR}/etc
+    cp -R /tmp/usr/* ${DESTDIR}/usr
+
+    # Set User & Root environments
+    cp -R ${DESTDIR}/etc/skel/.config ${DESTDIR}/home/${USER_NAME}
+    cp -R ${DESTDIR}/etc/skel/.kde4 ${DESTDIR}/home/${USER_NAME}
+    cp ${DESTDIR}/etc/skel/.gtkrc-2.0-kde4 ${DESTDIR}/home/${USER_NAME}
+    cp -R ${DESTDIR}/etc/skel/.config ${DESTDIR}/root
+    cp -R ${DESTDIR}/etc/skel/.kde4 ${DESTDIR}/root
+    cp ${DESTDIR}/etc/skel/.gtkrc-2.0-kde4 ${DESTDIR}/root
+    chroot ${DESTDIR} "ln -s /home/${USER_NAME}/.gtkrc-2.0-kde4 /home/${USER_NAME}/.gtkrc-2.0" ${USER_NAME}
+    chroot ${DESTDIR} "ln -s /root/.gtkrc-2.0-kde4 /root/.gtkrc-2.0"
+
+    # When applications transition to Qt5 they will look for config files in the standardized (XDG) locations. Create
+    # symlinks during the transitional period until all apps are updated to use the new config file paths.
+    link_config() {
+
+        if [[ ${1} != "apps:" ]] && [[ ${1} != "" ]]; then
+            app=${1:6}
+            app_old="/home/${USER_NAME}/.kde4/share/apps/${app}"
+            app_new="/home/${USER_NAME}/.local/share/${app}"
+            chroot ${DESTDIR} "ln -s ${app_old}${app_new}" ${USER_NAME}
+        fi
+        if [[ ${2} != "conf:" ]] && [[ ${2} != "" ]]; then
+            conf=${2:6}
+            conf_old="/home/${USER_NAME}/.kde4/share/config/${conf}"
+            conf_new="/home/${USER_NAME}/.config/${conf}"
+            chroot ${DESTDIR} "ln -s ${conf_old}${conf_new}" ${USER_NAME}
+        fi
+
+    }
+
+    for i in konsole; do
+        link_config apps:${i};
+    done
+    for i in kdeglobals; do
+        link_config apps: conf:kdeglobals;
+    done
+
+    ## Set defaults directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
 }
 
 plasma5_settings()
 {
-    
+    # Set KDE in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=plasma" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    # Force QtCurve to use our theme
+    #rm -R ${DESTDIR}/usr/share/apps/QtCurve/
+
+    # Get zip file from github, unzip it and copy all setup files in their right places.
+    wget -q -O /tmp/master.tar.xz "https://github.com/Antergos/kde-setup/raw/master/kde-setup-2014-25-05.tar.xz"
+    #xz -d -qq /tmp/master.tar.xz
+    #cd ${DESTDIR}
+    cd /tmp
+    tar xfJ /tmp/master.tar.xz
+    chown -R root:root /tmp/etc
+    chown -R root:root /tmp/usr
+    cp -R /tmp/etc/* ${DESTDIR}/etc
+    cp -R /tmp/usr/* ${DESTDIR}/usr
+
+    # Set User & Root environments
+    cp -R ${DESTDIR}/etc/skel/.config ${DESTDIR}/home/${USER_NAME}
+    cp -R ${DESTDIR}/etc/skel/.kde4 ${DESTDIR}/home/${USER_NAME}
+    cp ${DESTDIR}/etc/skel/.gtkrc-2.0-kde4 ${DESTDIR}/home/${USER_NAME}
+    cp -R ${DESTDIR}/etc/skel/.config ${DESTDIR}/root
+    cp -R ${DESTDIR}/etc/skel/.kde4 ${DESTDIR}/root
+    cp ${DESTDIR}/etc/skel/.gtkrc-2.0-kde4 ${DESTDIR}/root
+    chroot ${DESTDIR} "ln -s /home/${USER_NAME}/.gtkrc-2.0-kde4 /home/${USER_NAME}/.gtkrc-2.0" ${USER_NAME}
+    chroot ${DESTDIR} "ln -s /root/.gtkrc-2.0-kde4 /root/.gtkrc-2.0"
+
+    ## Set defaults directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
 }
 
 mate_settings()
 {
-    
+    # Set MATE in .dmrc
+    echo "[Desktop]" > ${DESTDIR}/home/${USER_NAME}/.dmrc
+    echo "Session=mate-session" >> ${DESTDIR}/home/${USER_NAME}/.dmrc
+    chroot ${DESTDIR} chown ${USER_NAME}:users /home/${USER_NAME}/.dmrc
+
+    ## Set default directories
+    chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+
+    # Set gsettings input-source
+    if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
+    else
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
+    fi
+    # Fix for Zukitwo Metacity Theme
+    cp ${DESTDIR}/usr/share/themes/Zukitwo/metacity-1/metacity-theme-2.xml ${DESTDIR}/usr/share/themes/Zukitwo/metacity-1/metacity-theme-1.xml
+
+    # copy antergos menu icon
+    mkdir -p ${DESTDIR}/usr/share/antergos/
+    cp /usr/share/antergos/antergos-menu.png ${DESTDIR}/usr/share/antergos/antergos-menu.png
+    chroot ${DESTDIR} ln -sf /usr/share/antergos/antergos-menu.png /usr/share/icons/Numix/24x24/places/start-here.png
+
+    # Set gsettings
+    cp /usr/share/cnchi/scripts/set-settings ${DESTDIR}/usr/bin/set-settings
+    mkdir -p ${DESTDIR}/var/run/dbus
+    mount -o bind /var/run/dbus ${DESTDIR}/var/run/dbus
+    chroot ${DESTDIR} su -l -c "/usr/bin/set-settings ${DESKTOP}" ${USER_NAME} > /dev/null 2>&1
+    rm ${DESTDIR}/usr/bin/set-settings
+
+    # Set MintMenu Favorites
+    if [[ $_BROWSER = "firefox" ]]; then
+        sed -i 's|chromium|firefox|g' /usr/share/cnchi/scripts/postinstall/applications.list
+    fi
+    cp /usr/share/cnchi/scripts/postinstall/applications.list ${DESTDIR}/usr/lib/linuxmint/mintMenu/applications.list
+
+    # Copy panel layout
+    cp /usr/share/cnchi/scripts/antergos.layout ${DESTDIR}/usr/share/mate-panel/layouts/antergos.layout
 }
 
 nox_settings()
 {
-##############################################################################################
-	rm /usr/share/applications/bssh.desktop
-	rm /usr/share/applications/bvnc.desktop
-	rm /usr/share/applications/avahi-discover.desktop
-	rm /usr/share/applications/qv4l2.desktop
-	rm /usr/share/applications/polkit-gnome-authentication-agent-1.desktop
-	rm /usr/share/applications/tracker-needle.desktop
-	rm /usr/share/applications/zenmap.desktop
-	rm /usr/share/applications/zenmap-root.desktop
-	rm /usr/share/applications/gksu.desktop
-	rm /usr/share/applications/gucharmap.desktop
-	rm /usr/share/applications/cups.desktop
-	rm /usr/share/applications/uxterm.desktop
-	rm /usr/share/applications/epiphany.desktop
-	rm /usr/share/applications/empathy.desktop
-	rm /usr/share/applications/designer-qt4.desktop
-	rm /usr/share/applications/linguist-qt4.desktop
-	rm /usr/share/applications/assistant-qt4.desktop
-	rm /usr/share/applications/qdbusviewer-qt4.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon-notifier-config.desktop
-	sed -i 's@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@' /usr/share/applications/org.gnome.Books.desktop
-	sed -i 's@Icon=builder@Icon=textwrangler@' /usr/share/applications/org.gnome.Builder.desktop
-	sed -i 's@Icon=gnome-characters@Icon=accessories-character-map@' /usr/share/applications/org.gnome.Characters.desktop
-	sed -i 's@Icon=x-office-address-book@Icon=evolution-addressbook@' /usr/share/applications/org.gnome.Contacts.desktop
-	sed -i 's@Icon=grsync.png@Icon=luckybackup@' /usr/share/applications/grsync.desktop
-	sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' /usr/share/applications/xterm.desktop
-	sed -i 's@Icon=tracker@Icon=preferences-system-search@' /usr/share/applications/tracker-preferences.desktop
-	cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux15.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux16.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
-	set -e -u
-	sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
-	locale-gen
-	ln -sf /usr/share/zoneinfo/UTC /etc/localtime
-	usermod -s /usr/bin/zsh root
-	cp -aT /etc/skel/ /root/
-	chmod 700 /root
-	id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel"
-	passwd -d liveuser
-	echo 'created user'
-	chmod 750 /etc/sudoers.d
-	chmod 440 /etc/sudoers.d/g_wheel
-	chown -R root /etc/sudoers.d
-	echo 'sudoed'
-	EDITOR=nano
-	#/etc/apricity-assets/Elegant_Dark/install.sh
-	sed -i.bak 's/Arch Linux/Apricity OS/g' /usr/lib/os-release
-	sed -i.bak 's/arch/apricity/g' /usr/lib/os-release
-	sed -i.bak 's/www.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bbs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bugs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	cp /usr/lib/os-release /etc/os-release
-	arch=`uname -m`
-	if [ "$arch" == "x86_64" ]
-	then
-	    echo "x86_64, plymouth okay"
-	    echo "$(cat /etc/mkinitcpio.conf)"
-	    sed -i.bak 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-	    chown -R root.root /usr/share/plymouth/themes/apricity
-	    plymouth-set-default-theme -R apricity
-	    mkinitcpio -p linux
-	    systemctl enable org.cups.cupsd.service
-	    systemctl enable smbd nmbd
-	else
-	    echo "i686, no plymouth"
-	fi
-	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
-	sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
-	echo 'seded'
-	systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service
-	systemctl -fq enable NetworkManager ModemManager
-	systemctl set-default graphical.target
-	systemctl enable tlp.service tlp-sleep.service
-	systemctl mask systemd-rfkill@.service
-	cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
-	chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
-	if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
-	else
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
-	fi
+    echo "Done"
 }
 
 enlightenment_settings()
 {
-
+    # http://git.enlightenment.org/core/enlightenment.git/plain/data/tools/enlightenment_remote
+    echo "TODO"
 }
 
 postinstall()
 {
-##############################################################################################
     USER_NAME=$1
     DESTDIR=$2
     DESKTOP=$3
@@ -294,11 +483,11 @@ postinstall()
         cp ${FONTCONFIG_FILE} ${FONTCONFIG_DIR}
     fi
 
-    # Set Apricity name in filesystem files
+    # Set Antergos name in filesystem files
     cp /etc/arch-release ${DESTDIR}/etc
     cp /etc/os-release ${DESTDIR}/etc
     #cp /etc/lsb-release ${DESTDIR}/etc
-    sed -i 's|Arch|Apricity|g' ${DESTDIR}/etc/issue
+    sed -i 's|Arch|Antergos|g' ${DESTDIR}/etc/issue
 
     # Set BROWSER var
     echo "BROWSER=/usr/bin/${_BROWSER}" >> ${DESTDIR}/etc/environment
@@ -320,89 +509,6 @@ postinstall()
         sed -i 's|echo "X|/usr/bin/VBoxClient-all \&\necho "X|g' ${DESTDIR}/etc/lightdm/Xsession
     fi
 
-	rm /usr/share/applications/bssh.desktop
-	rm /usr/share/applications/bvnc.desktop
-	rm /usr/share/applications/avahi-discover.desktop
-	rm /usr/share/applications/qv4l2.desktop
-	rm /usr/share/applications/polkit-gnome-authentication-agent-1.desktop
-	rm /usr/share/applications/tracker-needle.desktop
-	rm /usr/share/applications/zenmap.desktop
-	rm /usr/share/applications/zenmap-root.desktop
-	rm /usr/share/applications/gksu.desktop
-	rm /usr/share/applications/gucharmap.desktop
-	rm /usr/share/applications/cups.desktop
-	rm /usr/share/applications/uxterm.desktop
-	rm /usr/share/applications/epiphany.desktop
-	rm /usr/share/applications/empathy.desktop
-	rm /usr/share/applications/designer-qt4.desktop
-	rm /usr/share/applications/linguist-qt4.desktop
-	rm /usr/share/applications/assistant-qt4.desktop
-	rm /usr/share/applications/qdbusviewer-qt4.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon.desktop
-	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' /usr/share/applications/argon-notifier-config.desktop
-	sed -i 's@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@' /usr/share/applications/org.gnome.Books.desktop
-	sed -i 's@Icon=builder@Icon=textwrangler@' /usr/share/applications/org.gnome.Builder.desktop
-	sed -i 's@Icon=gnome-characters@Icon=accessories-character-map@' /usr/share/applications/org.gnome.Characters.desktop
-	sed -i 's@Icon=x-office-address-book@Icon=evolution-addressbook@' /usr/share/applications/org.gnome.Contacts.desktop
-	sed -i 's@Icon=grsync.png@Icon=luckybackup@' /usr/share/applications/grsync.desktop
-	sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' /usr/share/applications/xterm.desktop
-	sed -i 's@Icon=tracker@Icon=preferences-system-search@' /usr/share/applications/tracker-preferences.desktop
-	cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux15.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux16.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
-	cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
-	set -e -u
-	sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
-	locale-gen
-	ln -sf /usr/share/zoneinfo/UTC /etc/localtime
-	usermod -s /usr/bin/zsh root
-	cp -aT /etc/skel/ /root/
-	chmod 700 /root
-	id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel"
-	passwd -d liveuser
-	echo 'created user'
-	chmod 750 /etc/sudoers.d
-	chmod 440 /etc/sudoers.d/g_wheel
-	chown -R root /etc/sudoers.d
-	echo 'sudoed'
-	EDITOR=nano
-	#/etc/apricity-assets/Elegant_Dark/install.sh
-	sed -i.bak 's/Arch Linux/Apricity OS/g' /usr/lib/os-release
-	sed -i.bak 's/arch/apricity/g' /usr/lib/os-release
-	sed -i.bak 's/www.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bbs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	sed -i.bak 's/bugs.archlinux.org/www.apricityos.com/g' /usr/lib/os-release
-	cp /usr/lib/os-release /etc/os-release
-	arch=`uname -m`
-	if [ "$arch" == "x86_64" ]
-	then
-	    echo "x86_64, plymouth okay"
-	    echo "$(cat /etc/mkinitcpio.conf)"
-	    sed -i.bak 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-	    chown -R root.root /usr/share/plymouth/themes/apricity
-	    plymouth-set-default-theme -R apricity
-	    mkinitcpio -p linux
-	    systemctl enable org.cups.cupsd.service
-	    systemctl enable smbd nmbd
-	else
-	    echo "i686, no plymouth"
-	fi
-	sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
-	sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
-	echo 'seded'
-	systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service
-	systemctl -fq enable NetworkManager ModemManager
-	systemctl set-default graphical.target
-	systemctl enable tlp.service tlp-sleep.service
-	systemctl mask systemd-rfkill@.service
-	cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
-	chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
-	if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
-	else
-		sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
-	fi
 }
 
 touch /tmp/.postinstall.lock

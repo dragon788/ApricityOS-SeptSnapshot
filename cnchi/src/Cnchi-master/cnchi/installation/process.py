@@ -965,11 +965,14 @@ class InstallationProcess(multiprocessing.Process):
 
     @staticmethod
     def update_pacman_conf():
-        """ Add Antergos repo """
+        """ Add Apricity repo """
         path = os.path.join(DEST_DIR, "etc/pacman.conf")
         if os.path.exists(path):
             with open(path, "a") as pacman_conf:
                 pacman_conf.write("\n\n")
+                pacman_conf.write("[apricity-core]\n")
+                pacman_conf.write("SigLevel = Never\n")
+                pacman_conf.write("Include = http://apricityos.com/apricity-core/\n")
         else:
             logging.warning(_("Can't find pacman configuration file"))
 

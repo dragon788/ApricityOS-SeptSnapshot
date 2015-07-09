@@ -15,7 +15,7 @@ gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"
 gsettings set org.gnome.shell.extensions.user-theme name "Arctic Apricity"
 gsettings set org.gnome.desktop.interface icon-theme "Apricity Icons"
 
-gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'dash-to-dock@micxgx.gmail.com', 'shellshape@gfxmonk.net', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com']"
+gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'dash-to-dock@micxgx.gmail.com', 'shellshape@gfxmonk.net', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com', 'Move_Clock@rmy.pobox.com']"
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <':minimize,maximize,close'>}"
@@ -81,7 +81,9 @@ gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 tracker-control -r
 
-cp -rf /etc/apricity-assets/google-chrome-beta ~/.config/
+mv -f /etc/apricity-assets/google-chrome-beta ~/.config/
+sudo mv /install/var/cache/pacman/pkg /var/cache/pacman
+
 #pipelight-plugin --accept --enable silverlight
 #rm ~/.wine-pipelight
 #sudo pipelight-plugin --create-mozilla-plugins

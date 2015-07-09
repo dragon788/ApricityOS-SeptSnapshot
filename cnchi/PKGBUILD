@@ -1,29 +1,33 @@
 _pkgname=Cnchi
 pkgname=cnchi
-pkgver=0.8.152
+pkgver=0.8.155
 pkgrel=1
-pkgdesc='Graphical Installer for Antergos Linux'
+pkgdesc='Apricity Installer'
 arch=(any)
 license=(GPL)
-url="https://github.com/Antergos/Cnchi"
-depends=(python pyalpm python-gobject python-dbus python-cairo python-requests
-         python-parted webkitgtk upower python-mako iso-codes gptfdisk)
-source=("${_pkgname}-master.tar.gz")
-sha256sums=(SKIP)
+depends=(python pyalpm python-gobject python-dbus python-requests python-cairo
+         python-parted webkitgtk upower python-mako iso-codes encfs pam_encfs gptfdisk)
+source=("Cnchi-master.tar.gz")
+sha256sums=('SKIP')
+
+pkgver() {
+	cd ${srcdir}/${_pkgname}-master
+}
 
 build ()
 {
-  cd "$srcdir/${_pkgname}-master"
+  cd $srcdir/${_pkgname}-master
 }
 
 package() {
-	cd "${srcdir}/${_pkgname}-master"
+	cd ${srcdir}/${_pkgname}-master
 
 	install -d ${pkgdir}/usr/share/locale/
-	install -d ${pkgdir}/usr/share/cnchi
-	install -Dm755 "bin/${pkgname}" "${pkgdir}/usr/bin/cnchi"
-	install -Dm755 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/cnchi.desktop"
-	for i in cnchi bin data scripts ui "grub2-theme"; do
+	install -d ${pkgdir}/usr/share/cnchi/cnchi
+	install -Dm755 bin/${_pkgname,,} "${pkgdir}/usr/bin/cnchi"
+	install -Dm755 "scripts/testing.sh" "${pkgdir}/usr/bin/cnchi-dev"
+
+	for i in data scripts cnchi ui grub2-theme; do
 		cp -R ${i} "${pkgdir}/usr/share/cnchi/"
 	done
 

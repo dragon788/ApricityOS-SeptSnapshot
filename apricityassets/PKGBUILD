@@ -1,8 +1,8 @@
-#Maintainer: Alex Gajewski <apagajewski@gmail.com>
+#Maintainer: Alex Gajewski <agajews@gmail.com>
 
 _pkgname='Apricity Assets'
 pkgname=apricityassets
-pkgver=0.1.14
+pkgver=0.1.15
 pkgrel=1
 pkgdesc='Assets for Apricity OS'
 arch=(any)
