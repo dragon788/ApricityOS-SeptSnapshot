@@ -15,7 +15,7 @@
 		<pkgname>bash-completion</pkgname>
 		<pkgname>bind-tools</pkgname>
 		<pkgname>bluez-utils</pkgname>
-		<pkgname>broadcom-wl</pkgname>
+		<pkgname>broadcom-wl-dkms</pkgname>
 		<pkgname>btsync-gui</pkgname>
 		<pkgname>btsync</pkgname>
 		<pkgname>bzr</pkgname>
@@ -266,12 +266,6 @@
             
         </feature>
     </features>
-
-    <net>
-        <broadcom>
-            <pkgname>broadcom-wl</pkgname>
-        </broadcom>
-    </net>
 
     <filesystems>
         <pkgname>btrfs-progs</pkgname> <!-- for btrfs partitions -->
