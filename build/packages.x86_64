@@ -19,6 +19,7 @@ btsync-gui
 ice-ssb
 ufw
 gufw
+broadcom-wl-dkms
 
 #Codecs
 gst-libav

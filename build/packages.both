@@ -23,7 +23,6 @@ linux-firmware
 dhclient
 bind-tools
 rfkill
-broadcom-wl-dkms
 
 # Filesystem Tools
 btrfs-progs
