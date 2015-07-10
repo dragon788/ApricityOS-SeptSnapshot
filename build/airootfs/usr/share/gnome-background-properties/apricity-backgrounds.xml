@@ -100,13 +100,6 @@
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Snowy Goose</name>
-		<filename>/usr/share/backgrounds/gnome/goose.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-	<wallpaper deleted="false">
 		<name>Aspen</name>
 		<filename>/usr/share/backgrounds/gnome/aspen.jpg</filename>
 		<options>zoom</options>
@@ -424,13 +417,6 @@
 	<wallpaper deleted="false">
 		<name>Stripes</name>
 		<filename>/usr/share/backgrounds/gnome/stripes.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Flow</name>
-		<filename>/usr/share/backgrounds/gnome/flow.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>

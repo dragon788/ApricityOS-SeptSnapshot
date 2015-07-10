@@ -233,7 +233,6 @@
 		<pkgname>bluez-utils</pkgname>
 		<pkgname>cups-pk-helper</pkgname>
 		<pkgname>gsfonts</pkgname>
-		<pkgname>hplip</pkgname>
 		<pkgname>splix</pkgname>
             </packages>
         </edition>
