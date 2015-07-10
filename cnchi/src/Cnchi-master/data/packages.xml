@@ -5,33 +5,26 @@
     <editions>
         <edition name="common" description="Packages common to all DE and base">
             <packages>
-                <pkgname>acpi</pkgname>
-		<pkgname>adwaita-icon-theme</pkgname>
 		<pkgname>alsa-utils</pkgname>
 		<pkgname>apricityassets</pkgname>
-		<pkgname>arch-install-scripts</pkgname>
 		<pkgname>argon</pkgname>
 		<pkgname>b43-fwcutter</pkgname>
 		<pkgname>baobab</pkgname>
-		<pkgname>base</pkgname>
 		<pkgname>base-devel</pkgname>
+		<pkgname>base</pkgname>
+		<pkgname>bash-completion</pkgname>
 		<pkgname>bind-tools</pkgname>
-		<pkgname>btrfs-progs</pkgname>
-		<pkgname>btsync</pkgname>
+		<pkgname>bluez-utils</pkgname>
+		<pkgname>broadcom-wl</pkgname>
 		<pkgname>btsync-gui</pkgname>
+		<pkgname>btsync</pkgname>
+		<pkgname>bzr</pkgname>
 		<pkgname>crda</pkgname>
+		<pkgname>cups-pk-helper</pkgname>
 		<pkgname>cups</pkgname>
-		<pkgname>dhclient</pkgname>
-		<pkgname>dialog</pkgname>
-		<pkgname>dmraid</pkgname>
-		<pkgname>dnsmasq</pkgname>
 		<pkgname>dosfstools</pkgname>
-		<pkgname>efibootmgr</pkgname>
 		<pkgname>eog</pkgname>
-		<pkgname>ethtool</pkgname>
 		<pkgname>evince</pkgname>
-		<pkgname>expect</pkgname>
-		<pkgname>f2fs-tools</pkgname>
 		<pkgname>faac</pkgname>
 		<pkgname>faad2</pkgname>
 		<pkgname>fakeroot</pkgname>
@@ -39,9 +32,7 @@
 		<pkgname>filezilla</pkgname>
 		<pkgname>flac</pkgname>
 		<pkgname>gdm</pkgname>
-		<pkgname>geary</pkgname>
 		<pkgname>gedit</pkgname>
-		<pkgname>ghostscript</pkgname>
 		<pkgname>gimp</pkgname>
 		<pkgname>git</pkgname>
 		<pkgname>gksu</pkgname>
@@ -49,21 +40,19 @@
 		<pkgname>gnome-bluetooth</pkgname>
 		<pkgname>gnome-calculator</pkgname>
 		<pkgname>gnome-calendar</pkgname>
-		<pkgname>gnome-clocks</pkgname>
 		<pkgname>gnome-color-manager</pkgname>
 		<pkgname>gnome-contacts</pkgname>
 		<pkgname>gnome-control-center</pkgname>
 		<pkgname>gnome-disk-utility</pkgname>
-		<pkgname>gnome-icon-theme-symbolic</pkgname>
 		<pkgname>gnome-keyring</pkgname>
 		<pkgname>gnome-music</pkgname>
 		<pkgname>gnome-photos</pkgname>
 		<pkgname>gnome-screenshot</pkgname>
 		<pkgname>gnome-session</pkgname>
 		<pkgname>gnome-settings-daemon</pkgname>
+		<pkgname>gnome-shell-extensions</pkgname>
+		<pkgname>gnome-shell-extensions</pkgname>
 		<pkgname>gnome-shell</pkgname>
-		<pkgname>gnome-shell-extensions</pkgname>
-		<pkgname>gnome-shell-extensions</pkgname>
 		<pkgname>gnome-system-log</pkgname>
 		<pkgname>gnome-system-monitor</pkgname>
 		<pkgname>gnome-terminal</pkgname>
@@ -71,15 +60,10 @@
 		<pkgname>gnome-themes-standard</pkgname>
 		<pkgname>gnome-tweak-tool</pkgname>
 		<pkgname>gnome-user-docs</pkgname>
-		<pkgname>gnu-netcat</pkgname>
 		<pkgname>google-chrome-beta</pkgname>
 		<pkgname>google-talkplugin</pkgname>
-		<pkgname>gpm</pkgname>
-		<pkgname>gptfdisk</pkgname>
 		<pkgname>grilo-plugins</pkgname>
-		<pkgname>grml-zsh-config</pkgname>
-		<pkgname>sbackup</pkgname>
-		<pkgname>grub</pkgname>
+		<pkgname>gsfonts</pkgname>
 		<pkgname>gsfonts</pkgname>
 		<pkgname>gst-libav</pkgname>
 		<pkgname>gst-plugin-libde265</pkgname>
@@ -87,72 +71,52 @@
 		<pkgname>gst-plugins-base</pkgname>
 		<pkgname>gst-plugins-good</pkgname>
 		<pkgname>gst-plugins-ugly</pkgname>
-		<pkgname>gstreamer</pkgname>
-		<pkgname>gstreamer0.10</pkgname>
-		<pkgname>gstreamer0.10-bad-plugins</pkgname>
-		<pkgname>gstreamer0.10-base-plugins</pkgname>
-		<pkgname>gstreamer0.10-ffmpeg</pkgname>
-		<pkgname>gstreamer0.10-good-plugins</pkgname>
-		<pkgname>gstreamer0.10-ugly-plugins</pkgname>
-		<pkgname>gtk-engine-murrine</pkgname>
+		<pkgname>gstreamer-vaapi</pkgname>
+		<pkgname>gstreamer0.10-plugins</pkgname>
 		<pkgname>gtk-engine-murrine</pkgname>
 		<pkgname>gucharmap</pkgname>
 		<pkgname>gufw</pkgname>
-		<pkgname>gummiboot</pkgname>
+		<pkgname>gzip</pkgname>
 		<pkgname>haveged</pkgname>
-		<pkgname>hwdetect</pkgname>
 		<pkgname>ice-ssb</pkgname>
 		<pkgname>inkscape</pkgname>
-		<pkgname>intel-ucode</pkgname>
-		<pkgname>intel-ucode</pkgname>
 		<pkgname>ipw2100-fw</pkgname>
 		<pkgname>ipw2200-fw</pkgname>
-		<pkgname>lame</pkgname>
 		<pkgname>libcups</pkgname>
-		<pkgname>libdca</pkgname>
 		<pkgname>libdvdcss</pkgname>
 		<pkgname>libdvdnav</pkgname>
 		<pkgname>libdvdread</pkgname>
-		<pkgname>libmad</pkgname>
 		<pkgname>libmatroska</pkgname>
 		<pkgname>libreoffice-fresh</pkgname>
 		<pkgname>linux-firmware</pkgname>
 		<pkgname>linux-headers</pkgname>
 		<pkgname>mc</pkgname>
-		<pkgname>mesa</pkgname>
 		<pkgname>mesa-vdpau</pkgname>
+		<pkgname>mesa</pkgname>
 		<pkgname>modemmanager</pkgname>
-		<pkgname>mousetweaks</pkgname>
 		<pkgname>mtools</pkgname>
 		<pkgname>mutter</pkgname>
 		<pkgname>nautilus</pkgname>
 		<pkgname>net-tools</pkgname>
-		<pkgname>netctl</pkgname>
 		<pkgname>network-manager-applet</pkgname>
 		<pkgname>networkmanager-openvpn</pkgname>
 		<pkgname>networkmanager-pptp</pkgname>
 		<pkgname>ntfs-3g</pkgname>
 		<pkgname>ntfs-3g</pkgname>
-		<pkgname>ntp</pkgname>
-		<pkgname>opencore-amr</pkgname>
 		<pkgname>openssh</pkgname>
-		<pkgname>openvpn</pkgname>
 		<pkgname>os-prober</pkgname>
 		<pkgname>pavucontrol</pkgname>
-		<pkgname>pipelight</pkgname>
 		<pkgname>pkgfile</pkgname>
 		<pkgname>playonlinux</pkgname>
 		<pkgname>plymouth</pkgname>
 		<pkgname>polkit-gnome</pkgname>
-		<pkgname>prebootloader</pkgname>
-		<pkgname>prebootloader</pkgname>
 		<pkgname>pulseaudio-alsa</pkgname>
-		<pkgname>refind-efi</pkgname>
-		<pkgname>reflector</pkgname>
 		<pkgname>rfkill</pkgname>
 		<pkgname>samba</pkgname>
+		<pkgname>sbackup</pkgname>
+		<pkgname>seahorse</pkgname>
 		<pkgname>smartmontools</pkgname>
-		<pkgname>squashfs-tools</pkgname>
+		<pkgname>splix</pkgname>
 		<pkgname>steam</pkgname>
 		<pkgname>sudo</pkgname>
 		<pkgname>sushi</pkgname>
@@ -166,6 +130,7 @@
 		<pkgname>ttf-bitstream-vera</pkgname>
 		<pkgname>ttf-dejavu</pkgname>
 		<pkgname>ttf-freefont</pkgname>
+		<pkgname>ttf-liberation</pkgname>
 		<pkgname>ufw</pkgname>
 		<pkgname>unrar</pkgname>
 		<pkgname>unzip</pkgname>
@@ -179,59 +144,16 @@
 		<pkgname>xdg-user-dirs-gtk</pkgname>
 		<pkgname>xdg-user-dirs-gtk</pkgname>
 		<pkgname>xf86-input-synaptics</pkgname>
-		<pkgname>xf86-video-ati</pkgname>
-		<pkgname>xf86-video-intel</pkgname>
-		<pkgname>xf86-video-nouveau</pkgname>
-		<pkgname>xf86-video-openchrome</pkgname>
+		<pkgname>xf86-video-fbdev</pkgname>
 		<pkgname>xf86-video-vesa</pkgname>
-		<pkgname>xf86-video-vmware</pkgname>
-		<pkgname>xfsprogs</pkgname>
-		<pkgname>xfsprogs</pkgname>
-		<pkgname>xineramaproto</pkgname>
-		<pkgname>xkeyboard-config</pkgname>
-		<pkgname>xorg-bdftopcf</pkgname>
-		<pkgname>xorg-font-util</pkgname>
-		<pkgname>xorg-font-utils</pkgname>
-		<pkgname>xorg-fonts-alias</pkgname>
-		<pkgname>xorg-fonts-encodings</pkgname>
-		<pkgname>xorg-fonts-misc</pkgname>
-		<pkgname>xorg-iceauth</pkgname>
-		<pkgname>xorg-luit</pkgname>
-		<pkgname>xorg-mkfontdir</pkgname>
-		<pkgname>xorg-mkfontscale</pkgname>
-		<pkgname>xorg-server</pkgname>
-		<pkgname>xorg-server</pkgname>
-		<pkgname>xorg-server-common</pkgname>
+		<pkgname>xorg-apps</pkgname>
+		<pkgname>xorg-fonts</pkgname>
 		<pkgname>xorg-server-utils</pkgname>
-		<pkgname>xorg-server-utils</pkgname>
-		<pkgname>xorg-sessreg</pkgname>
-		<pkgname>xorg-setxkbmap</pkgname>
-		<pkgname>xorg-twm</pkgname>
-		<pkgname>xorg-xauth</pkgname>
-		<pkgname>xorg-xbacklight</pkgname>
-		<pkgname>xorg-xclock</pkgname>
-		<pkgname>xorg-xcmsdb</pkgname>
-		<pkgname>xorg-xgamma</pkgname>
-		<pkgname>xorg-xhost</pkgname>
+		<pkgname>xorg-server</pkgname>
 		<pkgname>xorg-xinit</pkgname>
-		<pkgname>xorg-xinput</pkgname>
-		<pkgname>xorg-xkbcomp</pkgname>
 		<pkgname>xorg-xkill</pkgname>
-		<pkgname>xorg-xmodmap</pkgname>
-		<pkgname>xorg-xrandr</pkgname>
-		<pkgname>xorg-xrdb</pkgname>
-		<pkgname>xorg-xrefresh</pkgname>
-		<pkgname>xorg-xset</pkgname>
-		<pkgname>xorg-xsetroot</pkgname>
-		<pkgname>xproto</pkgname>
-		<pkgname>xvidcore</pkgname>
-		<pkgname>xz</pkgname>
-		<pkgname>yelp</pkgname>
 		<pkgname>zd1211-firmware</pkgname>
-		<pkgname>bluez-utils</pkgname>
-		<pkgname>cups-pk-helper</pkgname>
-		<pkgname>gsfonts</pkgname>
-		<pkgname>splix</pkgname>
+
             </packages>
         </edition>
 

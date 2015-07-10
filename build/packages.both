@@ -1,18 +1,3 @@
-# Installation
-efibootmgr
-hwdetect
-arch-install-scripts
-#grub
-#gummiboot
-#prebootloader
-#os-prober
-#dmraid
-#hwinfo
-#libui-sh
-#parted
-#gparted
-#linux-headers
-
 # Cnchi Graphical Installer
 cnchi
 python-mako
@@ -20,9 +5,7 @@ python-mock
 python-lxml
 
 # Network
-ntp
 crda
-dialog
 ipw2100-fw
 ipw2200-fw
 zd1211-firmware
@@ -32,28 +15,21 @@ b43-fwcutter
 net-tools
 usb_modeswitch
 modemmanager
-networkmanager-openvpn
 networkmanager-pptp
 ntfs-3g
 whois
-netctl
 wget
 linux-firmware
-intel-ucode
 dhclient
-dnsmasq
 bind-tools
-ethtool
-gnu-netcat
 rfkill
+broadcom-wl
 
 # Filesystem Tools
 btrfs-progs
 ntfs-3g
 dosfstools
 xfsprogs
-squashfs-tools
-f2fs-tools
 smartmontools
 gptfdisk
 grml-zsh-config
@@ -67,49 +43,14 @@ xf86-input-synaptics
 # Graphical Drivers
 mesa
 mesa-vdpau
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-ati
-xf86-video-vmware
-xf86-video-openchrome
 xf86-video-vesa
-xfsprogs
-xineramaproto
-xkeyboard-config
-xorg-bdftopcf
-xorg-font-util
-xorg-font-utils
-xorg-fonts-alias
-xorg-fonts-encodings
-xorg-fonts-misc
-xorg-iceauth
-xorg-luit
-xorg-mkfontdir
-xorg-mkfontscale
+xf86-video-fbdev
 xorg-server
-xorg-server-common
-xorg-server-utils
-xorg-sessreg
-xorg-setxkbmap
-xorg-twm
-xorg-xauth
-xorg-xbacklight
-xorg-xclock
-xorg-xcmsdb
-xorg-xgamma
-xorg-xhost
 xorg-xinit
-xorg-xinput
-xorg-xkbcomp
 xorg-xkill
-xorg-xmodmap
-xorg-xrandr
-xorg-xrdb
-xorg-xrefresh
-xorg-xset
-xorg-xsetroot
-xproto
-xvidcore
+xorg-apps
+xorg-fonts
+xorg-server-utils
 xz
 
 # System Tools
@@ -118,22 +59,16 @@ gksu
 pkgfile
 alsa-utils
 xdg-user-dirs-gtk
-reflector
 expect
-gpm
-intel-ucode
 mc
 openssh
-openvpn
 tlp
 cups
 libcups
 fakeroot
-ghostscript
 gsfonts
 samba
 git
-acpi
 unrar
 unzip
 tar
@@ -143,6 +78,9 @@ cups-pk-helper
 gsfonts
 splix
 ufw
+gzip
+bzr
+bash-completion
 
 # Fonts
 ttf-dejavu
@@ -150,6 +88,7 @@ ttf-bitstream-vera
 ttf-freefont
 ttf-arphic-uming
 ttf-baekmuk
+ttf-liberation
 
 # Desktop
 network-manager-applet
@@ -168,7 +107,6 @@ gnome-themes-standard
 gnome-shell-extensions
 
 # Gnome
-adwaita-icon-theme
 baobab
 eog
 evince
@@ -180,12 +118,10 @@ gnome-backgrounds
 gnome-bluetooth
 gnome-calculator
 gnome-calendar
-gnome-clocks
 gnome-color-manager
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
-gnome-icon-theme-symbolic
 gnome-keyring
 gnome-music
 gnome-photos
@@ -203,11 +139,10 @@ gnome-user-docs
 grilo-plugins
 gtk-engine-murrine
 gucharmap
-mousetweaks
 mutter
 nautilus
 polkit-gnome
 sushi
 totem
+seahorse
 xdg-user-dirs-gtk
-yelp
