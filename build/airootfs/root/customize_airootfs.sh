@@ -51,8 +51,18 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 echo 'seded'
 
 
-systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service tlp.service tlp-sleep.service
-systemctl -fq enable NetworkManager ModemManager bluetooth ufw
+systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service
+echo 'enabled dhcpd, gdm'
+systemctl enable bluetooth.service
+echo 'enabled bluetooth'
+systemctl enable ufw.service
+echo 'enabled ufw'
+systemctl enable avahi-daemon.service
+echo 'enabled avahi'
+systemctl enable tlp.service tlp-sleep.service
+echo 'enabled tlp'
+systemctl -fq enable NetworkManager ModemManager
+echo 'enabled network'
 systemctl mask systemd-rfkill@.service
 systemctl set-default graphical.target
 touch /etc/pacman.d/antergos-mirrorlist

@@ -144,6 +144,7 @@ cups-pk-helper
 gsfonts
 hplip
 splix
+ufw
 
 # Fonts
 ttf-dejavu
@@ -162,6 +163,7 @@ gimp
 pavucontrol
 pulseaudio-alsa
 orca
+gufw
 ############################################More accessibility features?
 
 # Theme
