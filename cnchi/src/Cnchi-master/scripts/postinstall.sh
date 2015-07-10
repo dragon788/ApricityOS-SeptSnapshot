@@ -93,6 +93,7 @@ postinstall()
     KEYBOARD_LAYOUT=$4
     KEYBOARD_VARIANT=$5
     IS_VBOX=$6
+    KEYBOARD_COMMAND="setxkbmap $KEYBOARD_LAYOUT"
 
     export _BROWSER=google-chrome-beta
 
@@ -131,9 +132,14 @@ postinstall()
 
     # Set gsettings input-source
     if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
-        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
+        sed -i "s/us/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
+
     else
-        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" /usr/share/cnchi/scripts/set-settings
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
+        sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
     fi
     # Set gsettings
     rm ${DESTDIR}/usr/share/applications/bssh.desktop
@@ -146,15 +152,21 @@ postinstall()
 	rm ${DESTDIR}/usr/share/applications/gucharmap.desktop
 	rm ${DESTDIR}/usr/share/applications/cups.desktop
 	rm ${DESTDIR}/usr/share/applications/uxterm.desktop
+	rm ${DESTDIR}/usr/share/applications/sbackup-restore-su.desktop
+	rm ${DESTDIR}/usr/share/applications/sbackup-config-su.desktop
+
+	cp -f ${DESTDIR}/usr/share/gnome-background-properties/apricity-backgrounds.xml ${DESTDIR}/usr/share/gnome-background-properties/gnome-backgrounds.xml
+	cp -f ${DESTDIR}/etc/apricity-assets/10-evdev.conf ${DESTDIR}/etc/X11/xorg.conf.d/
+
+	echo $KEYBOARD_COMMAND >> /etc/gdm/Init/Default
+
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon-notifier-config.desktop
 	sed -i 's@Icon=x-office-address-book@Icon=evolution-addressbook@' ${DESTDIR}/usr/share/applications/org.gnome.Contacts.desktop
 	sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' ${DESTDIR}/usr/share/applications/xterm.desktop
 	sed -i 's@Icon=tracker@Icon=preferences-system-search@' ${DESTDIR}/usr/share/applications/tracker-preferences.desktop
 	sed -i 's@Icon=sbackup-restore@Icon=grsync-restore@' ${DESTDIR}/usr/share/applications/sbackup-restore.desktop
-	sed -i 's@Icon=sbackup-restore@Icon=grsync@' ${DESTDIR}/usr/share/applications/sbackup-config.desktop
-	sed -i 's@Icon=sbackup-restore@Icon=grsync-restore@' ${DESTDIR}/usr/share/applications/sbackup-restore-su.desktop
-	sed -i 's@Icon=sbackup-restore@Icon=grsync@' ${DESTDIR}/usr/share/applications/sbackup-config-su.desktop
+	sed -i 's@Icon=sbackup-conf@Icon=grsync@' ${DESTDIR}/usr/share/applications/sbackup-config.desktop
 	cp -f ${DESTDIR}/etc/apricity-assets/playonlinux.png ${DESTDIR}/usr/share/playonlinux/etc
 	cp -f ${DESTDIR}/etc/apricity-assets/playonlinux15.png ${DESTDIR}/usr/share/playonlinux/etc
 	cp -f ${DESTDIR}/etc/apricity-assets/playonlinux16.png ${DESTDIR}/usr/share/playonlinux/etc

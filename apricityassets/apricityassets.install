@@ -1,9 +1,10 @@
 post_install(){
 rm /usr/share/gnome-background-properties/adwaita.xml
+rm /usr/share/gnome-background-properties/gnome-default.xml
 rm -r /usr/share/backgrounds/gnome
 mv /usr/share/backgrounds/apricity/ /usr/share/backgrounds/gnome
 rm /usr/share/gnome-background-properties/gnome-backgrounds.xml
-mv /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
+cp /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
 chmod -R 755 /usr/share/backgrounds/gnome
 }
 
@@ -33,9 +34,10 @@ rm -r /etc/apricity-assets
 
 post_upgrade(){
 rm /usr/share/gnome-background-properties/adwaita.xml
+rm /usr/share/gnome-background-properties/gnome-default.xml
 rm -r /usr/share/backgrounds/gnome
 mv /usr/share/backgrounds/apricity/ /usr/share/backgrounds/gnome
 rm /usr/share/gnome-background-properties/gnome-backgrounds.xml
-mv /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
+cp /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
 chmod -R 755 /usr/share/backgrounds/gnome
 }

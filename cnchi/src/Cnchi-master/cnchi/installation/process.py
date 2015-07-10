@@ -1076,6 +1076,7 @@ class InstallationProcess(multiprocessing.Process):
 
         username = self.settings.get('username')
         autologin = not self.settings.get('require_password')
+        lightdm_conf_path = os.path.join(DEST_DIR, "etc/lightdm/lightdm.conf")
 
         try:
             # Setup LightDM as Desktop Manager

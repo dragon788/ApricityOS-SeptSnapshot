@@ -41,8 +41,6 @@ sudo sed -i 's@Icon=tracker@Icon=preferences-system-search@' /usr/share/applicat
 
 sudo sed -i 's@Icon=sbackup-restore@Icon=grsync-restore@' /usr/share/applications/sbackup-restore.desktop
 sudo sed -i 's@Icon=sbackup-conf@Icon=grsync@' /usr/share/applications/sbackup-config.desktop
-sudo sed -i 's@Icon=sbackup-restore@Icon=grsrync-restore@' /usr/share/applications/sbackup-restore-su.desktop
-sudo sed -i 's@Icon=sbackup-conf@Icon=grsync@' /usr/share/applications/sbackup-config-su.desktop
 
 #sudo sed -i 's@Icon=/usr/share/playonlinux/etc/playonlinux.png@Icon=playonlinux@' /usr/share/applications/playonlinux.desktop
 
@@ -79,6 +77,8 @@ sudo rm /usr/share/applications/designer-qt4.desktop
 sudo rm /usr/share/applications/linguist-qt4.desktop
 sudo rm /usr/share/applications/assistant-qt4.desktop
 sudo rm /usr/share/applications/qdbusviewer-qt4.desktop
+sudo rm /usr/share/applications/sbackup-restore-su.desktop
+sudo rm /usr/share/applications/sbackup-config-su.desktop
 rm ~/.local/share/applications/chrome-app-list.desktop
 
 gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories "[]"

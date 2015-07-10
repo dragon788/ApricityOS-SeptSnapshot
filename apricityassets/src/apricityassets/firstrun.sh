@@ -46,6 +46,7 @@ echo 'source ~/.liquidprompt/liquidprompt' >> ~/.bashrc
 #sudo cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
 #sudo cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
 #########################################################################################################
+dbus-launch gsettings set org.gnome.desktop.input-sources sources "[('xkb','us')]"
 gsettings set org.gnome.settings-daemon.peripherals.touchpad tap-to-click true
 gsettings set org.gnome.desktop.interface gtk-theme "Arctic Apricity"
 gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"
