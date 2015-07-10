@@ -1065,10 +1065,46 @@ class InstallationProcess(multiprocessing.Process):
         self.enable_services(services)
 
     def setup_display_manager(self):
-        """ Configures LightDM desktop manager, including autologin. """
-        txt = _("Configuring LightDM desktop manager...")
+        """ Configures gdm desktop manager, including autologin. """
+        txt = _("Configuring GDM desktop manager...")
         self.queue_event('info', txt)
-
+	cmd = ["rm", "/usr/share/applications/bssh.desktop"]
+	cmd = ["rm", "/usr/share/applications/bvnc.desktop"]
+	cmd = ["rm", "/usr/share/applications/avahi-discover.desktop"]
+	cmd = ["rm", "/usr/share/applications/qv4l2.desktop"]
+	cmd = ["rm", "/usr/share/applications/polkit-gnome-authentication-agent-1.desktop"]
+	cmd = ["rm", "/usr/share/applications/tracker-needle.desktop"]
+	cmd = ["rm", "/usr/share/applications/zenmap.desktop"]
+	cmd = ["rm", "/usr/share/applications/zenmap-root.desktop"]
+	cmd = ["rm", "/usr/share/applications/gksu.desktop"]
+	cmd = ["rm", "/usr/share/applications/gucharmap.desktop"]
+	cmd = ["rm", "/usr/share/applications/cups.desktop"]
+	cmd = ["rm", "/usr/share/applications/uxterm.desktop"]
+	cmd = ["rm", "/usr/share/applications/epiphany.desktop"]
+	cmd = ["rm", "/usr/share/applications/designer-qt4.desktop"]
+	cmd = ["rm", "/usr/share/applications/linguist-qt4.desktop"]
+	cmd = ["rm", "/usr/share/applications/assistant-qt4.desktop"]
+	cmd = ["rm", "/usr/share/applications/qdbusviewer-qt4.desktop"]
+	cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon.desktop"]
+	cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon-notifier-config.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@'", "/usr/share/applications/org.gnome.Books.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=builder@Icon=textwrangler@'", "/usr/share/applications/org.gnome.Builder.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=gnome-characters@Icon=accessories-character-map@'", "/usr/share/applications/org.gnome.Characters.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=x-office-address-book@Icon=evolution-addressbook@'", "/usr/share/applications/org.gnome.Contacts.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=grsync.png@Icon=luckybackup@'", "/usr/share/applications/grsync.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=xterm-color_48x48@Icon=xorg@'", "/usr/share/applications/xterm.desktop"]
+	cmd = ["sed", "-i", "'s@Icon=tracker@Icon=preferences-system-search@'", "/usr/share/applications/tracker-preferences.desktop"]
+	cmd = ["sed", "-i.bak", "'s/Arch Linux/Apricity OS/g'", "/usr/lib/os-release"]
+	cmd = ["sed", "-i.bak", "'s/www.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+	cmd = ["sed", "-i.bak", "'s/bbs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+	cmd = ["sed", "-i.bak", "'s/bugs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+	cmd = ["cp", "-f", "/usr/lib/os-release", "/etc/os-release"]
+	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux.png", "/usr/share/playonlinux/etc"]
+	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux15.png", "/usr/share/playonlinux/etc"]
+	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux16.png", "/usr/share/playonlinux/etc"]
+	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux22.png", "/usr/share/playonlinux/etc"]
+	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux32.png", "/usr/share/playonlinux/etc"]
+	cmd = ["systemctl", "mask", "systemd-rfkill@.service"]
         if self.desktop in desktops.SESSIONS:
             session = desktops.SESSIONS[self.desktop]
         else:
@@ -1076,8 +1112,6 @@ class InstallationProcess(multiprocessing.Process):
 
         username = self.settings.get('username')
         autologin = not self.settings.get('require_password')
-
-        lightdm_conf_path = os.path.join(DEST_DIR, "etc/lightdm/lightdm.conf")
 
         try:
             # Setup LightDM as Desktop Manager
@@ -1098,10 +1132,10 @@ class InstallationProcess(multiprocessing.Process):
                         line = 'user-session={0}\n'.format(session)
                     lightdm_conf.write(line)
 
-            txt = _("LightDM display manager configuration completed.")
+            txt = _("GDM display manager configuration completed.")
             logging.debug(txt)
         except FileNotFoundError:
-            txt = _("Error while trying to configure the LightDM display manager")
+            txt = _("Error while trying to configure the GDM display manager")
             logging.warning(txt)
 
     @staticmethod

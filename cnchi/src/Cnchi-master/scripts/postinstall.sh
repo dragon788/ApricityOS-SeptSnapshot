@@ -179,8 +179,6 @@ postinstall()
 	usermod -s /usr/bin/zsh root
 	cp -aT /etc/skel/ /root/
 	chmod 700 /root
-	id -u liveuser &>/dev/null || useradd -m "liveuser" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel"
-	passwd -d liveuser
 	echo 'created user'
 	chmod 750 /etc/sudoers.d
 	chmod 440 /etc/sudoers.d/g_wheel
