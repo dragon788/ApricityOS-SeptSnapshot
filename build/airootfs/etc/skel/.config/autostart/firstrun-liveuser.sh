@@ -39,6 +39,11 @@ sudo sed -i 's@Icon=grsync.png@Icon=luckybackup@' /usr/share/applications/grsync
 sudo sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' /usr/share/applications/xterm.desktop
 sudo sed -i 's@Icon=tracker@Icon=preferences-system-search@' /usr/share/applications/tracker-preferences.desktop
 
+sudo sed -i 's@Icon=sbackup-restore@Icon=grsync-restore@' /usr/share/applications/sbackup-restore.desktop
+sudo sed -i 's@Icon=sbackup-conf@Icon=grsync@' /usr/share/applications/sbackup-config.desktop
+sudo sed -i 's@Icon=sbackup-restore@Icon=grsrync-restore@' /usr/share/applications/sbackup-restore-su.desktop
+sudo sed -i 's@Icon=sbackup-conf@Icon=grsync@' /usr/share/applications/sbackup-config-su.desktop
+
 #sudo sed -i 's@Icon=/usr/share/playonlinux/etc/playonlinux.png@Icon=playonlinux@' /usr/share/applications/playonlinux.desktop
 
 sudo cp -f /etc/apricity-assets/playonlinux.png /usr/share/playonlinux/etc

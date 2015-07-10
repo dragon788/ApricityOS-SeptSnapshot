@@ -7,8 +7,6 @@ else
 cp ~/.liquidprompt/liquidpromptrc-dist ~/.config/liquidpromptrc
 
 echo 'source ~/.liquidprompt/liquidprompt' >> ~/.bashrc
-
-sleep .5
 ##########################################################################################################
 #sudo rm /usr/share/gnome-background-properties/adwaita.xml
 #sudo rm -r /usr/share/backgrounds/gnome

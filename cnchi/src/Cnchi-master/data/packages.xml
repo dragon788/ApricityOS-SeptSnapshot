@@ -78,7 +78,7 @@
 		<pkgname>gptfdisk</pkgname>
 		<pkgname>grilo-plugins</pkgname>
 		<pkgname>grml-zsh-config</pkgname>
-		<pkgname>grsync</pkgname>
+		<pkgname>sbackup</pkgname>
 		<pkgname>grub</pkgname>
 		<pkgname>gsfonts</pkgname>
 		<pkgname>gst-libav</pkgname>

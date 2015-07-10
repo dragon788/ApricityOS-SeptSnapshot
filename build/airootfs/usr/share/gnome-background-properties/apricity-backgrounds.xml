@@ -388,7 +388,7 @@
 	</wallpaper>
 	<wallpaper deleted="false">
 		<name>Snow-White</name>
-		<filename>/usr/share/backgrounds/gnome/snow-white.jpg</filename>
+		<filename>/usr/share/backgrounds/gnome/snow-white.png</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>

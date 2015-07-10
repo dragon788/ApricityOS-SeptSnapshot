@@ -972,7 +972,7 @@ class InstallationProcess(multiprocessing.Process):
                 pacman_conf.write("\n\n")
                 pacman_conf.write("[apricity-core]\n")
                 pacman_conf.write("SigLevel = Never\n")
-                pacman_conf.write("Include = http://apricityos.com/apricity-core/\n")
+                pacman_conf.write("Server = http://apricityos.com/apricity-core/\n")
         else:
             logging.warning(_("Can't find pacman configuration file"))
 
@@ -1032,7 +1032,7 @@ class InstallationProcess(multiprocessing.Process):
         # if self.settings.get("feature_aur"):
         #    logging.debug(_("Configuring AUR..."))
 
-        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw']
+        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw''tlp''tlp-sleep']
 
         if self.settings.get("feature_bluetooth"):
             services.append('bluetooth')
@@ -1068,43 +1068,47 @@ class InstallationProcess(multiprocessing.Process):
         """ Configures gdm desktop manager, including autologin. """
         txt = _("Configuring GDM desktop manager...")
         self.queue_event('info', txt)
-	cmd = ["rm", "/usr/share/applications/bssh.desktop"]
-	cmd = ["rm", "/usr/share/applications/bvnc.desktop"]
-	cmd = ["rm", "/usr/share/applications/avahi-discover.desktop"]
-	cmd = ["rm", "/usr/share/applications/qv4l2.desktop"]
-	cmd = ["rm", "/usr/share/applications/polkit-gnome-authentication-agent-1.desktop"]
-	cmd = ["rm", "/usr/share/applications/tracker-needle.desktop"]
-	cmd = ["rm", "/usr/share/applications/zenmap.desktop"]
-	cmd = ["rm", "/usr/share/applications/zenmap-root.desktop"]
-	cmd = ["rm", "/usr/share/applications/gksu.desktop"]
-	cmd = ["rm", "/usr/share/applications/gucharmap.desktop"]
-	cmd = ["rm", "/usr/share/applications/cups.desktop"]
-	cmd = ["rm", "/usr/share/applications/uxterm.desktop"]
-	cmd = ["rm", "/usr/share/applications/epiphany.desktop"]
-	cmd = ["rm", "/usr/share/applications/designer-qt4.desktop"]
-	cmd = ["rm", "/usr/share/applications/linguist-qt4.desktop"]
-	cmd = ["rm", "/usr/share/applications/assistant-qt4.desktop"]
-	cmd = ["rm", "/usr/share/applications/qdbusviewer-qt4.desktop"]
-	cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon.desktop"]
-	cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon-notifier-config.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@'", "/usr/share/applications/org.gnome.Books.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=builder@Icon=textwrangler@'", "/usr/share/applications/org.gnome.Builder.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=gnome-characters@Icon=accessories-character-map@'", "/usr/share/applications/org.gnome.Characters.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=x-office-address-book@Icon=evolution-addressbook@'", "/usr/share/applications/org.gnome.Contacts.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=grsync.png@Icon=luckybackup@'", "/usr/share/applications/grsync.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=xterm-color_48x48@Icon=xorg@'", "/usr/share/applications/xterm.desktop"]
-	cmd = ["sed", "-i", "'s@Icon=tracker@Icon=preferences-system-search@'", "/usr/share/applications/tracker-preferences.desktop"]
-	cmd = ["sed", "-i.bak", "'s/Arch Linux/Apricity OS/g'", "/usr/lib/os-release"]
-	cmd = ["sed", "-i.bak", "'s/www.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
-	cmd = ["sed", "-i.bak", "'s/bbs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
-	cmd = ["sed", "-i.bak", "'s/bugs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
-	cmd = ["cp", "-f", "/usr/lib/os-release", "/etc/os-release"]
-	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux.png", "/usr/share/playonlinux/etc"]
-	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux15.png", "/usr/share/playonlinux/etc"]
-	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux16.png", "/usr/share/playonlinux/etc"]
-	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux22.png", "/usr/share/playonlinux/etc"]
-	cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux32.png", "/usr/share/playonlinux/etc"]
-	cmd = ["systemctl", "mask", "systemd-rfkill@.service"]
+        cmd = ["rm", "/usr/share/applications/bssh.desktop"]
+        cmd = ["rm", "/usr/share/applications/bvnc.desktop"]
+        cmd = ["rm", "/usr/share/applications/avahi-discover.desktop"]
+        cmd = ["rm", "/usr/share/applications/qv4l2.desktop"]
+        cmd = ["rm", "/usr/share/applications/polkit-gnome-authentication-agent-1.desktop"]
+        cmd = ["rm", "/usr/share/applications/tracker-needle.desktop"]
+        cmd = ["rm", "/usr/share/applications/zenmap.desktop"]
+        cmd = ["rm", "/usr/share/applications/zenmap-root.desktop"]
+        cmd = ["rm", "/usr/share/applications/gksu.desktop"]
+        cmd = ["rm", "/usr/share/applications/gucharmap.desktop"]
+        cmd = ["rm", "/usr/share/applications/cups.desktop"]
+        cmd = ["rm", "/usr/share/applications/uxterm.desktop"]
+        cmd = ["rm", "/usr/share/applications/epiphany.desktop"]
+        cmd = ["rm", "/usr/share/applications/designer-qt4.desktop"]
+        cmd = ["rm", "/usr/share/applications/linguist-qt4.desktop"]
+        cmd = ["rm", "/usr/share/applications/assistant-qt4.desktop"]
+        cmd = ["rm", "/usr/share/applications/qdbusviewer-qt4.desktop"]
+        cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon.desktop"]
+        cmd = ["sed", "-i", "'s@/usr/share/argon/argon.png@gnome-app-install@'", "/usr/share/applications/argon-notifier-config.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@'", "/usr/share/applications/org.gnome.Books.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=builder@Icon=textwrangler@'", "/usr/share/applications/org.gnome.Builder.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=gnome-characters@Icon=accessories-character-map@'", "/usr/share/applications/org.gnome.Characters.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=x-office-address-book@Icon=evolution-addressbook@'", "/usr/share/applications/org.gnome.Contacts.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=grsync.png@Icon=luckybackup@'", "/usr/share/applications/grsync.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=xterm-color_48x48@Icon=xorg@'", "/usr/share/applications/xterm.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=tracker@Icon=preferences-system-search@'", "/usr/share/applications/tracker-preferences.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=sbackup-restore@Icon=grsync-restore@'", "/usr/share/applications/sbackup-restore.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=sbackup-conf@Icon=grsync@'", "/usr/share/applications/sbackup-config.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=sbackup-restore@Icon=grsync-restore@'", "/usr/share/applications/sbackup-restore.desktop"]
+        cmd = ["sed", "-i", "'s@Icon=sbackup-conf@Icon=grsync@'", "/usr/share/applications/sbackup-config-su.desktop"]
+        cmd = ["sed", "-i.bak", "'s/Arch Linux/Apricity OS/g'", "/usr/lib/os-release"]
+        cmd = ["sed", "-i.bak", "'s/www.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+        cmd = ["sed", "-i.bak", "'s/bbs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+        cmd = ["sed", "-i.bak", "'s/bugs.archlinux.org/www.apricityos.com/g'", "/usr/lib/os-release"]
+        cmd = ["cp", "-f", "/usr/lib/os-release", "/etc/os-release"]
+        cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux.png", "/usr/share/playonlinux/etc"]
+        cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux15.png", "/usr/share/playonlinux/etc"]
+        cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux16.png", "/usr/share/playonlinux/etc"]
+        cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux22.png", "/usr/share/playonlinux/etc"]
+        cmd = ["cp", "-f", "/etc/apricity-assets/playonlinux32.png", "/usr/share/playonlinux/etc"]
+        cmd = ["systemctl", "mask", "systemd-rfkill@.service"]
         if self.desktop in desktops.SESSIONS:
             session = desktops.SESSIONS[self.desktop]
         else:
