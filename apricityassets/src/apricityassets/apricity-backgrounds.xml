@@ -408,13 +408,6 @@
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Stream</name>
-		<filename>/usr/share/backgrounds/gnome/stream.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-	<wallpaper deleted="false">
 		<name>Stripes</name>
 		<filename>/usr/share/backgrounds/gnome/stripes.jpg</filename>
 		<options>zoom</options>
