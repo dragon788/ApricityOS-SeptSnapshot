@@ -932,6 +932,7 @@ class InstallationProcess(multiprocessing.Process):
     @staticmethod
     def enable_services(services):
         """ Enables all services that are in the list 'services' """
+        chroot_run(["systemctl", "mask", "systemd-rfkill@.service"])
         for name in services:
             path = os.path.join(DEST_DIR, "usr/lib/systemd/system/{0}.service".format(name))
             if os.path.exists(path):
@@ -1068,9 +1069,6 @@ class InstallationProcess(multiprocessing.Process):
         """ Configures gdm desktop manager, including autologin. """
         txt = _("Configuring GDM desktop manager...")
         self.queue_event('info', txt)
-        cmd = ["systemctl", "mask", "systemd-rfkill@.service"]
-        cmd = ["mkinitcpio", "-p", "linux"]
-        cmd = ["plymouth-set-default-theme", "-R", "apricity"]
         if self.desktop in desktops.SESSIONS:
             session = desktops.SESSIONS[self.desktop]
         else:

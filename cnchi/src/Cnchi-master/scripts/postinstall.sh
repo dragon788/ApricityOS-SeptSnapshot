@@ -129,10 +129,6 @@ postinstall()
     ## Ensure user permissions are set in /home
     chroot ${DESTDIR} chown -R ${USER_NAME}:users /home/${USER_NAME}
 
-    # Start vbox client services if we are installed in vbox
-    if [[ $IS_VBOX ]] || [[ $IS_VBOX = 0 ]] || [[ $IS_VBOX = "True" ]]; then
-        sed -i 's|echo "X|/usr/bin/VBoxClient-all \&\necho "X|g' ${DESTDIR}/etc/lightdm/Xsession
-    fi
     # Set gsettings input-source
     if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" /usr/share/cnchi/scripts/set-settings
@@ -146,25 +142,13 @@ postinstall()
 	rm ${DESTDIR}/usr/share/applications/qv4l2.desktop
 	rm ${DESTDIR}/usr/share/applications/polkit-gnome-authentication-agent-1.desktop
 	rm ${DESTDIR}/usr/share/applications/tracker-needle.desktop
-	rm ${DESTDIR}/usr/share/applications/zenmap.desktop
-	rm ${DESTDIR}/usr/share/applications/zenmap-root.desktop
 	rm ${DESTDIR}/usr/share/applications/gksu.desktop
 	rm ${DESTDIR}/usr/share/applications/gucharmap.desktop
 	rm ${DESTDIR}/usr/share/applications/cups.desktop
 	rm ${DESTDIR}/usr/share/applications/uxterm.desktop
-	rm ${DESTDIR}/usr/share/applications/epiphany.desktop
-	rm ${DESTDIR}/usr/share/applications/empathy.desktop
-	rm ${DESTDIR}/usr/share/applications/designer-qt4.desktop
-	rm ${DESTDIR}/usr/share/applications/linguist-qt4.desktop
-	rm ${DESTDIR}/usr/share/applications/assistant-qt4.desktop
-	rm ${DESTDIR}/usr/share/applications/qdbusviewer-qt4.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon-notifier-config.desktop
-	sed -i 's@Icon=gnome-books@Icon=unity-webapps-amazoncloudreader@' ${DESTDIR}/usr/share/applications/org.gnome.Books.desktop
-	sed -i 's@Icon=builder@Icon=textwrangler@' ${DESTDIR}/usr/share/applications/org.gnome.Builder.desktop
-	sed -i 's@Icon=gnome-characters@Icon=accessories-character-map@' ${DESTDIR}/usr/share/applications/org.gnome.Characters.desktop
 	sed -i 's@Icon=x-office-address-book@Icon=evolution-addressbook@' ${DESTDIR}/usr/share/applications/org.gnome.Contacts.desktop
-	sed -i 's@Icon=grsync.png@Icon=luckybackup@' ${DESTDIR}/usr/share/applications/grsync.desktop
 	sed -i 's@Icon=xterm-color_48x48@Icon=xorg@' ${DESTDIR}/usr/share/applications/xterm.desktop
 	sed -i 's@Icon=tracker@Icon=preferences-system-search@' ${DESTDIR}/usr/share/applications/tracker-preferences.desktop
 	sed -i 's@Icon=sbackup-restore@Icon=grsync-restore@' ${DESTDIR}/usr/share/applications/sbackup-restore.desktop
