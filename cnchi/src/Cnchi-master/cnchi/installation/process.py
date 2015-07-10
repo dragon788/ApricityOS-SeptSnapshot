@@ -1032,10 +1032,10 @@ class InstallationProcess(multiprocessing.Process):
         # if self.settings.get("feature_aur"):
         #    logging.debug(_("Configuring AUR..."))
 
-        services = ['bluetooth'']
+        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw']
 
         if self.settings.get("feature_bluetooth"):
-            services.append('bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw')
+            services.append('bluetooth')
 
         if self.settings.get("feature_cups"):
             services.append('org.cups.cupsd')
