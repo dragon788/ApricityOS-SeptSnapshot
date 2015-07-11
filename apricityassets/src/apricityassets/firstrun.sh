@@ -66,7 +66,7 @@ tracker-control -r
 gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/flow.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/gnome/aurora.jpg
 rm ~/.local/share/applications/chrome-app-list.desktop
-mv -f /etc/apricity-assets/google-chrome-beta ~/.config/
+cp -rf /etc/apricity-assets/google-chrome-beta ~/.config/
 #sudo rm -r /usr/lib/evolution-data-server
 #killall evolution-addressbook-factory
 #killall evolution-addressbook-factory-subprocess
