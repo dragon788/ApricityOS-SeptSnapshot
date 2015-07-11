@@ -20,7 +20,6 @@ ice-ssb
 ufw
 gufw
 broadcom-wl-dkms
-bleachbit
 
 #Codecs
 gst-libav
