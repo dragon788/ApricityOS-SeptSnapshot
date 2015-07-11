@@ -15,7 +15,8 @@
 - Online applications sit right in the dock with all other applications because of `Ice`, a tool for site-specific browsing
 - Informative `liquidprompt` terminal
 - Great applications including `LibreOffice`, `Totem`, `Gnome-Photos`, `Gnome Music`, `Gnome Calendar`, `Btsync`, `Grsync`, `PlayOnLinux`, and `Steam`
-- Many Windows programs run on Apricity through the use of `WINE` and `PlayOnLinux`
+- Many Windows programs (and games!) run on Apricity through the use of `WINE` and `PlayOnLinux`
+- The windows version of `Steam` can also be installed, although the linux version is included out of the box
 - HiDPI compatible
 - Great Chrome extensions that decrease memory usage, let you know about your privacy, and better sync what you're doing on your computer with what's on your phone
 
