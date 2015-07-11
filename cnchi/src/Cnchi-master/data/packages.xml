@@ -7,7 +7,8 @@
             <packages>
 		<pkgname>alsa-utils</pkgname>
 		<pkgname>apricityassets</pkgname>
-		<pkgname>argon</pkgname>
+		<pkgname>pamac-aur</pkgname>
+		<pkgname>yaourt-git</pkgname>
 		<pkgname>b43-fwcutter</pkgname>
 		<pkgname>baobab</pkgname>
 		<pkgname>base-devel</pkgname>
