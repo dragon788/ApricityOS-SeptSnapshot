@@ -133,13 +133,15 @@ postinstall()
     cp -f /etc/default/keyboard ${DESTDIR}/etc/default/keyboard
     # Set gsettings input-source
     if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
-        sed -i "s/('xkb', 'us')/('xkb', '${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'), ('xkb', 'us')/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
         sed -i "s/us/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/variant/${KEYBOARD_VARIANT}/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/us/${KEYBOARD_LAYOUT}/" ${DESTDIR}/etc/default/keyboard
 
-    elif [[ "${KEYBOARD_LAYOUT}" != 'us' ]]; then
-        sed -i "s/('xkb', 'us')/('xkb', '${KEYBOARD_LAYOUT}'), ('xkb', 'us')/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+    else
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
+        sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
         sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/variant//" ${DESTDIR}/etc/default/keyboard

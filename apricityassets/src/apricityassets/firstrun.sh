@@ -47,7 +47,7 @@ touch ~/.firstrun.ran
 #sudo cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
 #sudo cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
 #########################################################################################################
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
+gsettings set org.gnome.desktop.input-sources sources "[('xkb','us')]"
 gsettings set org.gnome.settings-daemon.peripherals.touchpad tap-to-click true
 gsettings set org.gnome.desktop.interface gtk-theme "Arctic Apricity"
 gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"
@@ -58,7 +58,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize
 gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <':minimize,maximize,close'>}"
 gsettings set org.gnome.shell.overrides dynamic-workspaces false
 gsettings set org.gnome.desktop.background show-desktop-icons true
-gsettings set org.gnome.shell favorite-apps "['google-chrome-beta.desktop', 'ice.desktop', 'org.gnome.Nautilus.desktop', 'geary.desktop', 'empathy.desktop', 'gnome-music.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Totem.desktop', 'libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-calc.desktop', 'org.gnome.gedit.desktop', 'gnome-terminal.desktop', 'gnome-tweak-tool.desktop', 'gnome-control-center.desktop', 'pamac-manager.desktop']"
+gsettings set org.gnome.shell favorite-apps "['google-chrome-beta.desktop', 'ice.desktop', 'org.gnome.Nautilus.desktop', 'geary.desktop', 'empathy.desktop', 'gnome-music.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Totem.desktop', 'libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-calc.desktop', 'org.gnome.gedit.desktop', 'gnome-terminal.desktop', 'gnome-tweak-tool.desktop', 'gnome-control-center.desktop', 'argon.desktop', 'cnchi.desktop']"
 gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories "[]"
 gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
