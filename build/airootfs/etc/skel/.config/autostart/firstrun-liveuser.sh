@@ -7,8 +7,6 @@ else
 cp ~/.liquidprompt/liquidpromptrc-dist ~/.config/liquidpromptrc
 
 echo 'source ~/.liquidprompt/liquidprompt' >> ~/.bashrc
-
-sleep .15
 gsettings set org.gnome.settings-daemon.peripherals.touchpad tap-to-click true
 gsettings set org.gnome.desktop.interface gtk-theme "Arctic Apricity"
 gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"

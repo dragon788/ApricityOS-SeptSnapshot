@@ -98,6 +98,7 @@
 		<pkgname>mutter</pkgname>
 		<pkgname>nautilus</pkgname>
 		<pkgname>net-tools</pkgname>
+		<pkgname>ntp</pkgname>
 		<pkgname>network-manager-applet</pkgname>
 		<pkgname>networkmanager-openvpn</pkgname>
 		<pkgname>networkmanager-pptp</pkgname>
