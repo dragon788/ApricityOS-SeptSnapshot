@@ -16,6 +16,8 @@
 - Informative `liquidprompt` terminal
 - Great applications including `LibreOffice`, `Totem`, `Gnome-Photos`, `Gnome Music`, `Gnome Calendar`, `Btsync`, `Grsync`, `PlayOnLinux`, and `Steam`
 - Many Windows programs run on Apricity through the use of `WINE` and `PlayOnLinux`
+- HiDPI compatible
+- Great Chrome extensions that decrease memory usage, let you know about your privacy, and better sync what you're doing on your computer with what's on your phone
 
 ![Wallpapers](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2018-59-02.png?raw=true)
 - Beautiful, clean wallpapers
