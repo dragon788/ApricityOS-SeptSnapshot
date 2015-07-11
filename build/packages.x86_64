@@ -5,7 +5,8 @@ refind-efi
 
 #Desktop
 google-chrome-beta
-argon
+pamac-aur
+yaourt-git
 plymouth
 gtk-engine-murrine
 wine
