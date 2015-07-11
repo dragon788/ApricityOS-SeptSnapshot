@@ -495,7 +495,8 @@ class InstallationProcess(multiprocessing.Process):
         try:
             cmd = ["pacman-key", "--init", "--gpgdir", dest_path]
             subprocess.check_call(cmd)
-            cmd = ["pacman-key", "--populate", "--gpgdir", dest_path, "archlinux", "antergos"]
+            cmd = ["pacman-key", "--populate", "--gpgdir", dest_path, "archlinux"]
+            cmd = ["pacman-key", "--populate", "archlinux"]
             subprocess.check_call(cmd)
         except subprocess.CalledProcessError as process_error:
             logging.warning(_("Error regenerating gnupg files with pacman-key"))
@@ -933,6 +934,7 @@ class InstallationProcess(multiprocessing.Process):
     def enable_services(services):
         """ Enables all services that are in the list 'services' """
         chroot_run(["systemctl", "mask", "systemd-rfkill@.service"])
+        chroot_run(["pacman-key", "--populate", "archlinux"])
         for name in services:
             path = os.path.join(DEST_DIR, "usr/lib/systemd/system/{0}.service".format(name))
             if os.path.exists(path):
