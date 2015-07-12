@@ -13,7 +13,7 @@ gsettings set org.gnome.desktop.wm.preferences theme "Arctic Apricity"
 gsettings set org.gnome.shell.extensions.user-theme name "Arctic Apricity"
 gsettings set org.gnome.desktop.interface icon-theme "Apricity Icons"
 
-gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'dash-to-dock@micxgx.gmail.com', 'shellshape@gfxmonk.net', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com', 'Move_Clock@rmy.pobox.com']"
+gsettings set org.gnome.shell enabled-extensions "['user-theme@gnome-shell-extensions.gcampax.github.com', 'alwayszoomworkspaces@jamie.thenicols.net', 'mediaplayer@patapon.info', 'caffeine@patapon.info', 'scroll-workspaces@gfxmonk.net', 'dash-to-dock@micxgx.gmail.com', 'suspend-button@laserb', 'topIcons@adel.gadllah@gmail.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'remove-dropdown-arrows@mpdeimos.com', 'Move_Clock@rmy.pobox.com']"
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/DecorationLayout': <':minimize,maximize,close'>}"
@@ -77,6 +77,7 @@ sudo rm /usr/share/applications/assistant-qt4.desktop
 sudo rm /usr/share/applications/qdbusviewer-qt4.desktop
 sudo rm /usr/share/applications/sbackup-restore-su.desktop
 sudo rm /usr/share/applications/sbackup-config-su.desktop
+sudo rm /usr/share/applications/yelp.desktop
 rm ~/.local/share/applications/chrome-app-list.desktop
 
 gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories "[]"

@@ -161,6 +161,9 @@ postinstall()
 	cp -f ${DESTDIR}/usr/share/gnome-background-properties/apricity-backgrounds.xml ${DESTDIR}/usr/share/gnome-background-properties/gnome-backgrounds.xml
 	cp -f ${DESTDIR}/etc/apricity-assets/10-evdev.conf ${DESTDIR}/etc/X11/xorg.conf.d/
 
+	rm  -r ${DESTDIR}/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
+	cp -rf /etc/apricity-assets/dash-to-dock@micxgx.gmail.com ${DESTDIR}/usr/share/gnome-shell/extensions/
+
 	echo $KEYBOARD_COMMAND >> /etc/gdm/Init/Default
 
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
