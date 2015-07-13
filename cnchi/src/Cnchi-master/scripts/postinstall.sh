@@ -93,7 +93,6 @@ postinstall()
     KEYBOARD_LAYOUT=$4
     KEYBOARD_VARIANT=$5
     IS_VBOX=$6
-    KEYBOARD_COMMAND="setxkbmap $KEYBOARD_LAYOUT"
 
     export _BROWSER=google-chrome-beta
 
@@ -138,6 +137,7 @@ postinstall()
         sed -i "s/us/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/variant/${KEYBOARD_VARIANT}/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/us/${KEYBOARD_LAYOUT}/" ${DESTDIR}/etc/default/keyboard
+	echo "setxkbmap ${KEYBOARD_LAYOUT} -variant ${KEYBOARD_VARIANT}" >> ${DESTDIR}/etc/gdm/Init/Default
 
     else
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
@@ -145,6 +145,7 @@ postinstall()
         sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/variant//" ${DESTDIR}/etc/default/keyboard
+	echo "setxkbmap ${KEYBOARD_LAYOUT}" >> ${DESTDIR}/etc/gdm/Init/Default
     fi
     # Set gsettings
     rm ${DESTDIR}/usr/share/applications/bssh.desktop
@@ -165,8 +166,6 @@ postinstall()
 
 	rm  -r ${DESTDIR}/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
 	cp -rf /etc/apricity-assets/dash-to-dock@micxgx.gmail.com ${DESTDIR}/usr/share/gnome-shell/extensions/
-
-	echo $KEYBOARD_COMMAND >> /etc/gdm/Init/Default
 
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon-notifier-config.desktop
