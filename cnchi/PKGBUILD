@@ -1,6 +1,6 @@
 _pkgname=Cnchi
 pkgname=cnchi
-pkgver=0.8.169
+pkgver=0.8.171
 pkgrel=1
 pkgdesc='Apricity Installer'
 arch=(any)

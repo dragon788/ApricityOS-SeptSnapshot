@@ -134,17 +134,20 @@ postinstall()
     if [[ "${KEYBOARD_VARIANT}" != '' ]]; then
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
+        sed -i "s/us/'${KEYBOARD_LAYOUT}+${KEYBOARD_VARIANT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/variant/${KEYBOARD_VARIANT}/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/us/${KEYBOARD_LAYOUT}/" ${DESTDIR}/etc/default/keyboard
+	echo "setxkbmap ${KEYBOARD_LAYOUT} -variant ${KEYBOARD_VARIANT}" >> ${DESTDIR}/etc/gdm/Init/Default
 
     else
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/skel/.config/autostart/firstrun.sh
         sed -i "s/'us'/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/home/${USER_NAME}/.config/autostart/firstrun.sh
+        sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/apricity-assets/10-evdev.conf
         sed -i "s/us/'${KEYBOARD_LAYOUT}'/" ${DESTDIR}/etc/default/keyboard
         sed -i "s/variant//" ${DESTDIR}/etc/default/keyboard
+	echo "setxkbmap ${KEYBOARD_LAYOUT}" >> ${DESTDIR}/etc/gdm/Init/Default
     fi
 
-    cp -f ${DESTDIR}/etc/default/keyboard ${DESTDIR}/etc/X11/xorg.conf.d/10-evdev.conf
     # Set gsettings
     rm ${DESTDIR}/usr/share/applications/bssh.desktop
 	rm ${DESTDIR}/usr/share/applications/bvnc.desktop
