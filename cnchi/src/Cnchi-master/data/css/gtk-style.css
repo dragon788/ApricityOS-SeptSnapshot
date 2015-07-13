@@ -57,9 +57,9 @@ GtkWindow {
 }
 
 GtkProgressBar.progressbar {
-    color: #5294e2;
-    border-color: shade(#5294e2, 0.9);
-    background-image: linear-gradient(to bottom, #5294e2, #5294e2);
+    color: #2196F3;
+    border-color: shade(#2196F3, 0.9);
+    background-image: linear-gradient(to bottom, #2196F3, #2196F3);
 }
 
 #fwd_btn, #bk_btn {
@@ -78,7 +78,7 @@ GtkProgressBar.progressbar {
 }
 
 #fwd_btn:hover, #bk_btn:hover {
-    color: #5294e2;
+    color: #2196F3;
 }
 
 #fwd_btn:active, #bk_btn:active {
@@ -92,7 +92,7 @@ GtkProgressBar.progressbar {
 }
 
 #fwd_btn_install_now {
-    background-color: #5294e2;
+    background-color: #2196F3;
     color: #ffffff;
     border-radius: 0px 2px 2px 0px;
     padding-left: 2px;
@@ -104,7 +104,7 @@ GtkProgressBar.progressbar {
 }
 
 #fwd_btn_save {
-    background-color: #5294e2;
+    background-color: #2196F3;
     color: #ffffff;
     border-radius: 0px 2px 2px 0px;
     padding-left: 4px;
@@ -149,24 +149,24 @@ GtkSeparatorToolItem {
 }
 
 GtkListBoxRow:active, .list-row:active, .list-row:selected {
-    background-color: #5294E2;
+    background-color: #2196F3;
 }
 
 #tryit_btn, #graph_btn {
     padding: 12px 20px;
     border-radius: 6px;
-    border-color: #5294E2;
+    border-color: #2196F3;
     border-width: 2px;
     background: rgba(255, 255, 255, 1);
     font-size: 15px;
     font-weight: 500;
-    color: #5294E2;
+    color: #2196F3;
     transition: all 0.1s ease-in;
 }
 
 #tryit_btn:hover, #graph_btn:hover {
     padding: 12px 20px;
-    background: #5294E2;
+    background: #2196F3;
     color: #fff;
     border-radius: 6px;
     border-width: 0px;
@@ -180,13 +180,13 @@ GtkListBoxRow:active, .list-row:active, .list-row:selected {
 
 GtkSwitch.trough:active {
     border-color: transparent;
-    background-color: #5294e2;
+    background-color: #2196F3;
     background-image: none;
 }
 
 GtkTreeView row:selected {
-    background-color: #5294e2;
-    border-color: shade(#5294e2, 0.9);
+    background-color: #2196F3;
+    border-color: shade(#2196F3, 0.9);
 }
 
 #auto_radio_btn GtkLabel, #advanced_radio_btn GtkLabel {
