@@ -80,6 +80,8 @@ sudo rm /usr/share/applications/sbackup-config-su.desktop
 sudo rm /usr/share/applications/yelp.desktop
 rm ~/.local/share/applications/chrome-app-list.desktop
 
+sudo rm /usr/share/gnome-background-properties/gnome-default.xml
+
 gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories "[]"
 gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
