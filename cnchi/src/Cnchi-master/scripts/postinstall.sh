@@ -162,6 +162,9 @@ postinstall()
 	rm ${DESTDIR}/usr/share/applications/sbackup-restore-su.desktop
 	rm ${DESTDIR}/usr/share/applications/sbackup-config-su.desktop
 
+	rm ${DESTDIR}/usr/share/gnome-background-properties/adwaita.xml
+	rm ${DESTDIR}/usr/share/gnome-background-properties/gnome-default.xml
+
 	cp -f ${DESTDIR}/usr/share/gnome-background-properties/apricity-backgrounds.xml ${DESTDIR}/usr/share/gnome-background-properties/gnome-backgrounds.xml
 
 	rm  -r ${DESTDIR}/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
