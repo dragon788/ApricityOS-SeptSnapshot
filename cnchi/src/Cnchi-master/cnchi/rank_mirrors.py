@@ -3,7 +3,7 @@
 #
 #  rank_mirrors.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -66,7 +66,7 @@ class AutoRankmirrorsThread(threading.Thread):
             logging.warning(_("Can't find update mirrors script"))
             return
 
-        # Uncomment Antergos mirrors and comment out auto selection so rankmirrors can find the best mirror.
+        # Uncomment Apricity mirrors and comment out auto selection so rankmirrors can find the best mirror.
 
         autoselect = "http://mirrors.antergos.com/$repo/$arch"
 
@@ -86,7 +86,7 @@ class AutoRankmirrorsThread(threading.Thread):
                     # Comment out auto selection
                     lines[i] = "#" + lines[i]
                 elif lines[i].startswith("#Server") and autoselect not in lines[i]:
-                    # Uncomment Antergos mirror
+                    # Uncomment Apricity mirror
                     lines[i] = lines[i].lstrip("#")
 
             with misc.raised_privileges():

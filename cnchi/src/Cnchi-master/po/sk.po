@@ -1,6 +1,6 @@
 # Cnchi - Apricity OS Installer
 # Copyright (C) 2013-2015 Apricity OS
-# Apricity OS Developers <devATantergos.com>
+# Apricity OS Developers <devATapricity.com>
 # 
 # Translators:
 # Dušan Kazik <prescott66@gmail.com>, 2014-2015
@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-20 06:10+0000\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
-"Language-Team: Slovak (http://www.transifex.com/projects/p/antergos/language/sk/)\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/apricity/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1835,8 +1835,8 @@ msgid ""
 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
 "setups. Please proceed with caution as data loss is possible!\n"
 "\n"
-"If you find any bugs, please report them at http://bugs.antergos.com"
-msgstr "Cnchi je predčasne uvoľnený softvér, ktorý je v aktívnom vývoji.\nZatiaľ nie celkom správne pracuje s RAIDom, btrfs podzväzkami, alebo inými\nzostavami. Prosím, postupujte opatrne, pretože strata údajov je možná!\n\nAk nájdete akékoľvek chyby, prosím, nahláste ich na http://bugs.antergos.com"
+"If you find any bugs, please report them at http://bugs.apricity.com"
+msgstr "Cnchi je predčasne uvoľnený softvér, ktorý je v aktívnom vývoji.\nZatiaľ nie celkom správne pracuje s RAIDom, btrfs podzväzkami, alebo inými\nzostavami. Prosím, postupujte opatrne, pretože strata údajov je možná!\n\nAk nájdete akékoľvek chyby, prosím, nahláste ich na http://bugs.apricity.com"
 
 #: cnchi/language.py:84
 msgid "Choose your language"

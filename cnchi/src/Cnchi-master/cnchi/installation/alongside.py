@@ -3,7 +3,7 @@
 #
 #  alongside.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -46,7 +46,7 @@ import bootinfo
 
 from gtkbasebox import GtkBaseBox
 
-# Leave at least 6.5GB for Antergos when shrinking
+# Leave at least 6.5GB for Apricity when shrinking
 MIN_ROOT_SIZE = 6500
 
 
@@ -144,7 +144,7 @@ class InstallationAlongside(GtkBaseBox):
         (min_size, part_size) = get_partition_size_info(device_to_shrink)
         max_size = part_size - (MIN_ROOT_SIZE * 1000.0)
         if max_size < 0:
-            # Full Antergos does not fit but maybe base fits... ask user.
+            # Full Apricity does not fit but maybe base fits... ask user.
             txt = _("Cnchi recommends at least 6.5GB free to install Apricity OS.") + "\n\n"
             txt += _("New partition {0} resulting of shrinking {1} will not have enough free space for a full installation.").format(new_device, device_to_shrink) + "\n\n"
             txt += _("You can still install Apricity OS, but be carefull on which DE you choose as it might not fit in.") + "\n\n"
@@ -178,10 +178,10 @@ class InstallationAlongside(GtkBaseBox):
         """ Gets an icon for the installed distribution """
         os_name = os_name.lower()
 
-        # No numix icon for Antergos, use our own.
+        # No numix icon for Apricity, use our own.
         if "apricity" in os_name:
             icons_path = os.path.join(self.settings.get('data'), "icons/48x48")
-            icon_file = os.path.join(icons_path, "distributor-logo-antergos.png")
+            icon_file = os.path.join(icons_path, "distributor-logo-apricity.png")
             return icon_file
 
         icon_names = [

@@ -3,7 +3,7 @@
 #
 #  check.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -83,11 +83,11 @@ class Check(GtkBaseBox):
         self.header.set_subtitle(txt)
 
         self.prepare_enough_space = self.ui.get_object("prepare_enough_space")
-        txt = _("has at least {0}GB available storage space. (*)").format(MIN_ROOT_SIZE / 1000000000)
+        txt = _("has at least {0}GB available storage space.").format(MIN_ROOT_SIZE / 1000000000)
         self.prepare_enough_space.props.label = txt
 
-        txt = _("This highly depends on which desktop environment you choose, so you might need more space.")
-        txt = "(*) <i>{0}</i>".format(txt)
+        txt = _("")
+        txt = "<i>{0}</i>".format(txt)
         self.label_space.set_markup(txt)
 
         self.prepare_power_source = self.ui.get_object("prepare_power_source")

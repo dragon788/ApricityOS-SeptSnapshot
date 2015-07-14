@@ -3,7 +3,7 @@
 #
 #  ask.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -267,12 +267,12 @@ class InstallationAsk(GtkBaseBox):
 
         # Alongside Install (For now, only works with Windows)
         # if len(oses_str) > 0:
-        #     txt = _("Install Antergos alongside {0}").format(oses_str)
+        #     txt = _("Install Apricity alongside {0}").format(oses_str)
         #     radio = self.ui.get_object("alongside_radiobutton")
         #     radio.set_label(txt)
         #
         #     label = self.ui.get_object("alongside_description")
-        #     txt = _("Installs Antergos without removing {0}").format(oses_str)
+        #     txt = _("Installs Apricity without removing {0}").format(oses_str)
         #     txt = description_style.format(txt)
         #     label.set_markup(txt)
         #     label.set_line_wrap(True)

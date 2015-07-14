@@ -4,7 +4,7 @@
 #  keyboard_widget.py
 #
 #  Copyright 2013 Manjaro (QT version)
-#  Copyright © 2013-2015 Antergos (GTK version)
+#  Copyright © 2015 Apricity (GTK version)
 #
 #  This file is part of Cnchi.
 #

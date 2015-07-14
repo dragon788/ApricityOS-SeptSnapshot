@@ -3,7 +3,7 @@
 #
 #  partition_module.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -400,7 +400,7 @@ def split_partition(device_path, partition_path, new_size_in_mb):
     logging.debug("create_partition %s", my_geometry)
     create_partition(disk, 0, my_geometry)
 
-    # Create new partition (for Antergos)
+    # Create new partition (for Apricity)
     new_size_in_mb = old_size_in_mb - new_size_in_mb
     start_sector = new_end_sector + 1
     end_sector = old_end_sector

@@ -3,7 +3,7 @@
 #
 #  encfs.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -22,7 +22,7 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 
-""" Configures Antergos to encrypt user's home with encFS """
+""" Configures Apricity to encrypt user's home with encFS """
 
 import os
 import shutil

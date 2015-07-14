@@ -1,6 +1,6 @@
 # Cnchi - Apricity OS Installer
 # Copyright (C) 2013-2015 Apricity OS
-# Apricity OS Developers <devATantergos.com>
+# Apricity OS Developers <devATapricity.com>
 # 
 # Translators:
 # Alan Guerra Costa <alancosta.unit@hotmail.com>, 2014-2015
@@ -19,7 +19,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-08 17:27+0000\n"
 "Last-Translator: Alan Guerra Costa <alancosta.unit@hotmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/antergos/language/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/apricity/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1844,8 +1844,8 @@ msgid ""
 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
 "setups. Please proceed with caution as data loss is possible!\n"
 "\n"
-"If you find any bugs, please report them at http://bugs.antergos.com"
-msgstr "Cnchi é pré-liberado em versão beta e está em constante desenvolvimento\nele não lida ainda adequadamente com RAID, subvolumes btrfs, ou outras configurações\navançadas. Por favor proceda com cautela uma vez que perda de dados é possível\n\nSe você encontrar alguma falha, por favor informe-os em http://bugs.antergos.com"
+"If you find any bugs, please report them at http://bugs.apricity.com"
+msgstr "Cnchi é pré-liberado em versão beta e está em constante desenvolvimento\nele não lida ainda adequadamente com RAID, subvolumes btrfs, ou outras configurações\navançadas. Por favor proceda com cautela uma vez que perda de dados é possível\n\nSe você encontrar alguma falha, por favor informe-os em http://bugs.apricity.com"
 
 #: cnchi/language.py:84
 msgid "Choose your language"

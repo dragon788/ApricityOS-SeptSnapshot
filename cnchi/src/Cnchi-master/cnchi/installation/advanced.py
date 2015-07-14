@@ -3,7 +3,7 @@
 #
 #  advanced.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -1565,7 +1565,7 @@ class InstallationAdvanced(GtkBaseBox):
                 self.update_view()
 
                 if ptype == 'gpt' and not os.path.exists('/sys/firmware/efi'):
-                    # Show warning (see https://github.com/Antergos/Cnchi/issues/63)
+                    # Show warning (see https://github.com/Apricity/Cnchi/issues/63)
                     msg = _(
                         'GRUB requires a BIOS Boot Partition in BIOS systems to embed its core.img file due to lack of '
                         'post-MBR embed gap in GPT disks.\n\n'
@@ -1795,7 +1795,7 @@ class InstallationAdvanced(GtkBaseBox):
                     else:
                         fmt = 'No'
                     # Advanced method formats root by default
-                    # https://github.com/Antergos/Cnchi/issues/8
+                    # https://github.com/Apricity/Cnchi/issues/8
                     if mnt == "/":
                         fmt = 'Yes'
                     if is_new:
@@ -1897,7 +1897,7 @@ class InstallationAdvanced(GtkBaseBox):
                             fmt = 'No'
 
                         # Advanced method formats root by default
-                        # https://github.com/Antergos/Cnchi/issues/8
+                        # https://github.com/Apricity/Cnchi/issues/8
                         if mnt == "/":
                             fmt = 'Yes'
 

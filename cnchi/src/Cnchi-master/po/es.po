@@ -1,6 +1,6 @@
 # Cnchi - Apricity OS Installer
 # Copyright (C) 2013-2015 Apricity OS
-# Apricity OS Developers <devATantergos.com>
+# Apricity OS Developers <devATapricity.com>
 # 
 # Translators:
 # Alexandre Filgueira <faidoc@gmail.com>, 2013
@@ -8,7 +8,7 @@
 # Antonio de la Vega Jiménez <antonio.v.j95@gmail.com>, 2014
 # Antonio de la Vega Jiménez <antonio.v.j95@gmail.com>, 2014
 # sevengrawl <eduardclops.pkmn@gmail.com>, 2015
-# faidoc <alexfilgueira@antergos.com>, 2013
+# faidoc <alexfilgueira@apricity.com>, 2013
 # Alexandre Filgueira <faidoc@gmail.com>, 2013
 # Alexandre Filgueira <faidoc@gmail.com>, 2013
 # fraescaya10 <fraescaya10@gmail.com>, 2014
@@ -18,7 +18,7 @@
 # Jesús Delgado <talpiod@gmail.com>, 2015
 # jmmpoveda <jmmpoveda@yahoo.es>, 2014
 # juan <fedoryo@gmail.com>, 2015
-# Gustau Castells <karasu@antergos.com>, 2012
+# Gustau Castells <karasu@apricity.com>, 2012
 # Yarhoslav ME <yarhoslavme@gmail.com>, 2015
 msgid ""
 msgstr ""
@@ -26,7 +26,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-15 17:44+0000\n"
 "Last-Translator: Guillermo Schvartzman <guillermohs9@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/antergos/language/es/)\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/apricity/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1851,8 +1851,8 @@ msgid ""
 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
 "setups. Please proceed with caution as data loss is possible!\n"
 "\n"
-"If you find any bugs, please report them at http://bugs.antergos.com"
-msgstr "Cnchi es software beta pre-lanzamiento que se encuentra en desarrollo activo.\nTodavía no maneja correctamente RAID, subvolumenes btrfs, u otras configuraciones\navanzadas. ¡Por favor proceda con cuidado ya que la pérdida de datos es posible!\n\nSi encuentra cualquier error, por favor repórtelo en http://bugs.antergos.com"
+"If you find any bugs, please report them at http://bugs.apricity.com"
+msgstr "Cnchi es software beta pre-lanzamiento que se encuentra en desarrollo activo.\nTodavía no maneja correctamente RAID, subvolumenes btrfs, u otras configuraciones\navanzadas. ¡Por favor proceda con cuidado ya que la pérdida de datos es posible!\n\nSi encuentra cualquier error, por favor repórtelo en http://bugs.apricity.com"
 
 #: cnchi/language.py:84
 msgid "Choose your language"

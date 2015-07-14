@@ -3,7 +3,7 @@
 #
 #  cnchi.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -22,7 +22,7 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 
-""" Main Cnchi (Antergos Installer) module """
+""" Main Cnchi (Apricity OS Installer) module """
 
 # Useful vars for gettext (translations)
 APP_NAME = "cnchi"

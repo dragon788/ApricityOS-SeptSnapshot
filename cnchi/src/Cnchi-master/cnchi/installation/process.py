@@ -3,7 +3,7 @@
 #
 #  process.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -516,7 +516,7 @@ class InstallationProcess(multiprocessing.Process):
             self.queue_event('info', _("Getting package list..."))
 
             try:
-                url = 'http://install.antergos.com/packages-{0}.xml'.format(info.CNCHI_VERSION[:3])
+                url = 'http://install.apricity.com/packages-{0}.xml'.format(info.CNCHI_VERSION[:3])
                 logging.debug(_("Getting url {0}...").format(url))
                 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
                 packages_xml = urllib.request.urlopen(req, timeout=10)
@@ -1057,7 +1057,7 @@ class InstallationProcess(multiprocessing.Process):
             services.append('ufw')
 
         if self.settings.get("feature_lts"):
-            # FIXME: Antergos doesn't boot if linux lts is selected
+            # FIXME: Apricity doesn't boot if linux lts is selected
             # Is something wrong with the 10_apricity file ?
             chroot_run(["chmod", "a-x", "/etc/grub.d/10_apricity"])
             chroot_run(["chmod", "a+x", "/etc/grub.d/10_linux"])
@@ -1241,7 +1241,7 @@ class InstallationProcess(multiprocessing.Process):
         except FileExistsError:
             pass
 
-        # Add Antergos repo to /etc/pacman.conf
+        # Add Apricity repo to /etc/pacman.conf
         self.update_pacman_conf()
 
         logging.debug(_("Generated /etc/pacman.conf"))

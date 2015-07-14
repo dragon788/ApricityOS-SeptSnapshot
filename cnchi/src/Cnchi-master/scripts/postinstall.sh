@@ -4,7 +4,7 @@
 #
 #  postinstall.sh
 #
-#  Copyright © 2013,2014 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #

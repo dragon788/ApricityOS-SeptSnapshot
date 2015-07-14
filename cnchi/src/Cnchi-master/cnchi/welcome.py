@@ -3,7 +3,7 @@
 #
 #  welcome.py
 #
-#  Copyright © 2013-2015 Antergos
+#  Copyright © 2015 Apricity
 #
 #  This file is part of Cnchi.
 #
@@ -59,8 +59,8 @@ class Welcome(GtkBaseBox):
                        # 'cli': self.ui.get_object("cli_image"),
                        'graph': self.ui.get_object("graph_image")}
 
-        self.filenames = {'tryit': {'path': os.path.join(welcome_dir, "try-it.svg"), 'width': 165, 'height': 189},
-                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 243, 'height': 174}}
+        self.filenames = {'tryit': {'path': os.path.join(welcome_dir, "try-it.svg"), 'width': 199, 'height': 199},
+                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 207, 'height': 207}}
 
         for key in self.images:
             image = self.filenames[key]

@@ -1,6 +1,6 @@
 # Cnchi - Apricity OS Installer
 # Copyright (C) 2013-2015 Apricity OS
-# Apricity OS Developers <devATantergos.com>
+# Apricity OS Developers <devATapricity.com>
 # 
 # Translators:
 # freddy4212 <freddy4212@gmail.com>, 2013
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-07 04:55+0000\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/antergos/language/zh_TW/)\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/apricity/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1837,8 +1837,8 @@ msgid ""
 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
 "setups. Please proceed with caution as data loss is possible!\n"
 "\n"
-"If you find any bugs, please report them at http://bugs.antergos.com"
-msgstr "Cnchi 是仍在積極開發中測試版軟體。\n它仍無法處理 RAID ，btrfs 子卷，或是其他\n進階設定。請注意可能會有資料遺失的危險！\n\n如果您發現任何程式錯誤，請在 http://bugs.antergos.com 回報"
+"If you find any bugs, please report them at http://bugs.apricity.com"
+msgstr "Cnchi 是仍在積極開發中測試版軟體。\n它仍無法處理 RAID ，btrfs 子卷，或是其他\n進階設定。請注意可能會有資料遺失的危險！\n\n如果您發現任何程式錯誤，請在 http://bugs.apricity.com 回報"
 
 #: cnchi/language.py:84
 msgid "Choose your language"

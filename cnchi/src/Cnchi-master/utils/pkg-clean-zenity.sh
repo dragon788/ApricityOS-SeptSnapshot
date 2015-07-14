@@ -7,7 +7,7 @@
 #clean="pacman -Scc --noconfirm"
 #clean2="pacman -Syy --noconfirm"
 
-#install_cinnamon="pacman -S antergos-gnome-defaults-list cdrkit cinnamon cinnamon-session cinnamon-control-center cinnamon-desktop cinnamon-settings-daemon cinnamon-menus cinnamon-screensaver cinnamon-theme-nadia cjs empathy eog evince faenza-icon-theme file-roller gedit gnome-calculator gnome-disk-utility gnome-keyring gnome-screenshot gnome-system-monitor gnome-terminal gnome-themes-standard gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gst-vaapi gstreamer0.10-plugins gstreamer0.10-vaapi gvfs-mtp gvfs-smb hicolor-icon-theme libgnomeui muffin nemo network-manager-applet networkmanager-openvpn networkmanager-pptp telepathy totem transmission-gtk xdg-user-dirs-gtk xfburn xnoise zukitwo-themes lightdm lightdm-webkit-greeter lightdm-webkit-theme-antergos --noconfirm"
+#install_cinnamon="pacman -S Apricity-gnome-defaults-list cdrkit cinnamon cinnamon-session cinnamon-control-center cinnamon-desktop cinnamon-settings-daemon cinnamon-menus cinnamon-screensaver cinnamon-theme-nadia cjs empathy eog evince faenza-icon-theme file-roller gedit gnome-calculator gnome-disk-utility gnome-keyring gnome-screenshot gnome-system-monitor gnome-terminal gnome-themes-standard gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gst-vaapi gstreamer0.10-plugins gstreamer0.10-vaapi gvfs-mtp gvfs-smb hicolor-icon-theme libgnomeui muffin nemo network-manager-applet networkmanager-openvpn networkmanager-pptp telepathy totem transmission-gtk xdg-user-dirs-gtk xfburn xnoise zukitwo-themes lightdm lightdm-webkit-greeter lightdm-webkit-theme-Apricity --noconfirm"
 #install_kde="pacman -S kde-meta-kdebase kde-meta-kdenetwork kdeplasma-applets-plasma-nm apper cdrdao digikam dvd+rw-tools emovix grub2-editor k3b kde-gtk-config kde-meta-kdeartwork kde-telepathy-meta kdeadmin-kuser kdegraphics-gwenview kdegraphics-ksnapshot kdegraphics-okular kdegraphics-thumbnailers kdemultimedia-ffmpegthumbs kdemultimedia-kmix kdepim-kmail kdepim-kontact kdeplasma-addons-applets-lancelot kdeplasma-addons-applets-notes kdesdk-dolphin-plugins kdesdk-kate kdeutils-ark kdeutils-kgpg kdeutils-kwalletmanager kdeutils-sweeper kipi-plugins kwebkitpart kfaenza-icon-theme oxygen-gtk2 oxygen-gtk3 qt5-webkit transmission-qt ttf-bitstream-vera ttf-dejavu vlc webkitgtk xdg-user-dirs"
 
 #echo "Remove GNOME/Cinnamon, Clear PKG Cache, Install KDE..."
@@ -46,7 +46,7 @@ do_install() {
 	
 #	# Get zip file from github, unzip it and copy all setup files in their right places.
 #	cd  /tmp
-#    wget -q "https://github.com/Antergos/kde-setup/archive/master.zip"
+#    wget -q "https://github.com/Apricity/kde-setup/archive/master.zip"
 #    unzip -o -qq  /tmp/master.zip -d  /tmp
 #    cp -R  /tmp/kde-setup-master/etc  /
 #    cp -R  /tmp/kde-setup-master/usr  /
@@ -95,7 +95,7 @@ if [ "$KDE_SESSION" != "" ]; then
     KDE_INSTALLED="TRUE"
 fi
 
-ANS=$(zenity --title="Antergos - Desktops" --height=300 --list  --text "Choose your desired desktops" --checklist  --column "Installed" --column "Desktop" $GNOME_INSTALLED "Gnome" $CINNAMON_INSTALLED "Cinnamon" $KDE_INSTALLED "KDE" --separator="|")
+ANS=$(zenity --title="Apricity - Desktops" --height=300 --list  --text "Choose your desired desktops" --checklist  --column "Installed" --column "Desktop" $GNOME_INSTALLED "Gnome" $CINNAMON_INSTALLED "Cinnamon" $KDE_INSTALLED "KDE" --separator="|")
 
 if [ "$ANS" == "" ]; then
     exit 0

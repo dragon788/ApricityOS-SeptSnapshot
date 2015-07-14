@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Install Antergos Linux
+Name=Install Apricity OS
 GenericName=Live Installer
 Comment=Install the operating system to disk
 Exec=sudo -E /usr/bin/cnchi -d -v -c /var/cache/pacman/pkg

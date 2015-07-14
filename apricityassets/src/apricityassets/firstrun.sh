@@ -63,7 +63,7 @@ gsettings set org.freedesktop.Tracker.Miner.Files index-recursive-directories "[
 gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 tracker-control -r
-gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/storm-beach.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/field.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/gnome/bliss.jpg
 rm ~/.local/share/applications/chrome-app-list.desktop
 cp -rf /etc/apricity-assets/google-chrome-beta ~/.config/

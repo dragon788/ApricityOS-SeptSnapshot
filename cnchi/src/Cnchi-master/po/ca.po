@@ -1,12 +1,12 @@
 # Cnchi - Apricity OS Installer
 # Copyright (C) 2013-2015 Apricity OS
-# Apricity OS Developers <devATantergos.com>
+# Apricity OS Developers <devATapricity.com>
 # 
 # Translators:
 # Arseni garcia <tot3lmon@gmail.com>, 2013
-# faidoc <alexfilgueira@antergos.com>, 2013
-# Gustau Castells <karasu@antergos.com>, 2013-2015
-# karasu0 <karasu@antergos.com>, 2013
+# faidoc <alexfilgueira@apricity.com>, 2013
+# Gustau Castells <karasu@apricity.com>, 2013-2015
+# karasu0 <karasu@apricity.com>, 2013
 # ArcNexus <marcmirallesbiosca@gmail.com>, 2014
 # Arseni garcia <tot3lmon@gmail.com>, 2013
 msgid ""
@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Apricity OS\n"
 "POT-Creation-Date: 2015-03-31 04:15-0600\n"
 "PO-Revision-Date: 2015-04-04 19:06+0000\n"
-"Last-Translator: Gustau Castells <karasu@antergos.com>\n"
-"Language-Team: Catalan (http://www.transifex.com/projects/p/antergos/language/ca/)\n"
+"Last-Translator: Gustau Castells <karasu@apricity.com>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/apricity/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1840,8 +1840,8 @@ msgid ""
 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
 "setups. Please proceed with caution as data loss is possible!\n"
 "\n"
-"If you find any bugs, please report them at http://bugs.antergos.com"
-msgstr "Cnchi és un programari en fase beta amb un desenvolupament molt actiu.\nEncara no pot gestionar RAID, subvolums btrfs o d'altres configuracions avançades.\nSi us plau, procedeix amb precaució ja que pots perdre les teves dades!\n\nSi trobes qualsevol errada, informa'n a http://bugs.antergos.com"
+"If you find any bugs, please report them at http://bugs.apricity.com"
+msgstr "Cnchi és un programari en fase beta amb un desenvolupament molt actiu.\nEncara no pot gestionar RAID, subvolums btrfs o d'altres configuracions avançades.\nSi us plau, procedeix amb precaució ja que pots perdre les teves dades!\n\nSi trobes qualsevol errada, informa'n a http://bugs.apricity.com"
 
 #: cnchi/language.py:84
 msgid "Choose your language"
