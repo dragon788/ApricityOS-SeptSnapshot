@@ -55,8 +55,6 @@ systemctl enable graphical.target gdm.service pacman-init.service dhcpcd.service
 echo 'enabled dhcpd, gdm'
 systemctl enable bluetooth.service
 echo 'enabled bluetooth'
-systemctl enable ufw.service
-echo 'enabled ufw'
 systemctl enable avahi-daemon.service
 echo 'enabled avahi'
 systemctl enable tlp.service tlp-sleep.service
