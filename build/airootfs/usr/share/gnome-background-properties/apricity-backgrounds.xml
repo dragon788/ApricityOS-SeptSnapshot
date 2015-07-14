@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
+	<wallpaper deleted="false">
+		<name>Storm-Beach</name>
+		<filename>/usr/share/backgrounds/gnome/storm-beach.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>Cook</name>
+		<filename>/usr/share/backgrounds/gnome/mount-cook.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>Cook</name>
+		<filename>/usr/share/backgrounds/gnome/spiral.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>Cook</name>
+		<filename>/usr/share/backgrounds/gnome/peacock.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>Cook</name>
+		<filename>/usr/share/backgrounds/gnome/crab.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+    <wallpaper deleted="false">
+		<name>Cook</name>
+		<filename>/usr/share/backgrounds/gnome/foam.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
     <wallpaper deleted="false">
 		<name>Toronto</name>
 		<filename>/usr/share/backgrounds/gnome/flow.jpg</filename>
@@ -396,13 +438,6 @@
 	<wallpaper deleted="false">
 		<name>Stone-Pier</name>
 		<filename>/usr/share/backgrounds/gnome/stone-pier.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Storm-Beach</name>
-		<filename>/usr/share/backgrounds/gnome/storm-beach.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
