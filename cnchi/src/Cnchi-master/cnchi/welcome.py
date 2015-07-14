@@ -59,8 +59,8 @@ class Welcome(GtkBaseBox):
                        # 'cli': self.ui.get_object("cli_image"),
                        'graph': self.ui.get_object("graph_image")}
 
-        self.filenames = {'tryit': {'path': os.path.join(welcome_dir, "try-it.svg"), 'width': 199, 'height': 199},
-                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 207, 'height': 207}}
+        self.filenames = {'tryit': {'path': os.path.join(welcome_dir, "try-it.svg"), 'width': 196, 'height': 196},
+                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 206, 'height': 206}}
 
         for key in self.images:
             image = self.filenames[key]

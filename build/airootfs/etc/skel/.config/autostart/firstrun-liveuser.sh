@@ -53,7 +53,7 @@ sudo rm /usr/share/gnome-background-properties/adwaita.xml
 sudo rm -r /usr/share/backgrounds/gnome
 sudo mv /usr/share/backgrounds/apricity /usr/share/backgrounds/gnome
 sudo mv -f /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
-gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/field.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/gnome/tahoe.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/gnome/bliss.jpg
 #cp -rf /etc/apricity-theme/google-chrome ~/.config
 sudo rm /usr/share/applications/bssh.desktop

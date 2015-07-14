@@ -2,8 +2,71 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
 	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/tahoe.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/yosemite.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/monument.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/ripples.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/tenaya.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/mirror-lake.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/golden-gate.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/field.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
 		<name>Storm-Beach</name>
 		<filename>/usr/share/backgrounds/gnome/storm-beach.jpg</filename>
+		<options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>Field</name>
+		<filename>/usr/share/backgrounds/gnome/red-rock.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
@@ -123,13 +186,6 @@
 	<wallpaper deleted="false">
 		<name>Groundcover</name>
 		<filename>/usr/share/backgrounds/gnome/dotty-flowers.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-	<wallpaper deleted="false">
-		<name>Field</name>
-		<filename>/usr/share/backgrounds/gnome/field.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
