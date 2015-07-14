@@ -9,17 +9,9 @@ pamac-aur
 yaourt-git
 plymouth
 gtk-engine-murrine
-wine
-playonlinux
-steam
-sbackup
-google-talkplugin
-inkscape
 btsync
 btsync-gui
 ice-ssb
-ufw
-gufw
 broadcom-wl-dkms
 
 #Codecs

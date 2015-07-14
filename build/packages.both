@@ -76,7 +76,6 @@ bluez-utils
 cups-pk-helper
 gsfonts
 splix
-ufw
 gzip
 bash-completion
 
@@ -90,34 +89,24 @@ ttf-liberation
 
 # Desktop
 network-manager-applet
-transmission-cli
-transmission-gtk
 libreoffice-fresh
-filezilla
-gimp
-pavucontrol
 pulseaudio-alsa
-gufw
-############################################More accessibility features?
 
 # Theme
 gnome-themes-standard
 gnome-shell-extensions
 
 # Gnome
-baobab
 eog
 evince
 file-roller
 gdm
-geary
 gedit
 gnome-backgrounds
 gnome-bluetooth
 gnome-calculator
 gnome-calendar
 gnome-color-manager
-gnome-contacts
 gnome-control-center
 gnome-disk-utility
 gnome-keyring
@@ -134,9 +123,7 @@ gnome-terminal
 gnome-themes-standard
 gnome-tweak-tool
 gnome-user-docs
-grilo-plugins
 gtk-engine-murrine
-gucharmap
 mutter
 nautilus
 polkit-gnome

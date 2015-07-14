@@ -107,12 +107,11 @@
 		<pkgname>ntfs-3g</pkgname>
 		<pkgname>openssh</pkgname>
 		<pkgname>os-prober</pkgname>
-		<pkgname>pavucontrol</pkgname>
+		<pkgname>pulseaudio-alsa</pkgname>
 		<pkgname>pkgfile</pkgname>
 		<pkgname>playonlinux</pkgname>
 		<pkgname>plymouth</pkgname>
 		<pkgname>polkit-gnome</pkgname>
-		<pkgname>pulseaudio-alsa</pkgname>
 		<pkgname>rfkill</pkgname>
 		<pkgname>samba</pkgname>
 		<pkgname>sbackup</pkgname>
