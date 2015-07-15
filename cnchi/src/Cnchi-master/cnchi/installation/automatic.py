@@ -78,7 +78,7 @@ class InstallationAutomatic(GtkBaseBox):
         label.set_markup(txt)
 
         label = self.ui.get_object('info_label')
-        txt = _("Note: If you are booting this live image under UEFI, we recommend that you select gummiboot for your bootloader.")
+        txt = _("Note: If you are booting this live image under UEFI, we recommend that you select gummiboot for your bootloader")
         label.set_markup(txt)
 
         label = self.ui.get_object('label_luks_password')

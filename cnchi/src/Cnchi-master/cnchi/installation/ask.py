@@ -226,30 +226,30 @@ class InstallationAsk(GtkBaseBox):
         radio.set_name('auto_radio_btn')
 
         label = self.ui.get_object("automatic_description")
-        txt = _("Warning: This will erase ALL data on your disk.")
+        txt = _("Warning: This will erase ALL data on your disk")
         #txt = description_style.format(txt)
         label.set_text(txt)
         label.set_line_wrap(True)
         label.set_name("automatic_desc")
 
         button = self.ui.get_object("encrypt_checkbutton")
-        txt = _("Encrypt this installation for increased security.")
+        txt = _("Encrypt this installation for increased security")
         button.set_label(txt)
         button.set_name("enc_btn")
 
         label = self.ui.get_object("encrypt_label")
-        txt = _("You will be asked to create an encryption password in the next step.")
+        txt = _("You will be asked to create an encryption password in the next step")
         #txt = description_style.format(txt)
         label.set_text(txt)
         label.set_name("enc_label")
 
         button = self.ui.get_object("lvm_checkbutton")
-        txt = _("Use LVM with this installation.")
+        txt = _("Use LVM with this installation")
         button.set_label(txt)
         button.set_name("lvm_btn")
 
         label = self.ui.get_object("lvm_label")
-        txt = _("This will setup LVM and allow you to easily manage partitions and create snapshots.")
+        txt = _("This will setup LVM and allow you to easily manage partitions and create snapshots")
         #txt = description_style.format(txt)
         label.set_text(txt)
         label.set_name("lvm_label")
@@ -260,7 +260,7 @@ class InstallationAsk(GtkBaseBox):
         button.set_name("home_btn")
 
         label = self.ui.get_object("home_label")
-        txt = _("This will setup you /home directory in a different partition or volume.")
+        txt = _("This will setup you /home directory in a different partition or volume")
         #txt = description_style.format(txt)
         label.set_text(txt)
         label.set_name("home_label")
@@ -289,11 +289,11 @@ class InstallationAsk(GtkBaseBox):
 
         # Advanced Install
         radio = self.ui.get_object("advanced_radiobutton")
-        radio.set_label(_("Choose exactly where Apricity OS should be installed."))
+        radio.set_label(_("Choose exactly where Apricity OS should be installed"))
         radio.set_name("advanced_radio_btn")
 
         label = self.ui.get_object("advanced_description")
-        txt = _("Edit partition table and choose mount points.")
+        txt = _("Edit partition table and choose mount points")
         #txt = description_style.format(txt)
         label.set_text(txt)
         label.set_line_wrap(True)

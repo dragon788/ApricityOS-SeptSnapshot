@@ -70,13 +70,13 @@ class Welcome(GtkBaseBox):
     def translate_ui(self):
         """ Translates all ui elements """
         if not self.disable_tryit:
-            txt = _("Try Apricity OS (without all features enabled).") + "\n"
+            txt = _("Try Apricity OS (without all features enabled)") + "\n"
         else:
             txt = ""
         self.labels['tryit'].set_markup(txt)
         self.labels['tryit'].set_name('tryit_label')
 
-        txt = _("Create a permanent place for Apricity OS on your system.")
+        txt = _("Create a permanent place for Apricity OS on your system")
         self.labels['installit'].set_markup(txt)
         self.labels['installit'].set_name('installit_label')
 

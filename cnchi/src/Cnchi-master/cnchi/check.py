@@ -40,7 +40,7 @@ NM = 'org.freedesktop.NetworkManager'
 NM_STATE_CONNECTED_GLOBAL = 70
 UPOWER = 'org.freedesktop.UPower'
 UPOWER_PATH = '/org/freedesktop/UPower'
-MIN_ROOT_SIZE = 6000000000
+MIN_ROOT_SIZE = 10000000000
 
 
 class Check(GtkBaseBox):
@@ -83,7 +83,7 @@ class Check(GtkBaseBox):
         self.header.set_subtitle(txt)
 
         self.prepare_enough_space = self.ui.get_object("prepare_enough_space")
-        txt = _("has at least {0}GB available storage space.").format(MIN_ROOT_SIZE / 1000000000)
+        txt = _("has at least {0}GB available storage space").format(MIN_ROOT_SIZE / 1000000000)
         self.prepare_enough_space.props.label = txt
 
         txt = _("")

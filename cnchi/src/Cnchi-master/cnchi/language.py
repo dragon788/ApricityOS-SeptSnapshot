@@ -71,7 +71,7 @@ class Language(GtkBaseBox):
 
     def translate_ui(self):
         """ Translates all ui elements """
-        txt_bold = _("Notice: The Cnchi Installer is beta software.")
+        txt_bold = _("Notice: The Cnchi Installer is beta software")
         # FIXME: Can't use an a html tag in the label. Causes an accessible GTK Assertion
         txt = _("Cnchi is beta software that is under active development.\n"
                 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
