@@ -91,7 +91,7 @@ class Check(GtkBaseBox):
         self.label_space.set_markup(txt)
 
         self.prepare_power_source = self.ui.get_object("prepare_power_source")
-        txt = _("is plugged in to a power source")
+        txt = _("is plugged into a power source")
         self.prepare_power_source.props.label = txt
 
         self.prepare_network_connection = self.ui.get_object("prepare_network_connection")
