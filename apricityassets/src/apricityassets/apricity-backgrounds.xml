@@ -2,49 +2,49 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Tahoe</name>
 		<filename>/usr/share/backgrounds/gnome/tahoe.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Yosemite</name>
 		<filename>/usr/share/backgrounds/gnome/yosemite.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Monument</name>
 		<filename>/usr/share/backgrounds/gnome/monument.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Ripples</name>
 		<filename>/usr/share/backgrounds/gnome/ripples.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Tenaya</name>
 		<filename>/usr/share/backgrounds/gnome/tenaya.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Mirror-Lake</name>
 		<filename>/usr/share/backgrounds/gnome/mirror-lake.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Golden-Gate</name>
 		<filename>/usr/share/backgrounds/gnome/golden-gate.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
@@ -65,49 +65,42 @@
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Field</name>
+		<name>Red-Rock</name>
 		<filename>/usr/share/backgrounds/gnome/red-rock.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
     <wallpaper deleted="false">
-		<name>Cook</name>
-		<filename>/usr/share/backgrounds/gnome/mount-cook.jpg</filename>
-		<options>zoom</options>
-    <pcolor>#ffffff</pcolor>
-    <scolor>#000000</scolor>
-	</wallpaper>
-    <wallpaper deleted="false">
-		<name>Cook</name>
+		<name>Spiral</name>
 		<filename>/usr/share/backgrounds/gnome/spiral.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
     <wallpaper deleted="false">
-		<name>Cook</name>
+		<name>Peacock</name>
 		<filename>/usr/share/backgrounds/gnome/peacock.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
     <wallpaper deleted="false">
-		<name>Cook</name>
+		<name>Crab</name>
 		<filename>/usr/share/backgrounds/gnome/crab.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
     <wallpaper deleted="false">
-		<name>Cook</name>
+		<name>Foam</name>
 		<filename>/usr/share/backgrounds/gnome/foam.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
     <scolor>#000000</scolor>
 	</wallpaper>
     <wallpaper deleted="false">
-		<name>Toronto</name>
+		<name>Flow</name>
 		<filename>/usr/share/backgrounds/gnome/flow.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
@@ -205,7 +198,7 @@
     <scolor>#000000</scolor>
 	</wallpaper>
 	<wallpaper deleted="false">
-		<name>Lake</name>
+		<name>Gradient</name>
 		<filename>/usr/share/backgrounds/gnome/gradient.jpg</filename>
 		<options>zoom</options>
     <pcolor>#ffffff</pcolor>
