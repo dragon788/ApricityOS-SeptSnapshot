@@ -23,12 +23,3 @@ gst-plugins-ugly
 gst-plugin-libde265
 gstreamer0.10-plugins
 gstreamer-vaapi
-opencore-amr
-faac
-faad2
-flac
-libmatroska
-libdvdread
-libdvdcss
-libdvdnav
-x264

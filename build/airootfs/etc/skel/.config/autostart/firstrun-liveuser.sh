@@ -49,6 +49,8 @@ sudo cp -f /etc/apricity-assets/playonlinux22.png /usr/share/playonlinux/etc
 sudo cp -f /etc/apricity-assets/playonlinux32.png /usr/share/playonlinux/etc
 #cp /etc/apricity-assets/chrome-apps/*.desktop /home/alex/.local/share/applications
 
+cd /usr/share/backgrounds
+sudo tar -xvf /usr/share/backgrounds/apricity.tar.gz
 sudo rm /usr/share/gnome-background-properties/adwaita.xml
 sudo rm -r /usr/share/backgrounds/gnome
 sudo mv /usr/share/backgrounds/apricity /usr/share/backgrounds/gnome
@@ -87,7 +89,10 @@ gsettings set org.freedesktop.Tracker.Miner.Files crawling-interval -2
 gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 tracker-control -r
 
-mv -f /etc/apricity-assets/google-chrome-beta ~/.config/
+cd /etc/apricity-assets
+sudo tar -xvf /etc/apricity-assets/google-chrome-beta.tar.gz
+sudo rm -f /etc/apricity-assets/google-chrome-beta.tar.gz
+sudo mv -f /etc/apricity-assets/google-chrome-beta ~/.config/
 sudo mv /install/var/cache/pacman/pkg /var/cache/pacman
 
 #pipelight-plugin --accept --enable silverlight

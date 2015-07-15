@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="apricity-wordmark.svg"
-   inkscape:export-filename="/home/alex/Apricity-OS-Git/graphics/apricity.png"
-   inkscape:export-xdpi="13.025054"
-   inkscape:export-ydpi="13.025054">
+   inkscape:export-filename="/home/alex/Apricity-OS-Git/build/airootfs/usr/share/plymouth/themes/apricity/apricity.png"
+   inkscape:export-xdpi="39.075161"
+   inkscape:export-ydpi="39.075161">
   <defs
      id="defs4525" />
   <sodipodi:namedview
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="86.115696"
+     inkscape:cx="-273.17002"
      inkscape:cy="-310.82963"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"

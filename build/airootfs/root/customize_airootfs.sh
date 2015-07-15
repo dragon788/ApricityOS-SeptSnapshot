@@ -57,8 +57,6 @@ systemctl enable bluetooth.service
 echo 'enabled bluetooth'
 systemctl enable avahi-daemon.service
 echo 'enabled avahi'
-systemctl enable tlp.service tlp-sleep.service
-echo 'enabled tlp'
 systemctl -fq enable NetworkManager ModemManager
 echo 'enabled network'
 systemctl mask systemd-rfkill@.service

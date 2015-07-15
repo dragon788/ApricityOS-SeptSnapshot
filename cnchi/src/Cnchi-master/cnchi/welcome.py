@@ -60,7 +60,7 @@ class Welcome(GtkBaseBox):
                        'graph': self.ui.get_object("graph_image")}
 
         self.filenames = {'tryit': {'path': os.path.join(welcome_dir, "try-it.svg"), 'width': 196, 'height': 196},
-                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 206, 'height': 206}}
+                          'graph': {'path': os.path.join(welcome_dir, "install-it.svg"), 'width': 205, 'height': 205}}
 
         for key in self.images:
             image = self.filenames[key]
@@ -70,7 +70,7 @@ class Welcome(GtkBaseBox):
     def translate_ui(self):
         """ Translates all ui elements """
         if not self.disable_tryit:
-            txt = _("Use Apricity OS without making any changes to your system.") + "\n"
+            txt = _("Try Apricity OS (without all features enabled).") + "\n"
         else:
             txt = ""
         self.labels['tryit'].set_markup(txt)

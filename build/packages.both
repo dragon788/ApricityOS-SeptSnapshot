@@ -20,19 +20,6 @@ ntfs-3g
 whois
 wget
 linux-firmware
-dhclient
-bind-tools
-rfkill
-
-# Filesystem Tools
-btrfs-progs
-ntfs-3g
-dosfstools
-xfsprogs
-smartmontools
-gptfdisk
-grml-zsh-config
-mtools
 
 # Xorg
 xorg-server
@@ -40,7 +27,6 @@ xorg-server-utils
 xf86-input-synaptics
 
 # Graphical Drivers
-mesa
 mesa-vdpau
 xf86-video-vesa
 xf86-video-fbdev
@@ -50,47 +36,24 @@ xorg-xkill
 xorg-apps
 xorg-fonts
 xorg-server-utils
-xz
 
 # System Tools
 sudo
-gksu
 pkgfile
 alsa-utils
 xdg-user-dirs-gtk
-expect
-mc
-openssh
-tlp
 cups
 libcups
 fakeroot
-gsfonts
 samba
-git
-unrar
-unzip
-tar
-haveged
-bluez-utils
 cups-pk-helper
-gsfonts
 splix
-gzip
-bash-completion
 
 # Fonts
 ttf-dejavu
-ttf-bitstream-vera
-ttf-freefont
-ttf-arphic-uming
-ttf-baekmuk
-ttf-liberation
 
 # Desktop
 network-manager-applet
-libreoffice-fresh
-pulseaudio-alsa
 
 # Theme
 gnome-themes-standard
@@ -102,32 +65,19 @@ evince
 file-roller
 gdm
 gedit
-gnome-backgrounds
 gnome-bluetooth
-gnome-calculator
-gnome-calendar
 gnome-color-manager
 gnome-control-center
-gnome-disk-utility
-gnome-keyring
-gnome-music
-gnome-photos
-gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell
 gnome-shell-extensions
-gnome-system-log
 gnome-system-monitor
 gnome-terminal
 gnome-themes-standard
 gnome-tweak-tool
-gnome-user-docs
 gtk-engine-murrine
-mutter
 nautilus
-polkit-gnome
 sushi
 totem
-seahorse
 xdg-user-dirs-gtk

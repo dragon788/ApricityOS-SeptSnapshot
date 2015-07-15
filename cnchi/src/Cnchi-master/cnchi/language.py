@@ -73,7 +73,7 @@ class Language(GtkBaseBox):
         """ Translates all ui elements """
         txt_bold = _("Notice: The Cnchi Installer is beta software.")
         # FIXME: Can't use an a html tag in the label. Causes an accessible GTK Assertion
-        txt = _("Cnchi is pre-release beta software that is under active development.\n"
+        txt = _("Cnchi is beta software that is under active development.\n"
                 "It does not yet properly handle RAID, btrfs subvolumes, or other advanced\n"
                 "setups. Please proceed with caution as data loss is possible!\n\n")
         txt_markup = "<span weight='bold'>{0}</span>\n\n{1}".format(txt_bold, txt)
