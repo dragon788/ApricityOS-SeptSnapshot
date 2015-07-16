@@ -167,8 +167,8 @@ fun StringToInteger (str) {
 # New arch background, it's just black
 # 0.00, 0.00, 0.00
 
-Window.SetBackgroundTopColor (0.16, 0.16, 0.16);     # Nice colour on top of the screen fading to
-Window.SetBackgroundBottomColor (0.04, 0.04, 0.04);  # an equally nice colour on the bottom
+Window.SetBackgroundTopColor (1, 1, 1);     # Nice colour on top of the screen fading to
+Window.SetBackgroundBottomColor (1, 1, 1);  # an equally nice colour on the bottom
 
 logo.image = Image ("apricity.png"); # "special://logo" is a special keyword which finds the logo image
 logo.sprite = Sprite ();
