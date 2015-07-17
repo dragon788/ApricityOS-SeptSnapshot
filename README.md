@@ -33,13 +33,13 @@ Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your term
 
 ![Wallpapers](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2018-59-02.png?raw=true)
 
-#####Up to Date
+#####Updates
 Because Apricity OS is based on Archlinux, it follows a rolling release system. This, when combined with the graphical Pamac package manager, ensures that you always have the most up to date packages. This also helps minimize security risks.
 
 #####Backup
 SBackup, is one of the easiest ways to back up your computer. While remaining simple and easy to use, it has many notable features which makes it stand apart from the competition. SBackup is able to create both compressed and uncompressed backups, able to split uncompressed backups into multiple parts, supports scheduled backups and manual backups, can back up files to both local and remote destinations, and has a variety of advanced options such as logging, and email notification. 
 
-#####Protection
+#####Security
 Apricity OS keeps your information safe through the use of Uncomplicated Firewall (UFW).  UFW was created to be an intuitive firewall that is ready out of the box with default set of rules that serve the needs of the basic computer user. UFW also can be customized to suit the needs of the user.
 
 #####Our Philosophy
