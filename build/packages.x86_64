@@ -1,7 +1,6 @@
 #Default Archiso
 gummiboot
 prebootloader
-refind-efi
 
 #Desktop
 google-chrome-beta
