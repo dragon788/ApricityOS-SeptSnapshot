@@ -9,7 +9,7 @@
 #####Resource Usage
   Apricity OS, by stripping down the Gnome desktop environment to purely its essentials, is able to be fast and fluid without sacrificing aesthetic appeal. Apricity OS idles at around 500 megabytes of memory usage, as opposed to other popular operating systems that idle at up to several gigabytes.
 
-#####Compatability
+#####Compatibility
 Being an operating system for the modern day, Apricity OS has excellent hidpi compatibility. This means that Apricity OS, unlike many other operating systems, can be used on “Retina” style displays with a minimum of scaling issues.
 
 Furthermore, it is possible to use many Windows programs and games on Apricity OS using Wine and PlayOnLinux. This helps ease the transition of switching from Windows to Apricity OS and helps you maintain the same workflow you used on another operating system.
