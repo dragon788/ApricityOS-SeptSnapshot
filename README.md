@@ -23,7 +23,7 @@ Apricity OS comes with a suite of applications designed to create a more useful 
 ![ICE-SSB](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2018-37-52.png?raw=true)
 -------------
 #####Ice
-  Apricity OS lets you put your favorite web apps on the desktop with Ice, a simple SSB (Site Specific Browser) manager. These specialized browsers minimize the number of steps between you wanting to use your favorite web app and you actually using it. This embodies our vision here at Apricity: we want to help make your workspace, and your play space, more productive and elegant.
+  Apricity OS lets you put your favorite web apps on the desktop with Ice, a simple SSB (Site Specific Browser) manager. These specialized browsers minimize the number of steps between you wanting to use your favorite web app and you actually using it. This embodies our vision here at Apricity: we want to help make your work space, and your play space, more productive and elegant.
 
 #####Staying Connected
   Staying connected between your devices can be tedious work, but Apricity OS comes with Pushbullet, a tool that lets you send links and small files between your devices, and lets you receive mobile notifications, texts, and phone calls across all your devices.
