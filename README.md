@@ -27,7 +27,7 @@ Staying connected between your devices can be tedious work, but Apricity OS come
 #####Terminal
 Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your terminal more informative and beautiful.
 
-![Btsync](http://apricityos.com/assets/img/apricity-laptop-btsync.png)
+![Btsync](http://apricityos.com/assets/img/apricity-laptop-btsync.jpg)
 #####Collaboration
 BtSync allows you to share large amounts data across multiple platforms allowing to be as connected as possible. BtSync can transfer large files up to 16 times faster than cloud based alternatives. Furthermore, your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process.
 
