@@ -3,6 +3,7 @@
 ####[Download the latest ISO](http://apricityos.com/iso/apricity_os-latest.iso)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
+<img src="http://apricityos.com/assets/img/apricity-laptop.png" width="500px"/>
 ![Nautilus Files](http://apricityos.com/assets/img/apricity-laptop.png =500x)
 ![Activities Overview](http://apricityos.com/assets/img/overview.png =500x)
 #####Resource Usage
