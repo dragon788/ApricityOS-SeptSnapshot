@@ -1,7 +1,7 @@
 # Apricity OS
 ####[Support us on Patreon](http://www.patreon.com/apricity)
-####[Download the latest uncached ISO](http://apricityos.com/iso/apricity_os-latest.iso) (Faster download, slower install)
-####[Download the latest cached ISO](http://apricityos.com/iso/apricity_os-latest-cache.iso) (Slower download, faster install)
+####[Download the latest uncached ISO (Faster download, slower install)](http://apricityos.com/iso/apricity_os-latest.iso)
+####[Download the latest cached ISO (Slower download, faster install)](http://apricityos.com/iso/apricity_os-latest-cache.iso)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
 ![Nautilus Files](http://apricityos.com/assets/img/apricity-laptop-github.jpg)
