@@ -5,24 +5,42 @@
 
 ![Nautilus Files](https://raw.githubusercontent.com/apagajewski/Apricity_OS/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2016-45-25.png)
 ![Activities Overview](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2016-45-03.png?raw=true)
-- Beautiful design
-- Fast without sacrificing aesthetic appeal (~500 MB idle memory usage as opposed to ~2000 MB for Windows 8.1)
-- Rolling release, so you always have the most up to date software and never have to perform full system updates
-- Ready to go out of the box with many codecs, `Netflix`, `Flash`, `Java`, lots of drivers, etc.
-- Simple, user-friendly interface
+----------
+#####Resource Usage
+  Apricity OS, by stripping down the Gnome desktop environment to purely its essentials, is able to be fast and fluid without sacrificing aesthetic appeal. Apricity OS idles at around 500 megabytes of memory usage, as opposed to other popular operating systems that idle at up to several gigabytes.
 
+#####Compatibility
+Being an operating system for the modern day, Apricity OS has excellent hidpi compatibility. This means that Apricity OS, unlike many other operating systems, can be used on “Retina” style displays with a minimum of scaling issues.
+
+Furthermore, it is possible to use many Windows programs and games on Apricity OS using Wine and PlayOnLinux. This helps ease the transition of switching from Windows to Apricity OS and helps you maintain the same workflow you used on another operating system.
+
+#####Download Suite
+Apricity OS comes with a suite of applications designed to create a more useful environment for both work and play, including LibreOffice, Totem, Gnome Photos, Gnome Music, Gnome Calendar, and Steam.
+
+#####Collaboration
+  BtSync allows you to share large amounts data across multiple platforms allowing to be as connected as possible. BtSync can transfer large files up to 16 times faster than cloud based alternatives. Furthermore, because your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process, your information is very safe.
+	
 ![ICE-SSB](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2018-37-52.png?raw=true)
-- Online applications sit right in the dock with all other applications because of `Ice`, a tool for site-specific browsing
-- Informative `liquidprompt` terminal
-- Great applications including `LibreOffice`, `Totem`, `Gnome-Photos`, `Gnome Music`, `Gnome Calendar`, `Btsync`, `Grsync`, `PlayOnLinux`, and `Steam`
-- Many Windows programs (and games!) run on Apricity through the use of `WINE` and `PlayOnLinux`
-- The windows version of `Steam` can also be installed, although the linux version is included out of the box
-- HiDPI compatible
-- Great Chrome extensions that decrease memory usage, let you know about your privacy, and better sync what you're doing on your computer with what's on your phone
+-------------
+#####Ice
+  Apricity OS lets you put your favorite web apps on the desktop with Ice, a simple SSB (Site Specific Browser) manager. These specialized browsers minimize the number of steps between you wanting to use your favorite web app and you actually using it. This embodies our vision here at Apricity: we want to help make your work space, and your play space, more productive and elegant.
+
+#####Staying Connected
+  Staying connected between your devices can be tedious work, but Apricity OS comes with Pushbullet, a tool that lets you send links and small files between your devices, and lets you receive mobile notifications, texts, and phone calls across all your devices.
+
+#####Terminal
+Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your terminal more informative and beautiful.
 
 ![Wallpapers](https://github.com/apagajewski/Apricity_OS/blob/master/Apricity%20Screengrabs/Screenshot%20from%202015-07-05%2018-59-02.png?raw=true)
-- Beautiful, clean wallpapers
-- Secure, with no known viruses
-- Incredible database of installable applications
-- Uses `Systemd` for startup for faster boots
-- Always utilizes the latest kernel for maximum compatibility
+
+#####Updates
+Because Apricity OS is based on Archlinux, it follows a rolling release system. This, when combined with the graphical Pamac package manager, ensures that you always have the most up to date packages. This also helps minimize security risks.
+
+#####Backup
+SBackup, is one of the easiest ways to back up your computer. While remaining simple and easy to use, it has many notable features which makes it stand apart from the competition. SBackup is able to create both compressed and uncompressed backups, able to split uncompressed backups into multiple parts, supports scheduled backups and manual backups, can back up files to both local and remote destinations, and has a variety of advanced options such as logging, and email notification. 
+
+#####Security
+Apricity OS keeps your information safe through the use of Uncomplicated Firewall (UFW).  UFW was created to be an intuitive firewall that is ready out of the box with default set of rules that serve the needs of the basic computer user. UFW also can be customized to suit the needs of the user.
+
+#####Our Philosophy
+  Here at Apricity, we believe that digital computing is an integral part of our daily lives today, and thus must always remain open and accessible. This is why Apricity OS is, and always will be, 100% free.
