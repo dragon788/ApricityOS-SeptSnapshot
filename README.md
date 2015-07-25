@@ -31,7 +31,7 @@ Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your term
 BtSync allows you to share large amounts data across multiple platforms allowing to be as connected as possible. BtSync can transfer large files up to 16 times faster than cloud based alternatives. Furthermore, your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process.
 
 #####Updates
-Because Apricity OS is based on Archlinux, it follows a rolling release system. This, when combined with the graphical Pamac package manager, ensures that you always have the most up to date packages. This also helps minimize security risks.
+Because Apricity OS is based on Archlinux, it follows a rolling release cycle. This, when combined with the graphical Pamac package manager, ensures that you always have the most up to date packages. This also helps minimize security risks.
 
 #####Backup
 SBackup, is one of the easiest ways to back up your computer. While remaining simple and easy to use, it has many notable features which makes it stand apart from the competition. SBackup is able to create both compressed and uncompressed backups, able to split uncompressed backups into multiple parts, supports scheduled backups and manual backups, can back up files to both local and remote destinations, and has a variety of advanced options such as logging, and email notification. 
