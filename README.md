@@ -12,7 +12,7 @@ Apricity OS, by stripping down the Gnome desktop environment to its essentials, 
 It is possible to use many Windows programs and games on Apricity OS using Wine and PlayOnLinux. This helps ease the transition of switching from Windows to Apricity OS and helps you maintain the same workflow you used on another operating system.
 
 #####HiDPI
-Being an operating system for the modern day, Apricity OS has excellent hidpi compatibility. This means that Apricity OS, unlike many other operating systems, can be used on “Retina” style displays with a minimum of scaling issues.
+As an operating system for the modern day, Apricity OS has excellent hidpi compatibility. This means that Apricity OS, unlike many other operating systems, can be used on “Retina” style displays with a minimum of scaling issues.
 
 #####Installed Applications
 Apricity OS comes with a number of applications designed to create a more useful environment for both work and play, including LibreOffice, Totem, Gnome Photos, Gnome Music, Gnome Calendar, and Steam.
