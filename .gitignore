@@ -8,8 +8,10 @@ pr
 /apricityassets/pkg/
 /build/install/
 /build/out/
+/build/work/
+/build/airootfs/install/
 /build/pacman.conf
 /cnchi/Cnchi-master.tar.gz
-/cnchi/cnchi-0.8.183-1-any.pkg.tar.xz
+/cnchi/cnchi-*-any.pkg.tar.xz
 /cnchi/pkg/
 /cnchi/src/Cnchi-master.tar.gz
