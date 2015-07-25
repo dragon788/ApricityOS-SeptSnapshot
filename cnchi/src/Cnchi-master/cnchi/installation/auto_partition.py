@@ -44,7 +44,7 @@ and then raise an InstallError exception.
 MAX_ROOT_SIZE = 30000
 
 # KDE needs 4.5 GB for its files. Need to leave extra space also.
-MIN_ROOT_SIZE = 6500
+MIN_ROOT_SIZE = 10000
 
 
 def get_info(part):

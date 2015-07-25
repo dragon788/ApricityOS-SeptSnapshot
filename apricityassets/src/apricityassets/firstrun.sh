@@ -4,7 +4,6 @@ then
 	cd /home
 
 else
-cp ~/.liquidprompt/liquidpromptrc-dist ~/.config/liquidpromptrc
 
 echo 'source ~/.liquidprompt/liquidprompt' >> ~/.bashrc
 touch ~/.firstrun.ran
@@ -67,6 +66,7 @@ gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgro
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/gnome/bliss.jpg
 rm ~/.local/share/applications/chrome-app-list.desktop
 cp -rf /etc/apricity-assets/google-chrome-beta ~/.config/
+cp ~/.liquidprompt/liquidpromptrc-dist ~/.config/liquidpromptrc
 #sudo rm -r /usr/lib/evolution-data-server
 #killall evolution-addressbook-factory
 #killall evolution-addressbook-factory-subprocess

@@ -167,8 +167,7 @@ postinstall()
 
 	cp -f ${DESTDIR}/usr/share/gnome-background-properties/apricity-backgrounds.xml ${DESTDIR}/usr/share/gnome-background-properties/gnome-backgrounds.xml
 
-	rm  -r ${DESTDIR}/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
-	cp -rf /etc/apricity-assets/dash-to-dock@micxgx.gmail.com ${DESTDIR}/usr/share/gnome-shell/extensions/
+	chmod 755 ${DESTDIR}/etc/apricity-assets/google-chrome-beta
 
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon-notifier-config.desktop
