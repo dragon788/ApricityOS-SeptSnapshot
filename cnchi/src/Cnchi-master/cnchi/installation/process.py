@@ -1036,7 +1036,7 @@ class InstallationProcess(multiprocessing.Process):
         # if self.settings.get("feature_aur"):
         #    logging.debug(_("Configuring AUR..."))
 
-        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw''tlp''tlp-sleep''ntpd']
+        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''tlp''tlp-sleep''ntpd']
 
         if self.settings.get("feature_bluetooth"):
             services.append('bluetooth')
@@ -1045,17 +1045,16 @@ class InstallationProcess(multiprocessing.Process):
             services.append('org.cups.cupsd')
             services.append('avahi-daemon')
 
-        if self.settings.get("feature_firewall"):
-            logging.debug(_("Configuring firewall..."))
-            # Set firewall rules
-            firewall.run(["default", "deny"])
-            toallow = misc.get_network()
-            if toallow:
-                firewall.run(["allow", "from", toallow])
-            firewall.run(["allow", "Transmission"])
-            firewall.run(["allow", "SSH"])
-            firewall.run(["enable"])
-            services.append('ufw')
+        logging.debug(_("Configuring firewall..."))
+        # Set firewall rules
+        firewall.run(["default", "deny"])
+        toallow = misc.get_network()
+        if toallow:
+            firewall.run(["allow", "from", toallow])
+        firewall.run(["allow", "Transmission"])
+        firewall.run(["allow", "SSH"])
+        firewall.run(["enable"])
+        services.append('ufw')
 
         if self.settings.get("feature_lts"):
             # FIXME: Apricity doesn't boot if linux lts is selected

@@ -206,8 +206,8 @@ class InstallationAutomatic(GtkBaseBox):
         self.bootloader_entry.remove_all()
 
         if os.path.exists('/sys/firmware/efi'):
-            self.bootloader_entry.append_text("Grub2")
             self.bootloader_entry.append_text("Gummiboot")
+            self.bootloader_entry.append_text("Grub2")
             self.bootloader_entry.set_active(0)
             self.bootloader_entry.show()
         else:
