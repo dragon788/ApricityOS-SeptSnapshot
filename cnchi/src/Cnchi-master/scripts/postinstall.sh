@@ -192,6 +192,7 @@ postinstall()
 	chown -R root.root ${DESTDIR}/usr/share/plymouth/themes/apricity
 	cp -R ${DESTDIR}/home/${USER_NAME}/.config ${DESTDIR}/etc/skel
 	chroot ${DESTDIR} su -c xdg-user-dirs-update ${USER_NAME}
+	cp -rf /usr/share/gnome-shell/extensions/* ${DESTDIR}/usr/share/gnome-shell/extensions
 
 }
 
