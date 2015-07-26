@@ -4,7 +4,7 @@
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
 ![Nautilus Files](http://apricityos.com/assets/img/apricity-laptop-github.jpg)
-####[Support us on Patreon](http://www.patreon.com/apricity)
+#####[Support us on Patreon](http://www.patreon.com/apricity)
 #####Resource Usage
 Apricity OS, by stripping down the Gnome desktop environment to its essentials, is able to be fast and fluid without sacrificing aesthetic appeal. Apricity OS idles at around 500 megabytes of memory usage, as opposed to other popular operating systems that idle at up to several gigabytes.
 
