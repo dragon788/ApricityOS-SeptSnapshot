@@ -168,6 +168,7 @@ postinstall()
 	cp -f ${DESTDIR}/usr/share/gnome-background-properties/apricity-backgrounds.xml ${DESTDIR}/usr/share/gnome-background-properties/gnome-backgrounds.xml
 
 	chmod 755 -R ${DESTDIR}/etc/apricity-assets/google-chrome-beta
+	ln -s ${DESTDIR}/usr/bin/google-chrome-beta ${DESTDIR}/usr/bin/google-chrome
 
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon.desktop
 	sed -i 's@/usr/share/argon/argon.png@gnome-app-install@' ${DESTDIR}/usr/share/applications/argon-notifier-config.desktop
