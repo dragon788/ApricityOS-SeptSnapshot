@@ -934,6 +934,7 @@ class InstallationProcess(multiprocessing.Process):
     def enable_services(services):
         """ Enables all services that are in the list 'services' """
         chroot_run(["systemctl", "mask", "systemd-rfkill@.service"])
+        chroot_run(["systemctl", "enable", "org.cups.cupsd.service"])
         chroot_run(["pacman-key", "--populate", "archlinux"])
         for name in services:
             path = os.path.join(DEST_DIR, "usr/lib/systemd/system/{0}.service".format(name))
@@ -1035,35 +1036,18 @@ class InstallationProcess(multiprocessing.Process):
         # if self.settings.get("feature_aur"):
         #    logging.debug(_("Configuring AUR..."))
 
-        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''ufw''tlp''tlp-sleep''ntpd']
+        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''tlp''tlp-sleep''ntpd']
 
-        if self.settings.get("feature_bluetooth"):
-            services.append('bluetooth')
-
-        if self.settings.get("feature_cups"):
-            services.append('org.cups.cupsd')
-            services.append('avahi-daemon')
-
-        if self.settings.get("feature_firewall"):
-            logging.debug(_("Configuring firewall..."))
-            # Set firewall rules
-            firewall.run(["default", "deny"])
-            toallow = misc.get_network()
-            if toallow:
-                firewall.run(["allow", "from", toallow])
-            firewall.run(["allow", "Transmission"])
-            firewall.run(["allow", "SSH"])
-            firewall.run(["enable"])
-            services.append('ufw')
-
-        if self.settings.get("feature_lts"):
-            # FIXME: Apricity doesn't boot if linux lts is selected
-            # Is something wrong with the 10_apricity file ?
-            chroot_run(["chmod", "a-x", "/etc/grub.d/10_apricity"])
-            chroot_run(["chmod", "a+x", "/etc/grub.d/10_linux"])
-            chroot_run(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
-            chroot_run(["chmod", "a-x", "/etc/grub.d/10_linux"])
-            chroot_run(["chmod", "a+x", "/etc/grub.d/10_apricity"])
+        logging.debug(_("Configuring firewall..."))
+        # Set firewall rules
+        firewall.run(["default", "deny"])
+        toallow = misc.get_network()
+        if toallow:
+            firewall.run(["allow", "from", toallow])
+        firewall.run(["allow", "Transmission"])
+        firewall.run(["allow", "SSH"])
+        firewall.run(["enable"])
+        services.append('ufw')
 
         self.enable_services(services)
 
@@ -1247,15 +1231,9 @@ class InstallationProcess(multiprocessing.Process):
         logging.debug(_("Generated /etc/pacman.conf"))
 
         # Enable services
-        services = []
-        if self.desktop != "base":
-            services.append(self.desktop_manager)
+        services = ['bluetooth''org.cups.cupsd''avahi-daemon''smbd''nmbd''tlp''tlp-sleep''ntpd']
         services.extend(["ModemManager", self.network_manager, "remote-fs.target", "haveged"])
         self.enable_services(services)
-
-        # Enable ntp service
-        if self.settings.get("use_ntp"):
-            self.enable_services(["ntpd"])
 
         # Set timezone
         zoneinfo_path = os.path.join("/usr/share/zoneinfo", self.settings.get("timezone_zone"))
