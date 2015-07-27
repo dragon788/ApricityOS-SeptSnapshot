@@ -3,7 +3,7 @@
 ####[Download the latest noncached ISO (Faster download, slower install)](http://apricityos.com/iso/apricity_os-latest-nocache.iso)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
-![Nautilus Files](https://apricityos.com/assets/img/apricity-laptop.jpg)
+![Nautilus Files](http://apricityos.com/assets/img/apricity-laptop.jpg)
 #####[Support us on Patreon](http://www.patreon.com/apricity)
 #####Resource Usage
 Apricity OS, by stripping down the Gnome desktop environment to its essentials, is able to be fast and fluid without sacrificing aesthetic appeal. Apricity OS idles at around 500 megabytes of memory usage, as opposed to other popular operating systems that idle at up to several gigabytes.
@@ -17,7 +17,7 @@ As an operating system for the modern day, Apricity OS has excellent hidpi compa
 #####Installed Applications
 Apricity OS comes with a number of applications designed to create a more useful environment for both work and play, including LibreOffice, Totem, Gnome Photos, Gnome Music, Gnome Calendar, and Steam.
 	
-![ICE-SSB](https://apricityos.com/assets/img/apricity-laptop-ice.jpg)
+![ICE-SSB](http://apricityos.com/assets/img/apricity-laptop-ice.jpg)
 #####Ice
 Apricity OS lets you put your favorite web apps on the desktop with ICE, a simple SSB (Site Specific Browser) manager. These specialized browsers minimize the number of steps between you wanting to use your favorite web app and you actually using it. This embodies our vision here at Apricity: we want to help make your workspace, and your playspace, more productive and elegant.
 
@@ -27,7 +27,7 @@ Staying connected between your devices can be tedious work, but Apricity OS come
 #####Terminal
 Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your terminal more informative and beautiful.
 
-![Btsync](https://apricityos.com/assets/img/apricity-laptop-btsync.jpg)
+![Btsync](http://apricityos.com/assets/img/apricity-laptop-btsync.jpg)
 #####Collaboration
 BtSync allows you to share large amounts data across multiple platforms allowing to be as connected as possible. BtSync can transfer large files up to 16 times faster than cloud based alternatives. Furthermore, your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process.
 
