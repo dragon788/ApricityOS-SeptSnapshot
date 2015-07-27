@@ -1,4 +1,4 @@
-Wallpapers for Apricity OS were contributed by the following incredible artists:
+The following incredible artists created wallpapers included in Apricity OS:
 
 [0rAX0](http://0rax0.deviantart.com/)
 
