@@ -1,4 +1,5 @@
 # Apricity OS
+Note: We do not have a mailing list. If you would like to receive email notifications of issues, please watch this repository, go to your GitHub account settings, click the notification center tab, and check the box under the 'Watching' header marked 'Email'.
 ####[Download the latest cached ISO (Slower download, faster install)](http://apricityos.com/iso/apricity_os-latest.torrent)
 ####[Download the latest noncached ISO (Faster download, slower install)](http://apricityos.com/iso/apricity_os-latest-nocache.torrent)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
