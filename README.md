@@ -2,10 +2,10 @@
 Note: We do not have a mailing list. If you would like to receive email notifications of issues, please watch this repository, go to your GitHub account settings, click the notification center tab, and check the box under the 'Watching' header marked 'Email'.
 ####[Download the latest 64 bit cached ISO (Slower download, faster install)](http://apricityos.com/iso/apricity_os-latest.torrent)
 ####[Download the latest 64 bit noncached ISO (Faster download, slower install)](http://apricityos.com/iso/apricity_os-latest-nocache.torrent)
+#####[Support us on Patreon](http://www.patreon.com/apricity)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
 ![Nautilus Files](http://apricityos.com/assets/img/back/apricity-laptop.jpg)
-#####[Support us on Patreon](http://www.patreon.com/apricity)
 #####Resource Usage
 Apricity OS, by stripping down the Gnome desktop environment to its essentials, is able to be fast and fluid without sacrificing aesthetic appeal. Apricity OS idles at around 500 megabytes of memory usage, as opposed to other popular operating systems that idle at up to several gigabytes.
 
