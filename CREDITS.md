@@ -24,6 +24,8 @@ The following incredible artists created wallpapers included in Apricity OS:
 
 [Mark Vegas](https://www.flickr.com/photos/vegas/)
 
+[midhunhk](http://midhunhk.blogspot.com/2014/07/android-l-release-artwork.html)
+
 [Philippe Put](https://www.flickr.com/photos/34547181@N00/)
 
 [Pietru H](http://pietruh.deviantart.com/gallery/)
