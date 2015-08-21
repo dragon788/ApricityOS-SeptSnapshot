@@ -2,13 +2,13 @@
 
 _pkgname='Apricity Assets'
 pkgname=apricityassets
-pkgver=0.1.29
+pkgver=0.1.30
 pkgrel=1
 pkgdesc='Assets for Apricity OS'
 arch=(any)
 license=(GPL)
 url="https://github.com/Apricity/OS"
-depends=()
+depends=('kdebase-runtime')
 source=("apricityassets.tar.gz")
 sha256sums=(SKIP)
 install=apricityassets.install
@@ -37,4 +37,7 @@ package() {
 	cp -f "${srcdir}/apricityassets/firstrun.desktop" "${pkgdir}/etc/skel/.config/autostart"
 	cp -f "${srcdir}/apricityassets/apricity-backgrounds.xml" "${pkgdir}/usr/share/gnome-background-properties"
 	cp -f "${srcdir}/apricityassets/g_wheel" "${pkgdir}/etc/sudoers.d"
+	chown root /etc/apricity-assets
+	chmod 755 /etc/apricity-assets
+	
 }

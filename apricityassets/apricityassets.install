@@ -6,6 +6,7 @@ mv /usr/share/backgrounds/apricity/ /usr/share/backgrounds/gnome
 rm /usr/share/gnome-background-properties/gnome-backgrounds.xml
 cp /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
 chmod -R 755 /usr/share/backgrounds/gnome
+kwriteconfig --file kdeglobals --group General --key widgetStyle gtk && kwriteconfig --file kdeglobals --group Icons --key Theme Human
 }
 
 post_remove(){
@@ -39,5 +40,8 @@ rm -r /usr/share/backgrounds/gnome
 mv /usr/share/backgrounds/apricity/ /usr/share/backgrounds/gnome
 rm /usr/share/gnome-background-properties/gnome-backgrounds.xml
 cp /usr/share/gnome-background-properties/apricity-backgrounds.xml /usr/share/gnome-background-properties/gnome-backgrounds.xml
+chown -R root /etc/apricity-assets
+chmod 755 /etc/apricity-assets
 chmod -R 755 /usr/share/backgrounds/gnome
+kwriteconfig --file kdeglobals --group General --key widgetStyle gtk && kwriteconfig --file kdeglobals --group Icons --key Theme Human
 }

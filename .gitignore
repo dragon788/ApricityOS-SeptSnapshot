@@ -3,13 +3,15 @@ re
 instructions
 pr
 *.docx
-/apricityassets/apricityassets-0.1.29-1-any.pkg.tar.xz
+/apricityassets/apricityassets-*.pkg.tar.xz
 /apricityassets/apricityassets.tar.gz
 /apricityassets/pkg/
 /build/install/
 /build/out/
 /build/work/
 /build/airootfs/install/
+/build/boot/
+/build/airootfs/var
 /build/pacman.conf
 /cnchi/Cnchi-master.tar.gz
 /cnchi/cnchi-*-any.pkg.tar.xz
