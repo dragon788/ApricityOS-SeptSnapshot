@@ -1,7 +1,8 @@
 # Apricity OS
 Note: We do not have a mailing list. If you would like to receive email notifications of issues, please watch this repository, go to your GitHub account settings, click the notification center tab, and check the box under the 'Watching' header marked 'Email'.
-####[Download the latest 64 bit cached ISO (Slower download, faster install)](http://apricityos.com/iso/apricity_os-latest.torrent)
-####[Download the latest 64 bit noncached ISO (Faster download, slower install)](http://apricityos.com/iso/apricity_os-latest-nocache.torrent)
+####[Download the latest 64-Bit ISO](http://apricityos.com/iso/apricity_os-08.2015-beta.iso)
+####[Mirror](https://sourceforge.net/projects/apricityos/files/apricity_os-08.2015-beta.iso/download)
+####[Torrent](http://apricityos.com/iso/apricity_os-08.2015-beta.torrent)
 ####[Support us on Patreon](http://www.patreon.com/apricity)
 ####Welcome to Apricity OS, a modern, intuitive operating system for the cloud generation of computing. 
 
@@ -28,9 +29,9 @@ Staying connected between your devices can be tedious work, but Apricity OS come
 #####Terminal
 Apricity OS utilizes Liquid Prompt, an adaptive bash prompt that makes your terminal more informative and beautiful.
 
-![Btsync](http://apricityos.com/assets/img/back/apricity-laptop-btsync.jpg)
+![Syncthing](http://apricityos.com/assets/img/back/apricity-laptop-syncthing.jpg)
 #####Collaboration
-BtSync allows you to share large amounts data across multiple platforms allowing to be as connected as possible. BtSync can transfer large files up to 16 times faster than cloud based alternatives. Furthermore, your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process.
+Syncthing allows you to share large amounts data across multiple platforms allowing to be as connected as possible. Syncthing can transfer large files even faster than cloud based alternatives. Furthermore, your files and personal information are stored only on local devices, not in the cloud, and are encrypted along every step in the file transfer process.
 
 #####Updates
 Because Apricity OS is based on Archlinux, it follows a rolling release cycle. This, when combined with the graphical Pamac package manager, ensures that you always have the most up to date packages. This also helps minimize security risks.
