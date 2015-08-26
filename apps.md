@@ -1,7 +1,5 @@
 Baobab
 
-BleachBit
-
 Cheese
 
 Chrome
