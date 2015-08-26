@@ -2,8 +2,6 @@ Baobab
 
 BleachBit
 
-BtSync
-
 Cheese
 
 Chrome
@@ -63,6 +61,8 @@ Polkit Gnome
 SBackup
 
 Steam
+
+Syncthing
 
 System Log Viewer
 
