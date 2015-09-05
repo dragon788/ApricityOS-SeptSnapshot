@@ -1,10 +1,10 @@
 The following talented designers created icons and themes featured in Apricity OS:
 
-[horst3180](https://github.com/horst3180/Arc-theme) [License](https://github.com/horst3180/Arc-theme/blob/master/COPYING)
+[horst3180](https://github.com/horst3180/Arc-theme) ([License](https://github.com/horst3180/Arc-theme/blob/master/COPYING))
 
-[Numix](https://github.com/numixproject/numix-icon-theme-circle) [License](https://github.com/numixproject/numix-icon-theme-circle/blob/master/license)
+[Numix](https://github.com/numixproject/numix-icon-theme-circle) ([License](https://github.com/numixproject/numix-icon-theme-circle/blob/master/license))
 
-[Sam Hewitt](http://snwh.org/paper/) [License](https://github.com/snwh/paper-icon-theme/blob/master/LICENSE)
+[Sam Hewitt](http://snwh.org/paper/) ([License](https://github.com/snwh/paper-icon-theme/blob/master/LICENSE))
 
 [vinceliuice](http://vinceliuice.deviantart.com/art/Vimix-icon-themes-530683384)
 
